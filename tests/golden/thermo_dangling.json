@@ -1,0 +1,2312 @@
+{
+  "cases": [
+    {
+      "antisense": {
+        "c_seq": "GCCG", 
+        "result": {
+          "value": "-5.0397563784730774"
+        }, 
+        "seq": "GGC", 
+        "shift": 1
+      }, 
+      "end_stability": {
+        "value": "False"
+      }, 
+      "free_energy3": {
+        "value": "(-0.1033313784730799, -2.992086378473079)"
+      }, 
+      "free_energy_dangling_ends": {
+        "value": "(-1.5117863784730798, -5.0397563784730774)"
+      }, 
+      "reverse_complement": "GGCGCAAACCACTTCCCAGAA", 
+      "sense": {
+        "c_seq": "AGAC", 
+        "result": {
+          "value": "-1.5117863784730798"
+        }, 
+        "seq": "CTG", 
+        "shift": 1
+      }, 
+      "sirna_sequence": "CTGGGAAGTGGTTTGCGCCGA", 
+      "sirna_sequence_n2": "TTCTGGGAAGTGGTTTGCGCC", 
+      "strand_selection": {
+        "value": "False"
+      }
+    }, 
+    {
+      "antisense": {
+        "c_seq": "GGCA", 
+        "result": {
+          "value": "-1.5881173784730818"
+        }, 
+        "seq": "CGT", 
+        "shift": 1
+      }, 
+      "end_stability": {
+        "value": "False"
+      }, 
+      "free_energy3": {
+        "value": "(-0.3569113784730798, -0.028577378473080898)"
+      }, 
+      "free_energy_dangling_ends": {
+        "value": "(-1.8624148784730787, -1.5881173784730818)"
+      }, 
+      "reverse_complement": "CGTGCTCGGCGCAAACCACTT", 
+      "sense": {
+        "c_seq": "TCAC", 
+        "result": {
+          "value": "-1.8624148784730787"
+        }, 
+        "seq": "GTG", 
+        "shift": 1
+      }, 
+      "sirna_sequence": "GTGGTTTGCGCCGAGCACGGC", 
+      "sirna_sequence_n2": "AAGTGGTTTGCGCCGAGCACG", 
+      "strand_selection": {
+        "value": "True"
+      }
+    }, 
+    {
+      "antisense": {
+        "c_seq": "TAGC", 
+        "result": {
+          "value": "-0.8727123784730811"
+        }, 
+        "seq": "TCG", 
+        "shift": 1
+      }, 
+      "end_stability": {
+        "value": "True"
+      }, 
+      "free_energy3": {
+        "value": "(-1.935226378473082, -0.19603737847308184)"
+      }, 
+      "free_energy_dangling_ends": {
+        "value": "(-3.999201378473084, -0.8727123784730811)"
+      }, 
+      "reverse_complement": "TCGATGCCGTGCTCGGCGCAA", 
+      "sense": {
+        "c_seq": "ACGC", 
+        "result": {
+          "value": "-3.999201378473084"
+        }, 
+        "seq": "GCG", 
+        "shift": 1
+      }, 
+      "sirna_sequence": "GCGCCGAGCACGGCATCGATC", 
+      "sirna_sequence_n2": "TTGCGCCGAGCACGGCATCGA", 
+      "strand_selection": {
+        "value": "True"
+      }
+    }, 
+    {
+      "antisense": {
+        "c_seq": "GCCA", 
+        "result": {
+          "value": "-3.1331073784730763"
+        }, 
+        "seq": "GGT", 
+        "shift": 1
+      }, 
+      "end_stability": {
+        "value": "False"
+      }, 
+      "free_energy3": {
+        "value": "(-1.0804723784730776, -1.0854373784730815)"
+      }, 
+      "free_energy_dangling_ends": {
+        "value": "(-2.5859758784730764, -3.1331073784730763)"
+      }, 
+      "reverse_complement": "GGTTGGATCGATGCCGTGCTC", 
+      "sense": {
+        "c_seq": "TCGT", 
+        "result": {
+          "value": "-2.5859758784730764"
+        }, 
+        "seq": "GCA", 
+        "shift": 1
+      }, 
+      "sirna_sequence": "GCACGGCATCGATCCAACCGG", 
+      "sirna_sequence_n2": "GAGCACGGCATCGATCCAACC", 
+      "strand_selection": {
+        "value": "False"
+      }
+    }, 
+    {
+      "antisense": {
+        "c_seq": "ATGG", 
+        "result": {
+          "value": "-2.033522378473077"
+        }, 
+        "seq": "ACC", 
+        "shift": 1
+      }, 
+      "end_stability": {
+        "value": "False"
+      }, 
+      "free_energy3": {
+        "value": "(1.1017226215269202, -1.0854373784730815)"
+      }, 
+      "free_energy_dangling_ends": {
+        "value": "(0.1421826215269248, -2.033522378473077)"
+      }, 
+      "reverse_complement": "ACCTTCCGGTTGGATCGATGC", 
+      "sense": {
+        "c_seq": "GTAG", 
+        "result": {
+          "value": "0.1421826215269248"
+        }, 
+        "seq": "ATC", 
+        "shift": 1
+      }, 
+      "sirna_sequence": "ATCGATCCAACCGGAAGGTAC", 
+      "sirna_sequence_n2": "GCATCGATCCAACCGGAAGGT", 
+      "strand_selection": {
+        "value": "False"
+      }
+    }, 
+    {
+      "antisense": {
+        "c_seq": "AGGC", 
+        "result": {
+          "value": "-3.1365213784730805"
+        }, 
+        "seq": "CCG", 
+        "shift": 1
+      }, 
+      "end_stability": {
+        "value": "False"
+      }, 
+      "free_energy3": {
+        "value": "(1.7304076215269224, -1.7280663784730823)"
+      }, 
+      "free_energy_dangling_ends": {
+        "value": "(0.17086762152692064, -3.1365213784730805)"
+      }, 
+      "reverse_complement": "CCGGTGTACCTTCCGGTTGGA", 
+      "sense": {
+        "c_seq": "GGTT", 
+        "result": {
+          "value": "0.17086762152692064"
+        }, 
+        "seq": "CAA", 
+        "shift": 1
+      }, 
+      "sirna_sequence": "CAACCGGAAGGTACACCGGAG", 
+      "sirna_sequence_n2": "TCCAACCGGAAGGTACACCGG", 
+      "strand_selection": {
+        "value": "False"
+      }
+    }, 
+    {
+      "antisense": {
+        "c_seq": "GACT", 
+        "result": {
+          "value": "-0.38451837847307613"
+        }, 
+        "seq": "TGA", 
+        "shift": 1
+      }, 
+      "end_stability": {
+        "value": "False"
+      }, 
+      "free_energy3": {
+        "value": "(1.7718626215269215, 0.6587166215269208)"
+      }, 
+      "free_energy_dangling_ends": {
+        "value": "(1.6326476215269212, -0.38451837847307613)"
+      }, 
+      "reverse_complement": "TGAGTCTCCGGTGTACCTTCC", 
+      "sense": {
+        "c_seq": "CTTC", 
+        "result": {
+          "value": "1.6326476215269212"
+        }, 
+        "seq": "AAG", 
+        "shift": 1
+      }, 
+      "sirna_sequence": "AAGGTACACCGGAGACTCAGA", 
+      "sirna_sequence_n2": "GGAAGGTACACCGGAGACTCA", 
+      "strand_selection": {
+        "value": "False"
+      }
+    }, 
+    {
+      "antisense": {
+        "c_seq": "ACGT", 
+        "result": {
+          "value": "-3.1444473784730764"
+        }, 
+        "seq": "GCA", 
+        "shift": 1
+      }, 
+      "end_stability": {
+        "value": "False"
+      }, 
+      "free_energy3": {
+        "value": "(-1.0854373784730815, -1.0804723784730776)"
+      }, 
+      "free_energy_dangling_ends": {
+        "value": "(-2.044977378473079, -3.1444473784730764)"
+      }, 
+      "reverse_complement": "GCAGATCTGAGTCTCCGGTGT", 
+      "sense": {
+        "c_seq": "GTGG", 
+        "result": {
+          "value": "-2.044977378473079"
+        }, 
+        "seq": "ACC", 
+        "shift": 1
+      }, 
+      "sirna_sequence": "ACCGGAGACTCAGATCTGCAA", 
+      "sirna_sequence_n2": "ACACCGGAGACTCAGATCTGC", 
+      "strand_selection": {
+        "value": "False"
+      }
+    }, 
+    {
+      "antisense": {
+        "c_seq": "GAGT", 
+        "result": {
+          "value": "-0.38451837847307613"
+        }, 
+        "seq": "TCA", 
+        "shift": 1
+      }, 
+      "end_stability": {
+        "value": "False"
+      }, 
+      "free_energy3": {
+        "value": "(0.8676316215269216, 0.6587166215269208)"
+      }, 
+      "free_energy_dangling_ends": {
+        "value": "(0.7284166215269215, -0.38451837847307613)"
+      }, 
+      "reverse_complement": "TCAAGTTGCAGATCTGAGTCT", 
+      "sense": {
+        "c_seq": "CTGA", 
+        "result": {
+          "value": "0.7284166215269215"
+        }, 
+        "seq": "ACT", 
+        "shift": 1
+      }, 
+      "sirna_sequence": "ACTCAGATCTGCAACTTGAGC", 
+      "sirna_sequence_n2": "AGACTCAGATCTGCAACTTGA", 
+      "strand_selection": {
+        "value": "False"
+      }
+    }, 
+    {
+      "antisense": {
+        "c_seq": "ACTA", 
+        "result": {
+          "value": "-0.9622523784730765"
+        }, 
+        "seq": "GAT", 
+        "shift": 1
+      }, 
+      "end_stability": {
+        "value": "False"
+      }, 
+      "free_energy3": {
+        "value": "(0.7001716215269207, 1.1017226215269202)"
+      }, 
+      "free_energy_dangling_ends": {
+        "value": "(0.023496621526919625, -0.9622523784730765)"
+      }, 
+      "reverse_complement": "GATGCGCTCAAGTTGCAGATC", 
+      "sense": {
+        "c_seq": "TAGA", 
+        "result": {
+          "value": "0.023496621526919625"
+        }, 
+        "seq": "TCT", 
+        "shift": 1
+      }, 
+      "sirna_sequence": "TCTGCAACTTGAGCGCATCAA", 
+      "sirna_sequence_n2": "GATCTGCAACTTGAGCGCATC", 
+      "strand_selection": {
+        "value": "False"
+      }
+    }, 
+    {
+      "antisense": {
+        "c_seq": "ATTT", 
+        "result": {
+          "value": "2.6575166215269226"
+        }, 
+        "seq": "AAA", 
+        "shift": 1
+      }, 
+      "end_stability": {
+        "value": "True"
+      }, 
+      "free_energy3": {
+        "value": "(1.7718626215269215, 3.6056016215269238)"
+      }, 
+      "free_energy_dangling_ends": {
+        "value": "(1.0348176215269196, 2.6575166215269226)"
+      }, 
+      "reverse_complement": "AAACGTTGATGCGCTCAAGTT", 
+      "sense": {
+        "c_seq": "TGAA", 
+        "result": {
+          "value": "1.0348176215269196"
+        }, 
+        "seq": "CTT", 
+        "shift": 1
+      }, 
+      "sirna_sequence": "CTTGAGCGCATCAACGTTTAC", 
+      "sirna_sequence_n2": "AACTTGAGCGCATCAACGTTT", 
+      "strand_selection": {
+        "value": "True"
+      }
+    }, 
+    {
+      "antisense": {
+        "c_seq": "TAAC", 
+        "result": {
+          "value": "1.0537326215269223"
+        }, 
+        "seq": "TTG", 
+        "shift": 1
+      }, 
+      "end_stability": {
+        "value": "True"
+      }, 
+      "free_energy3": {
+        "value": "(-1.0804723784730776, 1.7304076215269224)"
+      }, 
+      "free_energy_dangling_ends": {
+        "value": "(-3.1281423784730724, 1.0537326215269223)"
+      }, 
+      "reverse_complement": "TTGTAGTAAACGTTGATGCGC", 
+      "sense": {
+        "c_seq": "GCGT", 
+        "result": {
+          "value": "-3.1281423784730724"
+        }, 
+        "seq": "GCA", 
+        "shift": 1
+      }, 
+      "sirna_sequence": "GCATCAACGTTTACTACAATG", 
+      "sirna_sequence_n2": "GCGCATCAACGTTTACTACAA", 
+      "strand_selection": {
+        "value": "True"
+      }
+    }, 
+    {
+      "antisense": {
+        "c_seq": "AGCG", 
+        "result": {
+          "value": "-3.3436813784730766"
+        }, 
+        "seq": "CGC", 
+        "shift": 1
+      }, 
+      "end_stability": {
+        "value": "False"
+      }, 
+      "free_energy3": {
+        "value": "(-0.028577378473080898, -1.935226378473082)"
+      }, 
+      "free_energy_dangling_ends": {
+        "value": "(-0.7656223784730791, -3.3436813784730766)"
+      }, 
+      "reverse_complement": "CGCTTCATTGTAGTAAACGTT", 
+      "sense": {
+        "c_seq": "TGCA", 
+        "result": {
+          "value": "-0.7656223784730791"
+        }, 
+        "seq": "CGT", 
+        "shift": 1
+      }, 
+      "sirna_sequence": "CGTTTACTACAATGAAGCGAG", 
+      "sirna_sequence_n2": "AACGTTTACTACAATGAAGCG", 
+      "strand_selection": {
+        "value": "False"
+      }
+    }, 
+    {
+      "antisense": {
+        "c_seq": "GGCG", 
+        "result": {
+          "value": "-3.4947663784730794"
+        }, 
+        "seq": "CGC", 
+        "shift": 1
+      }, 
+      "end_stability": {
+        "value": "False"
+      }, 
+      "free_energy3": {
+        "value": "(1.0232476215269217, -1.935226378473082)"
+      }, 
+      "free_energy_dangling_ends": {
+        "value": "(-0.019987378473080752, -3.4947663784730794)"
+      }, 
+      "reverse_complement": "CGCAACTCGCTTCATTGTAGT", 
+      "sense": {
+        "c_seq": "GATG", 
+        "result": {
+          "value": "-0.019987378473080752"
+        }, 
+        "seq": "TAC", 
+        "shift": 1
+      }, 
+      "sirna_sequence": "TACAATGAAGCGAGTTGCGGT", 
+      "sirna_sequence_n2": "ACTACAATGAAGCGAGTTGCG", 
+      "strand_selection": {
+        "value": "False"
+      }
+    }, 
+    {
+      "antisense": {
+        "c_seq": "CTTA", 
+        "result": {
+          "value": "3.2172866215269242"
+        }, 
+        "seq": "AAT", 
+        "shift": 1
+      }, 
+      "end_stability": {
+        "value": "True"
+      }, 
+      "free_energy3": {
+        "value": "(1.7718626215269215, 3.3565016215269248)"
+      }, 
+      "free_energy_dangling_ends": {
+        "value": "(1.6326476215269212, 3.2172866215269242)"
+      }, 
+      "reverse_complement": "AATCTACCGCAACTCGCTTCA", 
+      "sense": {
+        "c_seq": "CTTC", 
+        "result": {
+          "value": "1.6326476215269212"
+        }, 
+        "seq": "AAG", 
+        "shift": 1
+      }, 
+      "sirna_sequence": "AAGCGAGTTGCGGTAGATTCG", 
+      "sirna_sequence_n2": "TGAAGCGAGTTGCGGTAGATT", 
+      "strand_selection": {
+        "value": "True"
+      }
+    }, 
+    {
+      "antisense": {
+        "c_seq": "CTCC", 
+        "result": {
+          "value": "-0.971072378473078"
+        }, 
+        "seq": "AGG", 
+        "shift": 1
+      }, 
+      "end_stability": {
+        "value": "False"
+      }, 
+      "free_energy3": {
+        "value": "(1.7304076215269224, -0.8318573784730797)"
+      }, 
+      "free_energy_dangling_ends": {
+        "value": "(1.2141026215269213, -0.971072378473078)"
+      }, 
+      "reverse_complement": "AGGAACGAATCTACCGCAACT", 
+      "sense": {
+        "c_seq": "CAAC", 
+        "result": {
+          "value": "1.2141026215269213"
+        }, 
+        "seq": "TTG", 
+        "shift": 1
+      }, 
+      "sirna_sequence": "TTGCGGTAGATTCGTTCCTCG", 
+      "sirna_sequence_n2": "AGTTGCGGTAGATTCGTTCCT", 
+      "strand_selection": {
+        "value": "False"
+      }
+    }, 
+    {
+      "antisense": {
+        "c_seq": "TGAC", 
+        "result": {
+          "value": "-0.84037637847308"
+        }, 
+        "seq": "CTG", 
+        "shift": 1
+      }, 
+      "end_stability": {
+        "value": "False"
+      }, 
+      "free_energy3": {
+        "value": "(0.7001716215269207, -0.1033313784730799)"
+      }, 
+      "free_energy_dangling_ends": {
+        "value": "(-0.24791337847308023, -0.84037637847308)"
+      }, 
+      "reverse_complement": "CTGCACGAGGAACGAATCTAC", 
+      "sense": {
+        "c_seq": "ATCT", 
+        "result": {
+          "value": "-0.24791337847308023"
+        }, 
+        "seq": "AGA", 
+        "shift": 1
+      }, 
+      "sirna_sequence": "AGATTCGTTCCTCGTGCAGTG", 
+      "sirna_sequence_n2": "GTAGATTCGTTCCTCGTGCAG", 
+      "strand_selection": {
+        "value": "False"
+      }
+    }, 
+    {
+      "antisense": {
+        "c_seq": "GTAC", 
+        "result": {
+          "value": "0.5217676215269221"
+        }, 
+        "seq": "ATG", 
+        "shift": 1
+      }, 
+      "end_stability": {
+        "value": "False"
+      }, 
+      "free_energy3": {
+        "value": "(1.3508226215269206, 1.481307621526923)"
+      }, 
+      "free_energy_dangling_ends": {
+        "value": "(0.8345176215269184, 0.5217676215269221)"
+      }, 
+      "reverse_complement": "ATGAGCACTGCACGAGGAACG", 
+      "sense": {
+        "c_seq": "CAAG", 
+        "result": {
+          "value": "0.8345176215269184"
+        }, 
+        "seq": "TTC", 
+        "shift": 1
+      }, 
+      "sirna_sequence": "TTCCTCGTGCAGTGCTCATGG", 
+      "sirna_sequence_n2": "CGTTCCTCGTGCAGTGCTCAT", 
+      "strand_selection": {
+        "value": "False"
+      }
+    }, 
+    {
+      "antisense": {
+        "c_seq": "GGTT", 
+        "result": {
+          "value": "0.17086762152692064"
+        }, 
+        "seq": "CAA", 
+        "shift": 1
+      }, 
+      "end_stability": {
+        "value": "True"
+      }, 
+      "free_energy3": {
+        "value": "(-1.0804723784730776, 1.7304076215269224)"
+      }, 
+      "free_energy_dangling_ends": {
+        "value": "(-1.5967773784730799, 0.17086762152692064)"
+      }, 
+      "reverse_complement": "CAAATCCATGAGCACTGCACG", 
+      "sense": {
+        "c_seq": "CACG", 
+        "result": {
+          "value": "-1.5967773784730799"
+        }, 
+        "seq": "TGC", 
+        "shift": 1
+      }, 
+      "sirna_sequence": "TGCAGTGCTCATGGATTTGGA", 
+      "sirna_sequence_n2": "CGTGCAGTGCTCATGGATTTG", 
+      "strand_selection": {
+        "value": "True"
+      }
+    }, 
+    {
+      "antisense": {
+        "c_seq": "GGTC", 
+        "result": {
+          "value": "-1.6628713784730753"
+        }, 
+        "seq": "CAG", 
+        "shift": 1
+      }, 
+      "end_stability": {
+        "value": "False"
+      }, 
+      "free_energy3": {
+        "value": "(-0.48291637847308083, -0.1033313784730799)"
+      }, 
+      "free_energy_dangling_ends": {
+        "value": "(-1.0102613784730783, -1.6628713784730753)"
+      }, 
+      "reverse_complement": "CAGGCTCCAAATCCATGAGCA", 
+      "sense": {
+        "c_seq": "CGAG", 
+        "result": {
+          "value": "-1.0102613784730783"
+        }, 
+        "seq": "CTC", 
+        "shift": 1
+      }, 
+      "sirna_sequence": "CTCATGGATTTGGAGCCTGGG", 
+      "sirna_sequence_n2": "TGCTCATGGATTTGGAGCCTG", 
+      "strand_selection": {
+        "value": "False"
+      }
+    }, 
+    {
+      "antisense": {
+        "c_seq": "GTAT", 
+        "result": {
+          "value": "1.9019266215269235"
+        }, 
+        "seq": "ATA", 
+        "shift": 1
+      }, 
+      "end_stability": {
+        "value": "False"
+      }, 
+      "free_energy3": {
+        "value": "(3.3565016215269248, 2.8614666215269233)"
+      }, 
+      "free_energy_dangling_ends": {
+        "value": "(3.2172866215269242, 1.9019266215269235)"
+      }, 
+      "reverse_complement": "ATAGTCCCAGGCTCCAAATCC", 
+      "sense": {
+        "c_seq": "CTAA", 
+        "result": {
+          "value": "3.2172866215269242"
+        }, 
+        "seq": "ATT", 
+        "shift": 1
+      }, 
+      "sirna_sequence": "ATTTGGAGCCTGGGACTATGG", 
+      "sirna_sequence_n2": "GGATTTGGAGCCTGGGACTAT", 
+      "strand_selection": {
+        "value": "False"
+      }
+    }, 
+    {
+      "antisense": {
+        "c_seq": "CTGA", 
+        "result": {
+          "value": "0.7284166215269215"
+        }, 
+        "seq": "ACT", 
+        "shift": 1
+      }, 
+      "end_stability": {
+        "value": "True"
+      }, 
+      "free_energy3": {
+        "value": "(-2.992086378473079, 0.8676316215269216)"
+      }, 
+      "free_energy_dangling_ends": {
+        "value": "(-4.497589878473078, 0.7284166215269215)"
+      }, 
+      "reverse_complement": "ACTATCCATAGTCCCAGGCTC", 
+      "sense": {
+        "c_seq": "TCGG", 
+        "result": {
+          "value": "-4.497589878473078"
+        }, 
+        "seq": "GCC", 
+        "shift": 1
+      }, 
+      "sirna_sequence": "GCCTGGGACTATGGATAGTCT", 
+      "sirna_sequence_n2": "GAGCCTGGGACTATGGATAGT", 
+      "strand_selection": {
+        "value": "True"
+      }
+    }, 
+    {
+      "antisense": {
+        "c_seq": "CTAG", 
+        "result": {
+          "value": "0.96250762152692"
+        }, 
+        "seq": "ATC", 
+        "shift": 1
+      }, 
+      "end_stability": {
+        "value": "False"
+      }, 
+      "free_energy3": {
+        "value": "(0.8676316215269216, 1.1017226215269202)"
+      }, 
+      "free_energy_dangling_ends": {
+        "value": "(0.7284166215269215, 0.96250762152692)"
+      }, 
+      "reverse_complement": "ATCTGAGACTATCCATAGTCC", 
+      "sense": {
+        "c_seq": "CTGA", 
+        "result": {
+          "value": "0.7284166215269215"
+        }, 
+        "seq": "ACT", 
+        "shift": 1
+      }, 
+      "sirna_sequence": "ACTATGGATAGTCTCAGATCT", 
+      "sirna_sequence_n2": "GGACTATGGATAGTCTCAGAT", 
+      "strand_selection": {
+        "value": "True"
+      }
+    }, 
+    {
+      "antisense": {
+        "c_seq": "GCCA", 
+        "result": {
+          "value": "-3.1331073784730763"
+        }, 
+        "seq": "GGT", 
+        "shift": 1
+      }, 
+      "end_stability": {
+        "value": "False"
+      }, 
+      "free_energy3": {
+        "value": "(2.8614666215269233, -1.0854373784730815)"
+      }, 
+      "free_energy_dangling_ends": {
+        "value": "(2.7222516215269232, -3.1331073784730763)"
+      }, 
+      "reverse_complement": "GGTCCAGATCTGAGACTATCC", 
+      "sense": {
+        "c_seq": "CTAT", 
+        "result": {
+          "value": "2.7222516215269232"
+        }, 
+        "seq": "ATA", 
+        "shift": 1
+      }, 
+      "sirna_sequence": "ATAGTCTCAGATCTGGACCGT", 
+      "sirna_sequence_n2": "GGATAGTCTCAGATCTGGACC", 
+      "strand_selection": {
+        "value": "False"
+      }
+    }, 
+    {
+      "antisense": {
+        "c_seq": "CTGG", 
+        "result": {
+          "value": "-1.2246523784730798"
+        }, 
+        "seq": "ACC", 
+        "shift": 1
+      }, 
+      "end_stability": {
+        "value": "False"
+      }, 
+      "free_energy3": {
+        "value": "(-0.1033313784730799, -1.0854373784730815)"
+      }, 
+      "free_energy_dangling_ends": {
+        "value": "(-1.5117863784730798, -1.2246523784730798)"
+      }, 
+      "reverse_complement": "ACCGTACGGTCCAGATCTGAG", 
+      "sense": {
+        "c_seq": "AGTC", 
+        "result": {
+          "value": "-1.5117863784730798"
+        }, 
+        "seq": "CAG", 
+        "shift": 1
+      }, 
+      "sirna_sequence": "CAGATCTGGACCGTACGGTCA", 
+      "sirna_sequence_n2": "CTCAGATCTGGACCGTACGGT", 
+      "strand_selection": {
+        "value": "True"
+      }
+    }, 
+    {
+      "antisense": {
+        "c_seq": "TTCC", 
+        "result": {
+          "value": "-1.024837378473081"
+        }, 
+        "seq": "AGG", 
+        "shift": 1
+      }, 
+      "end_stability": {
+        "value": "True"
+      }, 
+      "free_energy3": {
+        "value": "(-1.2528973784730806, -0.8318573784730797)"
+      }, 
+      "free_energy_dangling_ends": {
+        "value": "(-3.3168723784730756, -1.024837378473081)"
+      }, 
+      "reverse_complement": "AGGTCTGACCGTACGGTCCAG", 
+      "sense": {
+        "c_seq": "ACCT", 
+        "result": {
+          "value": "-3.3168723784730756"
+        }, 
+        "seq": "GGA", 
+        "shift": 1
+      }, 
+      "sirna_sequence": "GGACCGTACGGTCAGACCTTT", 
+      "sirna_sequence_n2": "CTGGACCGTACGGTCAGACCT", 
+      "strand_selection": {
+        "value": "True"
+      }
+    }, 
+    {
+      "antisense": {
+        "c_seq": "TCCA", 
+        "result": {
+          "value": "-2.5909408784730803"
+        }, 
+        "seq": "GGT", 
+        "shift": 1
+      }, 
+      "end_stability": {
+        "value": "False"
+      }, 
+      "free_energy3": {
+        "value": "(-0.028577378473080898, -1.0854373784730815)"
+      }, 
+      "free_energy_dangling_ends": {
+        "value": "(-0.9766623784730837, -2.5909408784730803)"
+      }, 
+      "reverse_complement": "GGTCGAAAGGTCTGACCGTAC", 
+      "sense": {
+        "c_seq": "ATGC", 
+        "result": {
+          "value": "-0.9766623784730837"
+        }, 
+        "seq": "ACG", 
+        "shift": 1
+      }, 
+      "sirna_sequence": "ACGGTCAGACCTTTCGACCTG", 
+      "sirna_sequence_n2": "GTACGGTCAGACCTTTCGACC", 
+      "strand_selection": {
+        "value": "False"
+      }
+    }, 
+    {
+      "antisense": {
+        "c_seq": "TCAA", 
+        "result": {
+          "value": "0.012779121526918971"
+        }, 
+        "seq": "GTT", 
+        "shift": 1
+      }, 
+      "end_stability": {
+        "value": "True"
+      }, 
+      "free_energy3": {
+        "value": "(-0.7364963784730826, 1.5182826215269214)"
+      }, 
+      "free_energy_dangling_ends": {
+        "value": "(-2.2419998784730777, 0.012779121526918971)"
+      }, 
+      "reverse_complement": "GTTATCAGGTCGAAAGGTCTG", 
+      "sense": {
+        "c_seq": "TCTG", 
+        "result": {
+          "value": "-2.2419998784730777"
+        }, 
+        "seq": "GAC", 
+        "shift": 1
+      }, 
+      "sirna_sequence": "GACCTTTCGACCTGATAACTT", 
+      "sirna_sequence_n2": "CAGACCTTTCGACCTGATAAC", 
+      "strand_selection": {
+        "value": "True"
+      }
+    }, 
+    {
+      "antisense": {
+        "c_seq": "TTCT", 
+        "result": {
+          "value": "0.5071916215269193"
+        }, 
+        "seq": "AGA", 
+        "shift": 1
+      }, 
+      "end_stability": {
+        "value": "True"
+      }, 
+      "free_energy3": {
+        "value": "(-0.19603737847308184, 0.7001716215269207)"
+      }, 
+      "free_energy_dangling_ends": {
+        "value": "(-1.6044923784730853, 0.5071916215269193)"
+      }, 
+      "reverse_complement": "AGACGAAGTTATCAGGTCGAA", 
+      "sense": {
+        "c_seq": "AGCT", 
+        "result": {
+          "value": "-1.6044923784730853"
+        }, 
+        "seq": "CGA", 
+        "shift": 1
+      }, 
+      "sirna_sequence": "CGACCTGATAACTTCGTCTTT", 
+      "sirna_sequence_n2": "TTCGACCTGATAACTTCGTCT", 
+      "strand_selection": {
+        "value": "True"
+      }
+    }, 
+    {
+      "antisense": {
+        "c_seq": "AACT", 
+        "result": {
+          "value": "-0.34530337847308146"
+        }, 
+        "seq": "TGA", 
+        "shift": 1
+      }, 
+      "end_stability": {
+        "value": "False"
+      }, 
+      "free_energy3": {
+        "value": "(2.8614666215269233, 0.6587166215269208)"
+      }, 
+      "free_energy_dangling_ends": {
+        "value": "(2.7222516215269232, -0.34530337847308146)"
+      }, 
+      "reverse_complement": "TGACCAAAGACGAAGTTATCA", 
+      "sense": {
+        "c_seq": "CTAT", 
+        "result": {
+          "value": "2.7222516215269232"
+        }, 
+        "seq": "ATA", 
+        "shift": 1
+      }, 
+      "sirna_sequence": "ATAACTTCGTCTTTGGTCAAT", 
+      "sirna_sequence_n2": "TGATAACTTCGTCTTTGGTCA", 
+      "strand_selection": {
+        "value": "False"
+      }
+    }, 
+    {
+      "antisense": {
+        "c_seq": "GTGG", 
+        "result": {
+          "value": "-2.044977378473079"
+        }, 
+        "seq": "ACC", 
+        "shift": 1
+      }, 
+      "end_stability": {
+        "value": "False"
+      }, 
+      "free_energy3": {
+        "value": "(-0.028577378473080898, -1.0854373784730815)"
+      }, 
+      "free_energy_dangling_ends": {
+        "value": "(-1.437032378473079, -2.044977378473079)"
+      }, 
+      "reverse_complement": "ACCGGATTGACCAAAGACGAA", 
+      "sense": {
+        "c_seq": "AGCA", 
+        "result": {
+          "value": "-1.437032378473079"
+        }, 
+        "seq": "CGT", 
+        "shift": 1
+      }, 
+      "sirna_sequence": "CGTCTTTGGTCAATCCGGTGC", 
+      "sirna_sequence_n2": "TTCGTCTTTGGTCAATCCGGT", 
+      "strand_selection": {
+        "value": "False"
+      }
+    }, 
+    {
+      "antisense": {
+        "c_seq": "AATG", 
+        "result": {
+          "value": "0.019227621526921212"
+        }, 
+        "seq": "TAC", 
+        "shift": 1
+      }, 
+      "end_stability": {
+        "value": "True"
+      }, 
+      "free_energy3": {
+        "value": "(-1.0854373784730815, 1.0232476215269217)"
+      }, 
+      "free_energy_dangling_ends": {
+        "value": "(-3.14941237847308, 0.019227621526921212)"
+      }, 
+      "reverse_complement": "TACCCGCACCGGATTGACCAA", 
+      "sense": {
+        "c_seq": "ACCA", 
+        "result": {
+          "value": "-3.14941237847308"
+        }, 
+        "seq": "GGT", 
+        "shift": 1
+      }, 
+      "sirna_sequence": "GGTCAATCCGGTGCGGGTAAC", 
+      "sirna_sequence_n2": "TTGGTCAATCCGGTGCGGGTA", 
+      "strand_selection": {
+        "value": "True"
+      }
+    }, 
+    {
+      "antisense": {
+        "c_seq": "GGTC", 
+        "result": {
+          "value": "-1.6628713784730753"
+        }, 
+        "seq": "CAG", 
+        "shift": 1
+      }, 
+      "end_stability": {
+        "value": "True"
+      }, 
+      "free_energy3": {
+        "value": "(-1.7280663784730823, -0.1033313784730799)"
+      }, 
+      "free_energy_dangling_ends": {
+        "value": "(-3.1365213784730805, -1.6628713784730753)"
+      }, 
+      "reverse_complement": "CAGTTGTTACCCGCACCGGAT", 
+      "sense": {
+        "c_seq": "AGGC", 
+        "result": {
+          "value": "-3.1365213784730805"
+        }, 
+        "seq": "CCG", 
+        "shift": 1
+      }, 
+      "sirna_sequence": "CCGGTGCGGGTAACAACTGGG", 
+      "sirna_sequence_n2": "ATCCGGTGCGGGTAACAACTG", 
+      "strand_selection": {
+        "value": "True"
+      }
+    }, 
+    {
+      "antisense": {
+        "c_seq": "GGAA", 
+        "result": {
+          "value": "0.21232262152692055"
+        }, 
+        "seq": "CTT", 
+        "shift": 1
+      }, 
+      "end_stability": {
+        "value": "True"
+      }, 
+      "free_energy3": {
+        "value": "(-2.784926378473079, 1.7718626215269215)"
+      }, 
+      "free_energy_dangling_ends": {
+        "value": "(-4.832596378473077, 0.21232262152692055)"
+      }, 
+      "reverse_complement": "CTTGGCCCAGTTGTTACCCGC", 
+      "sense": {
+        "c_seq": "GCCC", 
+        "result": {
+          "value": "-4.832596378473077"
+        }, 
+        "seq": "GGG", 
+        "shift": 1
+      }, 
+      "sirna_sequence": "GGGTAACAACTGGGCCAAGGG", 
+      "sirna_sequence_n2": "GCGGGTAACAACTGGGCCAAG", 
+      "strand_selection": {
+        "value": "True"
+      }
+    }, 
+    {
+      "antisense": {
+        "c_seq": "ATCA", 
+        "result": {
+          "value": "-0.08045337847307746"
+        }, 
+        "seq": "AGT", 
+        "shift": 1
+      }, 
+      "end_stability": {
+        "value": "False"
+      }, 
+      "free_energy3": {
+        "value": "(1.5182826215269214, 0.8676316215269216)"
+      }, 
+      "free_energy_dangling_ends": {
+        "value": "(0.5587426215269207, -0.08045337847307746)"
+      }, 
+      "reverse_complement": "AGTGTCCCTTGGCCCAGTTGT", 
+      "sense": {
+        "c_seq": "GTTG", 
+        "result": {
+          "value": "0.5587426215269207"
+        }, 
+        "seq": "AAC", 
+        "shift": 1
+      }, 
+      "sirna_sequence": "AACTGGGCCAAGGGACACTAC", 
+      "sirna_sequence_n2": "ACAACTGGGCCAAGGGACACT", 
+      "strand_selection": {
+        "value": "False"
+      }
+    }, 
+    {
+      "antisense": {
+        "c_seq": "AAGT", 
+        "result": {
+          "value": "-0.34530337847308146"
+        }, 
+        "seq": "TCA", 
+        "shift": 1
+      }, 
+      "end_stability": {
+        "value": "True"
+      }, 
+      "free_energy3": {
+        "value": "(-0.8733123784730796, 0.6587166215269208)"
+      }, 
+      "free_energy_dangling_ends": {
+        "value": "(-1.4006573784730771, -0.34530337847308146)"
+      }, 
+      "reverse_complement": "TCAGTGTAGTGTCCCTTGGCC", 
+      "sense": {
+        "c_seq": "CGGT", 
+        "result": {
+          "value": "-1.4006573784730771"
+        }, 
+        "seq": "CCA", 
+        "shift": 1
+      }, 
+      "sirna_sequence": "CCAAGGGACACTACACTGAAG", 
+      "sirna_sequence_n2": "GGCCAAGGGACACTACACTGA", 
+      "strand_selection": {
+        "value": "True"
+      }
+    }, 
+    {
+      "antisense": {
+        "c_seq": "GTCG", 
+        "result": {
+          "value": "-1.9985573784730768"
+        }, 
+        "seq": "AGC", 
+        "shift": 1
+      }, 
+      "end_stability": {
+        "value": "False"
+      }, 
+      "free_energy3": {
+        "value": "(0.8261766215269235, -1.0390173784730758)"
+      }, 
+      "free_energy_dangling_ends": {
+        "value": "(0.6869616215269234, -1.9985573784730768)"
+      }, 
+      "reverse_complement": "AGCTCCTTCAGTGTAGTGTCC", 
+      "sense": {
+        "c_seq": "CTGT", 
+        "result": {
+          "value": "0.6869616215269234"
+        }, 
+        "seq": "ACA", 
+        "shift": 1
+      }, 
+      "sirna_sequence": "ACACTACACTGAAGGAGCTGA", 
+      "sirna_sequence_n2": "GGACACTACACTGAAGGAGCT", 
+      "strand_selection": {
+        "value": "False"
+      }
+    }, 
+    {
+      "antisense": {
+        "c_seq": "TAAT", 
+        "result": {
+          "value": "2.433891621526923"
+        }, 
+        "seq": "TTA", 
+        "shift": 1
+      }, 
+      "end_stability": {
+        "value": "True"
+      }, 
+      "free_energy3": {
+        "value": "(0.8676316215269216, 3.1105666215269228)"
+      }, 
+      "free_energy_dangling_ends": {
+        "value": "(-0.09190837847307921, 2.433891621526923)"
+      }, 
+      "reverse_complement": "TTAGTTCAGCTCCTTCAGTGT", 
+      "sense": {
+        "c_seq": "GTGA", 
+        "result": {
+          "value": "-0.09190837847307921"
+        }, 
+        "seq": "ACT", 
+        "shift": 1
+      }, 
+      "sirna_sequence": "ACTGAAGGAGCTGAACTAATC", 
+      "sirna_sequence_n2": "ACACTGAAGGAGCTGAACTAA", 
+      "strand_selection": {
+        "value": "True"
+      }
+    }, 
+    {
+      "antisense": {
+        "c_seq": "CCTT", 
+        "result": {
+          "value": "0.3794126215269189"
+        }, 
+        "seq": "GAA", 
+        "shift": 1
+      }, 
+      "end_stability": {
+        "value": "True"
+      }, 
+      "free_energy3": {
+        "value": "(-0.48291637847308083, 1.3508226215269206)"
+      }, 
+      "free_energy_dangling_ends": {
+        "value": "(-1.4543263784730844, 0.3794126215269189)"
+      }, 
+      "reverse_complement": "GAATCGATTAGTTCAGCTCCT", 
+      "sense": {
+        "c_seq": "CCTC", 
+        "result": {
+          "value": "-1.4543263784730844"
+        }, 
+        "seq": "GAG", 
+        "shift": 1
+      }, 
+      "sirna_sequence": "GAGCTGAACTAATCGATTCCG", 
+      "sirna_sequence_n2": "AGGAGCTGAACTAATCGATTC", 
+      "strand_selection": {
+        "value": "True"
+      }
+    }, 
+    {
+      "antisense": {
+        "c_seq": "GCTC", 
+        "result": {
+          "value": "-2.5305863784730827"
+        }, 
+        "seq": "GAG", 
+        "shift": 1
+      }, 
+      "end_stability": {
+        "value": "False"
+      }, 
+      "free_energy3": {
+        "value": "(0.8676316215269216, -0.48291637847308083)"
+      }, 
+      "free_energy_dangling_ends": {
+        "value": "(0.6746516215269203, -2.5305863784730827)"
+      }, 
+      "reverse_complement": "GAGAACGGAATCGATTAGTTC", 
+      "sense": {
+        "c_seq": "TTGA", 
+        "result": {
+          "value": "0.6746516215269203"
+        }, 
+        "seq": "ACT", 
+        "shift": 1
+      }, 
+      "sirna_sequence": "ACTAATCGATTCCGTTCTCGA", 
+      "sirna_sequence_n2": "GAACTAATCGATTCCGTTCTC", 
+      "strand_selection": {
+        "value": "False"
+      }
+    }, 
+    {
+      "antisense": {
+        "c_seq": "TGTT", 
+        "result": {
+          "value": "0.9933626215269215"
+        }, 
+        "seq": "CAA", 
+        "shift": 1
+      }, 
+      "end_stability": {
+        "value": "True"
+      }, 
+      "free_energy3": {
+        "value": "(1.1017226215269202, 1.7304076215269224)"
+      }, 
+      "free_energy_dangling_ends": {
+        "value": "(-0.9459473784730762, 0.9933626215269215)"
+      }, 
+      "reverse_complement": "CAACATCGAGAACGGAATCGA", 
+      "sense": {
+        "c_seq": "GCTA", 
+        "result": {
+          "value": "-0.9459473784730762"
+        }, 
+        "seq": "GAT", 
+        "shift": 1
+      }, 
+      "sirna_sequence": "GATTCCGTTCTCGATGTTGTT", 
+      "sirna_sequence_n2": "TCGATTCCGTTCTCGATGTTG", 
+      "strand_selection": {
+        "value": "True"
+      }
+    }, 
+    {
+      "antisense": {
+        "c_seq": "GAAT", 
+        "result": {
+          "value": "2.0673316215269244"
+        }, 
+        "seq": "TTA", 
+        "shift": 1
+      }, 
+      "end_stability": {
+        "value": "True"
+      }, 
+      "free_energy3": {
+        "value": "(1.3508226215269206, 3.1105666215269228)"
+      }, 
+      "free_energy_dangling_ends": {
+        "value": "(0.8345176215269184, 2.0673316215269244)"
+      }, 
+      "reverse_complement": "TTACGAACAACATCGAGAACG", 
+      "sense": {
+        "c_seq": "CAAG", 
+        "result": {
+          "value": "0.8345176215269184"
+        }, 
+        "seq": "TTC", 
+        "shift": 1
+      }, 
+      "sirna_sequence": "TTCTCGATGTTGTTCGTAAGG", 
+      "sirna_sequence_n2": "CGTTCTCGATGTTGTTCGTAA", 
+      "strand_selection": {
+        "value": "True"
+      }
+    }, 
+    {
+      "antisense": {
+        "c_seq": "GTCG", 
+        "result": {
+          "value": "-1.9985573784730768"
+        }, 
+        "seq": "AGC", 
+        "shift": 1
+      }, 
+      "end_stability": {
+        "value": "False"
+      }, 
+      "free_energy3": {
+        "value": "(0.8261766215269235, -1.0390173784730758)"
+      }, 
+      "free_energy_dangling_ends": {
+        "value": "(0.14950162152692245, -1.9985573784730768)"
+      }, 
+      "reverse_complement": "AGCTTCCTTACGAACAACATC", 
+      "sense": {
+        "c_seq": "TACA", 
+        "result": {
+          "value": "0.14950162152692245"
+        }, 
+        "seq": "TGT", 
+        "shift": 1
+      }, 
+      "sirna_sequence": "TGTTGTTCGTAAGGAAGCTGA", 
+      "sirna_sequence_n2": "GATGTTGTTCGTAAGGAAGCT", 
+      "strand_selection": {
+        "value": "False"
+      }
+    }, 
+    {
+      "antisense": {
+        "c_seq": "GTCA", 
+        "result": {
+          "value": "-0.09190837847307921"
+        }, 
+        "seq": "AGT", 
+        "shift": 1
+      }, 
+      "end_stability": {
+        "value": "True"
+      }, 
+      "free_energy3": {
+        "value": "(-0.028577378473080898, 0.8676316215269216)"
+      }, 
+      "free_energy_dangling_ends": {
+        "value": "(-1.437032378473079, -0.09190837847307921)"
+      }, 
+      "reverse_complement": "AGTTCTCAGCTTCCTTACGAA", 
+      "sense": {
+        "c_seq": "AGCA", 
+        "result": {
+          "value": "-1.437032378473079"
+        }, 
+        "seq": "CGT", 
+        "shift": 1
+      }, 
+      "sirna_sequence": "CGTAAGGAAGCTGAGAACTGT", 
+      "sirna_sequence_n2": "TTCGTAAGGAAGCTGAGAACT", 
+      "strand_selection": {
+        "value": "True"
+      }
+    }, 
+    {
+      "antisense": {
+        "c_seq": "CGTC", 
+        "result": {
+          "value": "-0.6306763784730792"
+        }, 
+        "seq": "CAG", 
+        "shift": 1
+      }, 
+      "end_stability": {
+        "value": "False"
+      }, 
+      "free_energy3": {
+        "value": "(1.7718626215269215, -0.1033313784730799)"
+      }, 
+      "free_energy_dangling_ends": {
+        "value": "(1.6326476215269212, -0.6306763784730792)"
+      }, 
+      "reverse_complement": "CAGTCACAGTTCTCAGCTTCC", 
+      "sense": {
+        "c_seq": "CTTC", 
+        "result": {
+          "value": "1.6326476215269212"
+        }, 
+        "seq": "AAG", 
+        "shift": 1
+      }, 
+      "sirna_sequence": "AAGCTGAGAACTGTGACTGCC", 
+      "sirna_sequence_n2": "GGAAGCTGAGAACTGTGACTG", 
+      "strand_selection": {
+        "value": "False"
+      }
+    }, 
+    {
+      "antisense": {
+        "c_seq": "GAAC", 
+        "result": {
+          "value": "0.6871726215269209"
+        }, 
+        "seq": "TTG", 
+        "shift": 1
+      }, 
+      "end_stability": {
+        "value": "False"
+      }, 
+      "free_energy3": {
+        "value": "(1.3508226215269206, 1.7304076215269224)"
+      }, 
+      "free_energy_dangling_ends": {
+        "value": "(-0.15468087847307835, 0.6871726215269209)"
+      }, 
+      "reverse_complement": "TTGGAGGCAGTCACAGTTCTC", 
+      "sense": {
+        "c_seq": "TCTT", 
+        "result": {
+          "value": "-0.15468087847307835"
+        }, 
+        "seq": "GAA", 
+        "shift": 1
+      }, 
+      "sirna_sequence": "GAACTGTGACTGCCTCCAAGG", 
+      "sirna_sequence_n2": "GAGAACTGTGACTGCCTCCAA", 
+      "strand_selection": {
+        "value": "True"
+      }
+    }, 
+    {
+      "antisense": {
+        "c_seq": "ACCT", 
+        "result": {
+          "value": "-3.3168723784730756"
+        }, 
+        "seq": "GGA", 
+        "shift": 1
+      }, 
+      "end_stability": {
+        "value": "False"
+      }, 
+      "free_energy3": {
+        "value": "(-0.7364963784730826, -1.2528973784730806)"
+      }, 
+      "free_energy_dangling_ends": {
+        "value": "(-2.8004713784730813, -3.3168723784730756)"
+      }, 
+      "reverse_complement": "GGAACCCTTGGAGGCAGTCAC", 
+      "sense": {
+        "c_seq": "ACTG", 
+        "result": {
+          "value": "-2.8004713784730813"
+        }, 
+        "seq": "GAC", 
+        "shift": 1
+      }, 
+      "sirna_sequence": "GACTGCCTCCAAGGGTTCCAG", 
+      "sirna_sequence_n2": "GTGACTGCCTCCAAGGGTTCC", 
+      "strand_selection": {
+        "value": "False"
+      }
+    }, 
+    {
+      "antisense": {
+        "c_seq": "TGTT", 
+        "result": {
+          "value": "0.9933626215269215"
+        }, 
+        "seq": "CAA", 
+        "shift": 1
+      }, 
+      "end_stability": {
+        "value": "True"
+      }, 
+      "free_energy3": {
+        "value": "(-1.2528973784730806, 1.7304076215269224)"
+      }, 
+      "free_energy_dangling_ends": {
+        "value": "(-2.2961323784730774, 0.9933626215269215)"
+      }, 
+      "reverse_complement": "CAAACCTGGAACCCTTGGAGG", 
+      "sense": {
+        "c_seq": "GAGG", 
+        "result": {
+          "value": "-2.2961323784730774"
+        }, 
+        "seq": "TCC", 
+        "shift": 1
+      }, 
+      "sirna_sequence": "TCCAAGGGTTCCAGGTTTGTC", 
+      "sirna_sequence_n2": "CCTCCAAGGGTTCCAGGTTTG", 
+      "strand_selection": {
+        "value": "True"
+      }
+    }, 
+    {
+      "antisense": {
+        "c_seq": "TACT", 
+        "result": {
+          "value": "-0.0179583784730803"
+        }, 
+        "seq": "TGA", 
+        "shift": 1
+      }, 
+      "end_stability": {
+        "value": "False"
+      }, 
+      "free_energy3": {
+        "value": "(1.5182826215269214, 0.6587166215269208)"
+      }, 
+      "free_energy_dangling_ends": {
+        "value": "(0.5468726215269216, -0.0179583784730803)"
+      }, 
+      "reverse_complement": "TGAGTGACAAACCTGGAACCC", 
+      "sense": {
+        "c_seq": "CCAA", 
+        "result": {
+          "value": "0.5468726215269216"
+        }, 
+        "seq": "GTT", 
+        "shift": 1
+      }, 
+      "sirna_sequence": "GTTCCAGGTTTGTCACTCATT", 
+      "sirna_sequence_n2": "GGGTTCCAGGTTTGTCACTCA", 
+      "strand_selection": {
+        "value": "False"
+      }
+    }, 
+    {
+      "antisense": {
+        "c_seq": "GGAG", 
+        "result": {
+          "value": "-2.0424563784730783"
+        }, 
+        "seq": "CTC", 
+        "shift": 1
+      }, 
+      "end_stability": {
+        "value": "False"
+      }, 
+      "free_energy3": {
+        "value": "(1.5182826215269214, -0.48291637847308083)"
+      }, 
+      "free_energy_dangling_ends": {
+        "value": "(0.5468726215269216, -2.0424563784730783)"
+      }, 
+      "reverse_complement": "CTCCCAATGAGTGACAAACCT", 
+      "sense": {
+        "c_seq": "CCAA", 
+        "result": {
+          "value": "0.5468726215269216"
+        }, 
+        "seq": "GTT", 
+        "shift": 1
+      }, 
+      "sirna_sequence": "GTTTGTCACTCATTGGGAGGA", 
+      "sirna_sequence_n2": "AGGTTTGTCACTCATTGGGAG", 
+      "strand_selection": {
+        "value": "False"
+      }
+    }, 
+    {
+      "antisense": {
+        "c_seq": "TCAA", 
+        "result": {
+          "value": "0.012779121526918971"
+        }, 
+        "seq": "GTT", 
+        "shift": 1
+      }, 
+      "end_stability": {
+        "value": "False"
+      }, 
+      "free_energy3": {
+        "value": "(0.8676316215269216, 1.5182826215269214)"
+      }, 
+      "free_energy_dangling_ends": {
+        "value": "(-0.09190837847307921, 0.012779121526918971)"
+      }, 
+      "reverse_complement": "GTTCCTCCTCCCAATGAGTGA", 
+      "sense": {
+        "c_seq": "GTGA", 
+        "result": {
+          "value": "-0.09190837847307921"
+        }, 
+        "seq": "ACT", 
+        "shift": 1
+      }, 
+      "sirna_sequence": "ACTCATTGGGAGGAGGAACTG", 
+      "sirna_sequence_n2": "TCACTCATTGGGAGGAGGAAC", 
+      "strand_selection": {
+        "value": "True"
+      }
+    }, 
+    {
+      "antisense": {
+        "c_seq": "GTCT", 
+        "result": {
+          "value": "-0.25936837847308014"
+        }, 
+        "seq": "AGA", 
+        "shift": 1
+      }, 
+      "end_stability": {
+        "value": "True"
+      }, 
+      "free_energy3": {
+        "value": "(-2.784926378473079, 0.7001716215269207)"
+      }, 
+      "free_energy_dangling_ends": {
+        "value": "(-4.848901378473081, -0.25936837847308014)"
+      }, 
+      "reverse_complement": "AGATCCAGTTCCTCCTCCCAA", 
+      "sense": {
+        "c_seq": "ACCC", 
+        "result": {
+          "value": "-4.848901378473081"
+        }, 
+        "seq": "GGG", 
+        "shift": 1
+      }, 
+      "sirna_sequence": "GGGAGGAGGAACTGGATCTGG", 
+      "sirna_sequence_n2": "TTGGGAGGAGGAACTGGATCT", 
+      "strand_selection": {
+        "value": "True"
+      }
+    }, 
+    {
+      "antisense": {
+        "c_seq": "GGGT", 
+        "result": {
+          "value": "-2.4328523784730787"
+        }, 
+        "seq": "CCA", 
+        "shift": 1
+      }, 
+      "end_stability": {
+        "value": "False"
+      }, 
+      "free_energy3": {
+        "value": "(-1.2528973784730806, -0.8733123784730796)"
+      }, 
+      "free_energy_dangling_ends": {
+        "value": "(-2.758400878473076, -2.4328523784730787)"
+      }, 
+      "reverse_complement": "CCATACCAGATCCAGTTCCTC", 
+      "sense": {
+        "c_seq": "TCCT", 
+        "result": {
+          "value": "-2.758400878473076"
+        }, 
+        "seq": "GGA", 
+        "shift": 1
+      }, 
+      "sirna_sequence": "GGAACTGGATCTGGTATGGGA", 
+      "sirna_sequence_n2": "GAGGAACTGGATCTGGTATGG", 
+      "strand_selection": {
+        "value": "True"
+      }
+    }, 
+    {
+      "antisense": {
+        "c_seq": "GTTA", 
+        "result": {
+          "value": "2.3969616215269216"
+        }, 
+        "seq": "AAT", 
+        "shift": 1
+      }, 
+      "end_stability": {
+        "value": "True"
+      }, 
+      "free_energy3": {
+        "value": "(1.1017226215269202, 3.3565016215269248)"
+      }, 
+      "free_energy_dangling_ends": {
+        "value": "(0.1303126215269167, 2.3969616215269216)"
+      }, 
+      "reverse_complement": "AATGTTCCCATACCAGATCCA", 
+      "sense": {
+        "c_seq": "CCTA", 
+        "result": {
+          "value": "0.1303126215269167"
+        }, 
+        "seq": "GAT", 
+        "shift": 1
+      }, 
+      "sirna_sequence": "GATCTGGTATGGGAACATTGT", 
+      "sirna_sequence_n2": "TGGATCTGGTATGGGAACATT", 
+      "strand_selection": {
+        "value": "True"
+      }
+    }, 
+    {
+      "antisense": {
+        "c_seq": "TCTA", 
+        "result": {
+          "value": "-0.40378087847307687"
+        }, 
+        "seq": "GAT", 
+        "shift": 1
+      }, 
+      "end_stability": {
+        "value": "False"
+      }, 
+      "free_energy3": {
+        "value": "(2.8614666215269233, 1.1017226215269202)"
+      }, 
+      "free_energy_dangling_ends": {
+        "value": "(2.3451616215269224, -0.40378087847307687)"
+      }, 
+      "reverse_complement": "GATCAACAATGTTCCCATACC", 
+      "sense": {
+        "c_seq": "CATA", 
+        "result": {
+          "value": "2.3451616215269224"
+        }, 
+        "seq": "TAT", 
+        "shift": 1
+      }, 
+      "sirna_sequence": "TATGGGAACATTGTTGATCTC", 
+      "sirna_sequence_n2": "GGTATGGGAACATTGTTGATC", 
+      "strand_selection": {
+        "value": "False"
+      }
+    }, 
+    {
+      "antisense": {
+        "c_seq": "TAGA", 
+        "result": {
+          "value": "0.023496621526919625"
+        }, 
+        "seq": "TCT", 
+        "shift": 1
+      }, 
+      "end_stability": {
+        "value": "False"
+      }, 
+      "free_energy3": {
+        "value": "(0.8261766215269235, 0.7001716215269207)"
+      }, 
+      "free_energy_dangling_ends": {
+        "value": "(0.6331966215269204, 0.023496621526919625)"
+      }, 
+      "reverse_complement": "TCTTAGAGATCAACAATGTTC", 
+      "sense": {
+        "c_seq": "TTGT", 
+        "result": {
+          "value": "0.6331966215269204"
+        }, 
+        "seq": "ACA", 
+        "shift": 1
+      }, 
+      "sirna_sequence": "ACATTGTTGATCTCTAAGATC", 
+      "sirna_sequence_n2": "GAACATTGTTGATCTCTAAGA", 
+      "strand_selection": {
+        "value": "False"
+      }
+    }, 
+    {
+      "antisense": {
+        "c_seq": "AAGT", 
+        "result": {
+          "value": "-0.34530337847308146"
+        }, 
+        "seq": "TCA", 
+        "shift": 1
+      }, 
+      "end_stability": {
+        "value": "False"
+      }, 
+      "free_energy3": {
+        "value": "(0.6587166215269208, 0.6587166215269208)"
+      }, 
+      "free_energy_dangling_ends": {
+        "value": "(-0.34530337847308146, -0.34530337847308146)"
+      }, 
+      "reverse_complement": "TCACGGATCTTAGAGATCAAC", 
+      "sense": {
+        "c_seq": "AACT", 
+        "result": {
+          "value": "-0.34530337847308146"
+        }, 
+        "seq": "TGA", 
+        "shift": 1
+      }, 
+      "sirna_sequence": "TGATCTCTAAGATCCGTGAAG", 
+      "sirna_sequence_n2": "GTTGATCTCTAAGATCCGTGA", 
+      "strand_selection": {
+        "value": "True"
+      }
+    }, 
+    {
+      "antisense": {
+        "c_seq": "CCAT", 
+        "result": {
+          "value": "0.05183762152691997"
+        }, 
+        "seq": "GTA", 
+        "shift": 1
+      }, 
+      "end_stability": {
+        "value": "False"
+      }, 
+      "free_energy3": {
+        "value": "(3.1105666215269228, 1.0232476215269217)"
+      }, 
+      "free_energy_dangling_ends": {
+        "value": "(2.0673316215269244, 0.05183762152691997)"
+      }, 
+      "reverse_complement": "GTACTCTTCACGGATCTTAGA", 
+      "sense": {
+        "c_seq": "GATT", 
+        "result": {
+          "value": "2.0673316215269244"
+        }, 
+        "seq": "TAA", 
+        "shift": 1
+      }, 
+      "sirna_sequence": "TAAGATCCGTGAAGAGTACCC", 
+      "sirna_sequence_n2": "TCTAAGATCCGTGAAGAGTAC", 
+      "strand_selection": {
+        "value": "False"
+      }
+    }, 
+    {
+      "antisense": {
+        "c_seq": "GCTA", 
+        "result": {
+          "value": "-0.9459473784730762"
+        }, 
+        "seq": "GAT", 
+        "shift": 1
+      }, 
+      "end_stability": {
+        "value": "False"
+      }, 
+      "free_energy3": {
+        "value": "(-0.028577378473080898, 1.1017226215269202)"
+      }, 
+      "free_energy_dangling_ends": {
+        "value": "(-1.5881173784730818, -0.9459473784730762)"
+      }, 
+      "reverse_complement": "GATCTGGGTACTCTTCACGGA", 
+      "sense": {
+        "c_seq": "GGCA", 
+        "result": {
+          "value": "-1.5881173784730818"
+        }, 
+        "seq": "CGT", 
+        "shift": 1
+      }, 
+      "sirna_sequence": "CGTGAAGAGTACCCAGATCGC", 
+      "sirna_sequence_n2": "TCCGTGAAGAGTACCCAGATC", 
+      "strand_selection": {
+        "value": "True"
+      }
+    }, 
+    {
+      "antisense": {
+        "c_seq": "GTAG", 
+        "result": {
+          "value": "0.1421826215269248"
+        }, 
+        "seq": "ATC", 
+        "shift": 1
+      }, 
+      "end_stability": {
+        "value": "False"
+      }, 
+      "free_energy3": {
+        "value": "(0.8676316215269216, 1.1017226215269202)"
+      }, 
+      "free_energy_dangling_ends": {
+        "value": "(0.7284166215269215, 0.1421826215269248)"
+      }, 
+      "reverse_complement": "ATCATGCGATCTGGGTACTCT", 
+      "sense": {
+        "c_seq": "CTCA", 
+        "result": {
+          "value": "0.7284166215269215"
+        }, 
+        "seq": "AGT", 
+        "shift": 1
+      }, 
+      "sirna_sequence": "AGTACCCAGATCGCATGATGC", 
+      "sirna_sequence_n2": "AGAGTACCCAGATCGCATGAT", 
+      "strand_selection": {
+        "value": "False"
+      }
+    }, 
+    {
+      "antisense": {
+        "c_seq": "TCCA", 
+        "result": {
+          "value": "-2.5909408784730803"
+        }, 
+        "seq": "GGT", 
+        "shift": 1
+      }, 
+      "end_stability": {
+        "value": "False"
+      }, 
+      "free_energy3": {
+        "value": "(0.7001716215269207, -1.0854373784730815)"
+      }, 
+      "free_energy_dangling_ends": {
+        "value": "(-0.25936837847308014, -2.5909408784730803)"
+      }, 
+      "reverse_complement": "GGTAAGCATCATGCGATCTGG", 
+      "sense": {
+        "c_seq": "GTCT", 
+        "result": {
+          "value": "-0.25936837847308014"
+        }, 
+        "seq": "AGA", 
+        "shift": 1
+      }, 
+      "sirna_sequence": "AGATCGCATGATGCTTACCTT", 
+      "sirna_sequence_n2": "CCAGATCGCATGATGCTTACC", 
+      "strand_selection": {
+        "value": "False"
+      }
+    }, 
+    {
+      "antisense": {
+        "c_seq": "TGGC", 
+        "result": {
+          "value": "-2.465111378473073"
+        }, 
+        "seq": "CCG", 
+        "shift": 1
+      }, 
+      "end_stability": {
+        "value": "False"
+      }, 
+      "free_energy3": {
+        "value": "(1.481307621526923, -1.7280663784730823)"
+      }, 
+      "free_energy_dangling_ends": {
+        "value": "(0.5217676215269221, -2.465111378473073)"
+      }, 
+      "reverse_complement": "CCGAGAAGGTAAGCATCATGC", 
+      "sense": {
+        "c_seq": "GTAC", 
+        "result": {
+          "value": "0.5217676215269221"
+        }, 
+        "seq": "ATG", 
+        "shift": 1
+      }, 
+      "sirna_sequence": "ATGATGCTTACCTTCTCGGTG", 
+      "sirna_sequence_n2": "GCATGATGCTTACCTTCTCGG", 
+      "strand_selection": {
+        "value": "False"
+      }
+    }, 
+    {
+      "antisense": {
+        "c_seq": "TCCC", 
+        "result": {
+          "value": "-4.290429878473081"
+        }, 
+        "seq": "GGG", 
+        "shift": 1
+      }, 
+      "end_stability": {
+        "value": "False"
+      }, 
+      "free_energy3": {
+        "value": "(3.1105666215269228, -2.784926378473079)"
+      }, 
+      "free_energy_dangling_ends": {
+        "value": "(2.0673316215269244, -4.290429878473081)"
+      }, 
+      "reverse_complement": "GGGAACACCGAGAAGGTAAGC", 
+      "sense": {
+        "c_seq": "GAAT", 
+        "result": {
+          "value": "2.0673316215269244"
+        }, 
+        "seq": "TTA", 
+        "shift": 1
+      }, 
+      "sirna_sequence": "TTACCTTCTCGGTGTTCCCTT", 
+      "sirna_sequence_n2": "GCTTACCTTCTCGGTGTTCCC", 
+      "strand_selection": {
+        "value": "False"
+      }
+    }, 
+    {
+      "antisense": {
+        "c_seq": "AACC", 
+        "result": {
+          "value": "-1.877332378473082"
+        }, 
+        "seq": "TGG", 
+        "shift": 1
+      }, 
+      "end_stability": {
+        "value": "False"
+      }, 
+      "free_energy3": {
+        "value": "(-0.48291637847308083, -0.8733123784730796)"
+      }, 
+      "free_energy_dangling_ends": {
+        "value": "(-1.8913713784730752, -1.877332378473082)"
+      }, 
+      "reverse_complement": "TGGTGAAGGGAACACCGAGAA", 
+      "sense": {
+        "c_seq": "AGAG", 
+        "result": {
+          "value": "-1.8913713784730752"
+        }, 
+        "seq": "CTC", 
+        "shift": 1
+      }, 
+      "sirna_sequence": "CTCGGTGTTCCCTTCACCAAA", 
+      "sirna_sequence_n2": "TTCTCGGTGTTCCCTTCACCA", 
+      "strand_selection": {
+        "value": "True"
+      }
+    }, 
+    {
+      "antisense": {
+        "c_seq": "CTTT", 
+        "result": {
+          "value": "3.4663866215269237"
+        }, 
+        "seq": "AAA", 
+        "shift": 1
+      }, 
+      "end_stability": {
+        "value": "True"
+      }, 
+      "free_energy3": {
+        "value": "(1.3508226215269206, 3.6056016215269238)"
+      }, 
+      "free_energy_dangling_ends": {
+        "value": "(0.8345176215269184, 3.4663866215269237)"
+      }, 
+      "reverse_complement": "AAACCTTTGGTGAAGGGAACA", 
+      "sense": {
+        "c_seq": "CAAG", 
+        "result": {
+          "value": "0.8345176215269184"
+        }, 
+        "seq": "TTC", 
+        "shift": 1
+      }, 
+      "sirna_sequence": "TTCCCTTCACCAAAGGTTTCT", 
+      "sirna_sequence_n2": "TGTTCCCTTCACCAAAGGTTT", 
+      "strand_selection": {
+        "value": "True"
+      }
+    }, 
+    {
+      "antisense": {
+        "c_seq": "TCAT", 
+        "result": {
+          "value": "-0.48225587847307905"
+        }, 
+        "seq": "GTA", 
+        "shift": 1
+      }, 
+      "end_stability": {
+        "value": "True"
+      }, 
+      "free_energy3": {
+        "value": "(-0.3569113784730798, 1.0232476215269217)"
+      }, 
+      "free_energy_dangling_ends": {
+        "value": "(-1.7653663784730742, -0.48225587847307905)"
+      }, 
+      "reverse_complement": "GTATCAGAAACCTTTGGTGAA", 
+      "sense": {
+        "c_seq": "AGTG", 
+        "result": {
+          "value": "-1.7653663784730742"
+        }, 
+        "seq": "CAC", 
+        "shift": 1
+      }, 
+      "sirna_sequence": "CACCAAAGGTTTCTGATACTG", 
+      "sirna_sequence_n2": "TTCACCAAAGGTTTCTGATAC", 
+      "strand_selection": {
+        "value": "True"
+      }
+    }, 
+    {
+      "antisense": {
+        "c_seq": "GGTG", 
+        "result": {
+          "value": "-1.9164513784730735"
+        }, 
+        "seq": "CAC", 
+        "shift": 1
+      }, 
+      "end_stability": {
+        "value": "False"
+      }, 
+      "free_energy3": {
+        "value": "(-1.0854373784730815, -0.3569113784730798)"
+      }, 
+      "free_energy_dangling_ends": {
+        "value": "(-2.5909408784730803, -1.9164513784730735)"
+      }, 
+      "reverse_complement": "CACCACAGTATCAGAAACCTT", 
+      "sense": {
+        "c_seq": "TCCA", 
+        "result": {
+          "value": "-2.5909408784730803"
+        }, 
+        "seq": "GGT", 
+        "shift": 1
+      }, 
+      "sirna_sequence": "GGTTTCTGATACTGTGGTGGA", 
+      "sirna_sequence_n2": "AAGGTTTCTGATACTGTGGTG", 
+      "strand_selection": {
+        "value": "True"
+      }
+    }, 
+    {
+      "antisense": {
+        "c_seq": "ATTC", 
+        "result": {
+          "value": "0.8237776215269224"
+        }, 
+        "seq": "AAG", 
+        "shift": 1
+      }, 
+      "end_stability": {
+        "value": "True"
+      }, 
+      "free_energy3": {
+        "value": "(1.1017226215269202, 1.7718626215269215)"
+      }, 
+      "free_energy_dangling_ends": {
+        "value": "(-0.9622523784730765, 0.8237776215269224)"
+      }, 
+      "reverse_complement": "AAGGCTCCACCACAGTATCAG", 
+      "sense": {
+        "c_seq": "ACTA", 
+        "result": {
+          "value": "-0.9622523784730765"
+        }, 
+        "seq": "GAT", 
+        "shift": 1
+      }, 
+      "sirna_sequence": "GATACTGTGGTGGAGCCTTAC", 
+      "sirna_sequence_n2": "CTGATACTGTGGTGGAGCCTT", 
+      "strand_selection": {
+        "value": "True"
+      }
+    }, 
+    {
+      "antisense": {
+        "c_seq": "TCGC", 
+        "result": {
+          "value": "-3.4407298784730846"
+        }, 
+        "seq": "GCG", 
+        "shift": 1
+      }, 
+      "end_stability": {
+        "value": "False"
+      }, 
+      "free_energy3": {
+        "value": "(-0.8733123784730796, -1.935226378473082)"
+      }, 
+      "free_energy_dangling_ends": {
+        "value": "(-1.3896173784730799, -3.4407298784730846)"
+      }, 
+      "reverse_complement": "GCGTTGTAAGGCTCCACCACA", 
+      "sense": {
+        "c_seq": "CACC", 
+        "result": {
+          "value": "-1.3896173784730799"
+        }, 
+        "seq": "TGG", 
+        "shift": 1
+      }, 
+      "sirna_sequence": "TGGTGGAGCCTTACAACGCTA", 
+      "sirna_sequence_n2": "TGTGGTGGAGCCTTACAACGC", 
+      "strand_selection": {
+        "value": "False"
+      }
+    }, 
+    {
+      "end_stability": {
+        "value": "False"
+      }, 
+      "free_energy3": {
+        "value": "(1.3508226215269206, -1.935226378473082)"
+      }, 
+      "sirna_sequence": "TTCTGGGAAGTGGTTTGCGCC", 
+      "sirna_sequence_n2": null, 
+      "strand_selection": {
+        "value": "False"
+      }
+    }, 
+    {
+      "end_stability": {
+        "value": "False"
+      }, 
+      "free_energy3": {
+        "value": "(0.7001716215269207, -1.935226378473082)"
+      }, 
+      "sirna_sequence": "TCTGGGAAGTGGTTTGCGCCG", 
+      "sirna_sequence_n2": null, 
+      "strand_selection": {
+        "value": "False"
+      }
+    }
+  ], 
+  "description": "The pipeline's second call shape: calculate_free_energy(seq, c_seq=..., shift=1), plus the free_energy3 / free_energy_dangling_ends / strand_selection / end_stability wrappers. Floats are repr() strings.", 
+  "end_nucleotides": 3, 
+  "end_stability_treshold": "1.0", 
+  "overhang": 2, 
+  "sirna_size": 21
+}

@@ -29,9 +29,12 @@ legacy/            frozen Python 2 original — never edit, never import from sr
 src/sifi2/         the Python 3 port; see PLAN.md for the module map (thermo, sirna, bowtie,
                    rnaplfold, efficiency, pipeline, analysis, plots, cli)
 tests/golden/      JSON fixtures captured from legacy/ under Python 2.7 (Phase 1)
-tests/py2_capture/ the capture script and Qt stubs used to produce them
+tests/data/        real inputs the fixtures are built from — query/reference FASTA, captured
+                   bowtie and RNAplfold output, and a real data_to_json result
+tests/py2_capture/ the capture script, the Qt stubs, and make_inputs.py; see its README.md
 ToCopy/Images/     icons kept for the eventual GUI, converted from TIFF to PNG
 environment.yml    curated sifi2 env spec; environment.lock.yml is the generated pin
+environment-py2.yml throwaway sifi2-py2 env, for regenerating the fixtures only
 ```
 
 `legacy/` is kept so the original stays importable under Python 2.7 for fixture regeneration. Do not lint,
@@ -72,14 +75,15 @@ The project env is `sifi2` at `/mnt/apps/users/jnprice/conda/envs/sifi2` (Python
 it: `conda run -n sifi2 <command>`. `sifi2` is installed into it editable, so `import sifi2` and the `sifi`
 console script work without reinstalling after edits.
 
-Phase 1 additionally needs a throwaway `sifi2-py2` env (`python=2.7, biopython=1.76, numpy`) to run `legacy/`
-and capture the golden fixtures.
+The throwaway `sifi2-py2` env (`environment-py2.yml`) runs `legacy/` to regenerate the golden fixtures. It
+already exists; you only need it if `tests/golden/` has to be rebuilt. Note `repo.anaconda.com` is blocked on
+this cluster, so any new env spec needs `- nodefaults` in its channel list.
 
 ## Linting
 
 `conda run -n sifi2 ruff check src/ tests/` and `ruff format --check src/ tests/`. `ruff.toml` selects
-`E,W,F,UP,B,SIM,I` and excludes `legacy/` and `ToCopy/` — ruff cannot parse Python 2 syntax, so never point it
-at `legacy/`.
+`E,W,F,UP,B,SIM,I` and excludes `legacy/`, `ToCopy/` and `tests/py2_capture/` — ruff cannot parse Python 2
+syntax, and `tests/py2_capture/` must keep running under Python 2.7, so never point it at either.
 
 ## Testing
 
@@ -87,3 +91,8 @@ at `legacy/`.
 guarantee of this port is that the ported functions reproduce those fixtures exactly, so a failing golden test
 means the port is wrong — never adjust a fixture to make a test pass unless that change is the deliberate
 subject of the commit.
+
+The fixtures record the original's behaviour **including its bugs** — that is deliberate. `PLAN.md` Phase 6
+fixes them one attributable commit at a time, each showing up as a reviewed golden diff. Regenerate with
+`conda run -n sifi2-py2 python tests/py2_capture/capture.py`; it is deterministic, so a re-run must leave
+`tests/golden/` byte-for-byte identical. See `tests/py2_capture/README.md`.

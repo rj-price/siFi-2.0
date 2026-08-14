@@ -1,0 +1,1073 @@
+{
+  "cases": [
+    {
+      "result": {
+        "value": "3.6056016215269238"
+      }, 
+      "seq": "AAA"
+    }, 
+    {
+      "result": {
+        "value": "1.5182826215269214"
+      }, 
+      "seq": "AAC"
+    }, 
+    {
+      "result": {
+        "value": "1.7718626215269215"
+      }, 
+      "seq": "AAG"
+    }, 
+    {
+      "result": {
+        "value": "3.3565016215269248"
+      }, 
+      "seq": "AAT"
+    }, 
+    {
+      "result": {
+        "value": "0.8261766215269235"
+      }, 
+      "seq": "ACA"
+    }, 
+    {
+      "result": {
+        "value": "-1.0854373784730815"
+      }, 
+      "seq": "ACC"
+    }, 
+    {
+      "result": {
+        "value": "-0.028577378473080898"
+      }, 
+      "seq": "ACG"
+    }, 
+    {
+      "result": {
+        "value": "0.8676316215269216"
+      }, 
+      "seq": "ACT"
+    }, 
+    {
+      "result": {
+        "value": "0.7001716215269207"
+      }, 
+      "seq": "AGA"
+    }, 
+    {
+      "result": {
+        "value": "-1.0390173784730758"
+      }, 
+      "seq": "AGC"
+    }, 
+    {
+      "result": {
+        "value": "-0.8318573784730797"
+      }, 
+      "seq": "AGG"
+    }, 
+    {
+      "result": {
+        "value": "0.8676316215269216"
+      }, 
+      "seq": "AGT"
+    }, 
+    {
+      "result": {
+        "value": "2.8614666215269233"
+      }, 
+      "seq": "ATA"
+    }, 
+    {
+      "result": {
+        "value": "1.1017226215269202"
+      }, 
+      "seq": "ATC"
+    }, 
+    {
+      "result": {
+        "value": "1.481307621526923"
+      }, 
+      "seq": "ATG"
+    }, 
+    {
+      "result": {
+        "value": "3.3565016215269248"
+      }, 
+      "seq": "ATT"
+    }, 
+    {
+      "result": {
+        "value": "1.7304076215269224"
+      }, 
+      "seq": "CAA"
+    }, 
+    {
+      "result": {
+        "value": "-0.3569113784730798"
+      }, 
+      "seq": "CAC"
+    }, 
+    {
+      "result": {
+        "value": "-0.1033313784730799"
+      }, 
+      "seq": "CAG"
+    }, 
+    {
+      "result": {
+        "value": "1.481307621526923"
+      }, 
+      "seq": "CAT"
+    }, 
+    {
+      "result": {
+        "value": "-0.8733123784730796"
+      }, 
+      "seq": "CCA"
+    }, 
+    {
+      "result": {
+        "value": "-2.784926378473079"
+      }, 
+      "seq": "CCC"
+    }, 
+    {
+      "result": {
+        "value": "-1.7280663784730823"
+      }, 
+      "seq": "CCG"
+    }, 
+    {
+      "result": {
+        "value": "-0.8318573784730797"
+      }, 
+      "seq": "CCT"
+    }, 
+    {
+      "result": {
+        "value": "-0.19603737847308184"
+      }, 
+      "seq": "CGA"
+    }, 
+    {
+      "result": {
+        "value": "-1.935226378473082"
+      }, 
+      "seq": "CGC"
+    }, 
+    {
+      "result": {
+        "value": "-1.7280663784730823"
+      }, 
+      "seq": "CGG"
+    }, 
+    {
+      "result": {
+        "value": "-0.028577378473080898"
+      }, 
+      "seq": "CGT"
+    }, 
+    {
+      "result": {
+        "value": "1.2768276215269199"
+      }, 
+      "seq": "CTA"
+    }, 
+    {
+      "result": {
+        "value": "-0.48291637847308083"
+      }, 
+      "seq": "CTC"
+    }, 
+    {
+      "result": {
+        "value": "-0.1033313784730799"
+      }, 
+      "seq": "CTG"
+    }, 
+    {
+      "result": {
+        "value": "1.7718626215269215"
+      }, 
+      "seq": "CTT"
+    }, 
+    {
+      "result": {
+        "value": "1.3508226215269206"
+      }, 
+      "seq": "GAA"
+    }, 
+    {
+      "result": {
+        "value": "-0.7364963784730826"
+      }, 
+      "seq": "GAC"
+    }, 
+    {
+      "result": {
+        "value": "-0.48291637847308083"
+      }, 
+      "seq": "GAG"
+    }, 
+    {
+      "result": {
+        "value": "1.1017226215269202"
+      }, 
+      "seq": "GAT"
+    }, 
+    {
+      "result": {
+        "value": "-1.0804723784730776"
+      }, 
+      "seq": "GCA"
+    }, 
+    {
+      "result": {
+        "value": "-2.992086378473079"
+      }, 
+      "seq": "GCC"
+    }, 
+    {
+      "result": {
+        "value": "-1.935226378473082"
+      }, 
+      "seq": "GCG"
+    }, 
+    {
+      "result": {
+        "value": "-1.0390173784730758"
+      }, 
+      "seq": "GCT"
+    }, 
+    {
+      "result": {
+        "value": "-1.2528973784730806"
+      }, 
+      "seq": "GGA"
+    }, 
+    {
+      "result": {
+        "value": "-2.992086378473079"
+      }, 
+      "seq": "GGC"
+    }, 
+    {
+      "result": {
+        "value": "-2.784926378473079"
+      }, 
+      "seq": "GGG"
+    }, 
+    {
+      "result": {
+        "value": "-1.0854373784730815"
+      }, 
+      "seq": "GGT"
+    }, 
+    {
+      "result": {
+        "value": "1.0232476215269217"
+      }, 
+      "seq": "GTA"
+    }, 
+    {
+      "result": {
+        "value": "-0.7364963784730789"
+      }, 
+      "seq": "GTC"
+    }, 
+    {
+      "result": {
+        "value": "-0.3569113784730798"
+      }, 
+      "seq": "GTG"
+    }, 
+    {
+      "result": {
+        "value": "1.5182826215269214"
+      }, 
+      "seq": "GTT"
+    }, 
+    {
+      "result": {
+        "value": "3.1105666215269228"
+      }, 
+      "seq": "TAA"
+    }, 
+    {
+      "result": {
+        "value": "1.0232476215269217"
+      }, 
+      "seq": "TAC"
+    }, 
+    {
+      "result": {
+        "value": "1.2768276215269199"
+      }, 
+      "seq": "TAG"
+    }, 
+    {
+      "result": {
+        "value": "2.8614666215269233"
+      }, 
+      "seq": "TAT"
+    }, 
+    {
+      "result": {
+        "value": "0.6587166215269208"
+      }, 
+      "seq": "TCA"
+    }, 
+    {
+      "result": {
+        "value": "-1.2528973784730806"
+      }, 
+      "seq": "TCC"
+    }, 
+    {
+      "result": {
+        "value": "-0.19603737847308184"
+      }, 
+      "seq": "TCG"
+    }, 
+    {
+      "result": {
+        "value": "0.7001716215269207"
+      }, 
+      "seq": "TCT"
+    }, 
+    {
+      "result": {
+        "value": "0.6587166215269208"
+      }, 
+      "seq": "TGA"
+    }, 
+    {
+      "result": {
+        "value": "-1.0804723784730776"
+      }, 
+      "seq": "TGC"
+    }, 
+    {
+      "result": {
+        "value": "-0.8733123784730796"
+      }, 
+      "seq": "TGG"
+    }, 
+    {
+      "result": {
+        "value": "0.8261766215269235"
+      }, 
+      "seq": "TGT"
+    }, 
+    {
+      "result": {
+        "value": "3.1105666215269228"
+      }, 
+      "seq": "TTA"
+    }, 
+    {
+      "result": {
+        "value": "1.3508226215269206"
+      }, 
+      "seq": "TTC"
+    }, 
+    {
+      "result": {
+        "value": "1.7304076215269224"
+      }, 
+      "seq": "TTG"
+    }, 
+    {
+      "result": {
+        "value": "3.6056016215269238"
+      }, 
+      "seq": "TTT"
+    }, 
+    {
+      "result": {
+        "value": "-44.45229328473078"
+      }, 
+      "seq": "TTCTGGGAAGTGGTTTGCGCC"
+    }, 
+    {
+      "result": {
+        "value": "-49.745942284730816"
+      }, 
+      "seq": "GTGGTTTGCGCCGAGCACGGC"
+    }, 
+    {
+      "result": {
+        "value": "-48.83987328473086"
+      }, 
+      "seq": "GCCGAGCACGGCATCGATCCA"
+    }, 
+    {
+      "result": {
+        "value": "-46.186587284730834"
+      }, 
+      "seq": "GGCATCGATCCAACCGGAAGG"
+    }, 
+    {
+      "result": {
+        "value": "-46.54557328473084"
+      }, 
+      "seq": "CCAACCGGAAGGTACACCGGA"
+    }, 
+    {
+      "result": {
+        "value": "-43.89816428473085"
+      }, 
+      "seq": "AGGTACACCGGAGACTCAGAT"
+    }, 
+    {
+      "result": {
+        "value": "-41.2487832847308"
+      }, 
+      "seq": "GGAGACTCAGATCTGCAACTT"
+    }, 
+    {
+      "result": {
+        "value": "-42.294577284730885"
+      }, 
+      "seq": "GATCTGCAACTTGAGCGCATC"
+    }, 
+    {
+      "result": {
+        "value": "-38.41572728473079"
+      }, 
+      "seq": "CTTGAGCGCATCAACGTTTAC"
+    }, 
+    {
+      "result": {
+        "value": "-31.061734284730832"
+      }, 
+      "seq": "ATCAACGTTTACTACAATGAA"
+    }, 
+    {
+      "result": {
+        "value": "-38.014553284730795"
+      }, 
+      "seq": "TACTACAATGAAGCGAGTTGC"
+    }, 
+    {
+      "result": {
+        "value": "-41.52503728473088"
+      }, 
+      "seq": "GAAGCGAGTTGCGGTAGATTC"
+    }, 
+    {
+      "result": {
+        "value": "-41.93522928473083"
+      }, 
+      "seq": "TGCGGTAGATTCGTTCCTCGT"
+    }, 
+    {
+      "result": {
+        "value": "-44.2524332847308"
+      }, 
+      "seq": "TTCGTTCCTCGTGCAGTGCTC"
+    }, 
+    {
+      "result": {
+        "value": "-41.58182728473094"
+      }, 
+      "seq": "CGTGCAGTGCTCATGGATTTG"
+    }, 
+    {
+      "result": {
+        "value": "-44.98554728473083"
+      }, 
+      "seq": "CTCATGGATTTGGAGCCTGGG"
+    }, 
+    {
+      "result": {
+        "value": "-44.5096192847309"
+      }, 
+      "seq": "TTGGAGCCTGGGACTATGGAT"
+    }, 
+    {
+      "result": {
+        "value": "-42.35866828473084"
+      }, 
+      "seq": "GGGACTATGGATAGTCTCAGA"
+    }, 
+    {
+      "result": {
+        "value": "-43.06155228473086"
+      }, 
+      "seq": "GATAGTCTCAGATCTGGACCG"
+    }, 
+    {
+      "result": {
+        "value": "-44.794373284730796"
+      }, 
+      "seq": "AGATCTGGACCGTACGGTCAG"
+    }, 
+    {
+      "result": {
+        "value": "-43.56628828473087"
+      }, 
+      "seq": "CCGTACGGTCAGACCTTTCGA"
+    }, 
+    {
+      "result": {
+        "value": "-39.73956228473084"
+      }, 
+      "seq": "CAGACCTTTCGACCTGATAAC"
+    }, 
+    {
+      "result": {
+        "value": "-36.807508284730865"
+      }, 
+      "seq": "CGACCTGATAACTTCGTCTTT"
+    }, 
+    {
+      "result": {
+        "value": "-37.410788284730806"
+      }, 
+      "seq": "AACTTCGTCTTTGGTCAATCC"
+    }, 
+    {
+      "result": {
+        "value": "-44.46093428473078"
+      }, 
+      "seq": "TTTGGTCAATCCGGTGCGGGT"
+    }, 
+    {
+      "result": {
+        "value": "-46.373148284730796"
+      }, 
+      "seq": "TCCGGTGCGGGTAACAACTGG"
+    }, 
+    {
+      "result": {
+        "value": "-45.62956828473084"
+      }, 
+      "seq": "GGTAACAACTGGGCCAAGGGA"
+    }, 
+    {
+      "result": {
+        "value": "-46.455924284730806"
+      }, 
+      "seq": "TGGGCCAAGGGACACTACACT"
+    }, 
+    {
+      "result": {
+        "value": "-43.76351828473084"
+      }, 
+      "seq": "GGACACTACACTGAAGGAGCT"
+    }, 
+    {
+      "result": {
+        "value": "-38.79693328473083"
+      }, 
+      "seq": "ACTGAAGGAGCTGAACTAATC"
+    }, 
+    {
+      "result": {
+        "value": "-37.129518284730814"
+      }, 
+      "seq": "GCTGAACTAATCGATTCCGTT"
+    }, 
+    {
+      "result": {
+        "value": "-37.11229428473083"
+      }, 
+      "seq": "ATCGATTCCGTTCTCGATGTT"
+    }, 
+    {
+      "result": {
+        "value": "-36.33256228473084"
+      }, 
+      "seq": "GTTCTCGATGTTGTTCGTAAG"
+    }, 
+    {
+      "result": {
+        "value": "-39.27658228473083"
+      }, 
+      "seq": "GTTGTTCGTAAGGAAGCTGAG"
+    }, 
+    {
+      "result": {
+        "value": "-40.83222328473083"
+      }, 
+      "seq": "AAGGAAGCTGAGAACTGTGAC"
+    }, 
+    {
+      "result": {
+        "value": "-43.477398284730825"
+      }, 
+      "seq": "GAGAACTGTGACTGCCTCCAA"
+    }, 
+    {
+      "result": {
+        "value": "-47.43744228473087"
+      }, 
+      "seq": "GACTGCCTCCAAGGGTTCCAG"
+    }, 
+    {
+      "result": {
+        "value": "-42.15041728473082"
+      }, 
+      "seq": "CAAGGGTTCCAGGTTTGTCAC"
+    }, 
+    {
+      "result": {
+        "value": "-40.65536328473082"
+      }, 
+      "seq": "CAGGTTTGTCACTCATTGGGA"
+    }, 
+    {
+      "result": {
+        "value": "-43.34363328473089"
+      }, 
+      "seq": "CACTCATTGGGAGGAGGAACT"
+    }, 
+    {
+      "result": {
+        "value": "-46.32693828473083"
+      }, 
+      "seq": "GGAGGAGGAACTGGATCTGGT"
+    }, 
+    {
+      "result": {
+        "value": "-42.12802428473084"
+      }, 
+      "seq": "ACTGGATCTGGTATGGGAACA"
+    }, 
+    {
+      "result": {
+        "value": "-38.47210228473085"
+      }, 
+      "seq": "GGTATGGGAACATTGTTGATC"
+    }, 
+    {
+      "result": {
+        "value": "-34.343028284730885"
+      }, 
+      "seq": "ACATTGTTGATCTCTAAGATC"
+    }, 
+    {
+      "result": {
+        "value": "-38.32905828473083"
+      }, 
+      "seq": "ATCTCTAAGATCCGTGAAGAG"
+    }, 
+    {
+      "result": {
+        "value": "-41.40929428473089"
+      }, 
+      "seq": "ATCCGTGAAGAGTACCCAGAT"
+    }, 
+    {
+      "result": {
+        "value": "-42.877972284730845"
+      }, 
+      "seq": "GAGTACCCAGATCGCATGATG"
+    }, 
+    {
+      "result": {
+        "value": "-40.30570728473083"
+      }, 
+      "seq": "GATCGCATGATGCTTACCTTC"
+    }, 
+    {
+      "result": {
+        "value": "-40.295663284730864"
+      }, 
+      "seq": "ATGCTTACCTTCTCGGTGTTC"
+    }, 
+    {
+      "result": {
+        "value": "-43.06123428473086"
+      }, 
+      "seq": "TTCTCGGTGTTCCCTTCACCA"
+    }, 
+    {
+      "result": {
+        "value": "3.6056016215269238"
+      }, 
+      "seq": "AAA"
+    }, 
+    {
+      "result": {
+        "value": "1.5182826215269214"
+      }, 
+      "seq": "AAC"
+    }, 
+    {
+      "result": {
+        "value": "1.7718626215269215"
+      }, 
+      "seq": "AAG"
+    }, 
+    {
+      "result": {
+        "value": "3.3565016215269248"
+      }, 
+      "seq": "AAT"
+    }, 
+    {
+      "result": {
+        "value": "0.8261766215269235"
+      }, 
+      "seq": "ACA"
+    }, 
+    {
+      "result": {
+        "value": "-1.0854373784730815"
+      }, 
+      "seq": "ACC"
+    }, 
+    {
+      "result": {
+        "value": "-0.028577378473080898"
+      }, 
+      "seq": "ACG"
+    }, 
+    {
+      "result": {
+        "value": "0.8676316215269216"
+      }, 
+      "seq": "ACT"
+    }, 
+    {
+      "result": {
+        "value": "0.7001716215269207"
+      }, 
+      "seq": "AGA"
+    }, 
+    {
+      "result": {
+        "value": "-1.0390173784730758"
+      }, 
+      "seq": "AGC"
+    }, 
+    {
+      "result": {
+        "value": "-0.8318573784730797"
+      }, 
+      "seq": "AGG"
+    }, 
+    {
+      "result": {
+        "value": "0.8676316215269216"
+      }, 
+      "seq": "AGT"
+    }, 
+    {
+      "result": {
+        "value": "2.8614666215269233"
+      }, 
+      "seq": "ATA"
+    }, 
+    {
+      "result": {
+        "value": "1.1017226215269202"
+      }, 
+      "seq": "ATC"
+    }, 
+    {
+      "result": {
+        "value": "1.481307621526923"
+      }, 
+      "seq": "ATG"
+    }, 
+    {
+      "result": {
+        "value": "3.3565016215269248"
+      }, 
+      "seq": "ATT"
+    }, 
+    {
+      "result": {
+        "value": "1.7304076215269224"
+      }, 
+      "seq": "CAA"
+    }, 
+    {
+      "result": {
+        "value": "-0.3569113784730798"
+      }, 
+      "seq": "CAC"
+    }, 
+    {
+      "result": {
+        "value": "-0.1033313784730799"
+      }, 
+      "seq": "CAG"
+    }, 
+    {
+      "result": {
+        "value": "1.481307621526923"
+      }, 
+      "seq": "CAT"
+    }, 
+    {
+      "result": {
+        "value": "-0.8733123784730796"
+      }, 
+      "seq": "CCA"
+    }, 
+    {
+      "result": {
+        "value": "-2.784926378473079"
+      }, 
+      "seq": "CCC"
+    }, 
+    {
+      "result": {
+        "value": "-1.7280663784730823"
+      }, 
+      "seq": "CCG"
+    }, 
+    {
+      "result": {
+        "value": "-0.8318573784730797"
+      }, 
+      "seq": "CCT"
+    }, 
+    {
+      "result": {
+        "value": "-0.19603737847308184"
+      }, 
+      "seq": "CGA"
+    }, 
+    {
+      "result": {
+        "value": "-1.935226378473082"
+      }, 
+      "seq": "CGC"
+    }, 
+    {
+      "result": {
+        "value": "-1.7280663784730823"
+      }, 
+      "seq": "CGG"
+    }, 
+    {
+      "result": {
+        "value": "-0.028577378473080898"
+      }, 
+      "seq": "CGT"
+    }, 
+    {
+      "result": {
+        "value": "1.2768276215269199"
+      }, 
+      "seq": "CTA"
+    }, 
+    {
+      "result": {
+        "value": "-0.48291637847308083"
+      }, 
+      "seq": "CTC"
+    }, 
+    {
+      "result": {
+        "value": "-0.1033313784730799"
+      }, 
+      "seq": "CTG"
+    }, 
+    {
+      "result": {
+        "value": "1.7718626215269215"
+      }, 
+      "seq": "CTT"
+    }, 
+    {
+      "result": {
+        "value": "1.3508226215269206"
+      }, 
+      "seq": "GAA"
+    }, 
+    {
+      "result": {
+        "value": "-0.7364963784730826"
+      }, 
+      "seq": "GAC"
+    }, 
+    {
+      "result": {
+        "value": "-0.48291637847308083"
+      }, 
+      "seq": "GAG"
+    }, 
+    {
+      "result": {
+        "value": "1.1017226215269202"
+      }, 
+      "seq": "GAT"
+    }, 
+    {
+      "result": {
+        "value": "-1.0804723784730776"
+      }, 
+      "seq": "GCA"
+    }, 
+    {
+      "result": {
+        "value": "-2.992086378473079"
+      }, 
+      "seq": "GCC"
+    }, 
+    {
+      "result": {
+        "value": "-1.935226378473082"
+      }, 
+      "seq": "GCG"
+    }, 
+    {
+      "result": {
+        "value": "-1.0390173784730758"
+      }, 
+      "seq": "GCT"
+    }, 
+    {
+      "result": {
+        "value": "-1.2528973784730806"
+      }, 
+      "seq": "GGA"
+    }, 
+    {
+      "result": {
+        "value": "-2.992086378473079"
+      }, 
+      "seq": "GGC"
+    }, 
+    {
+      "result": {
+        "value": "-2.784926378473079"
+      }, 
+      "seq": "GGG"
+    }, 
+    {
+      "result": {
+        "value": "-1.0854373784730815"
+      }, 
+      "seq": "GGT"
+    }, 
+    {
+      "result": {
+        "value": "1.0232476215269217"
+      }, 
+      "seq": "GTA"
+    }, 
+    {
+      "result": {
+        "value": "-0.7364963784730789"
+      }, 
+      "seq": "GTC"
+    }, 
+    {
+      "result": {
+        "value": "-0.3569113784730798"
+      }, 
+      "seq": "GTG"
+    }, 
+    {
+      "result": {
+        "value": "1.5182826215269214"
+      }, 
+      "seq": "GTT"
+    }, 
+    {
+      "result": {
+        "value": "3.1105666215269228"
+      }, 
+      "seq": "TAA"
+    }, 
+    {
+      "result": {
+        "value": "1.0232476215269217"
+      }, 
+      "seq": "TAC"
+    }, 
+    {
+      "result": {
+        "value": "1.2768276215269199"
+      }, 
+      "seq": "TAG"
+    }, 
+    {
+      "result": {
+        "value": "2.8614666215269233"
+      }, 
+      "seq": "TAT"
+    }, 
+    {
+      "result": {
+        "value": "0.6587166215269208"
+      }, 
+      "seq": "TCA"
+    }, 
+    {
+      "result": {
+        "value": "-1.2528973784730806"
+      }, 
+      "seq": "TCC"
+    }, 
+    {
+      "result": {
+        "value": "-0.19603737847308184"
+      }, 
+      "seq": "TCG"
+    }, 
+    {
+      "result": {
+        "value": "0.7001716215269207"
+      }, 
+      "seq": "TCT"
+    }, 
+    {
+      "result": {
+        "value": "0.6587166215269208"
+      }, 
+      "seq": "TGA"
+    }, 
+    {
+      "result": {
+        "value": "-1.0804723784730776"
+      }, 
+      "seq": "TGC"
+    }, 
+    {
+      "result": {
+        "value": "-0.8733123784730796"
+      }, 
+      "seq": "TGG"
+    }, 
+    {
+      "result": {
+        "value": "0.8261766215269235"
+      }, 
+      "seq": "TGT"
+    }, 
+    {
+      "result": {
+        "value": "3.1105666215269228"
+      }, 
+      "seq": "TTA"
+    }, 
+    {
+      "result": {
+        "value": "1.3508226215269206"
+      }, 
+      "seq": "TTC"
+    }, 
+    {
+      "result": {
+        "value": "1.7304076215269224"
+      }, 
+      "seq": "TTG"
+    }, 
+    {
+      "result": {
+        "value": "3.6056016215269238"
+      }, 
+      "seq": "TTT"
+    }
+  ], 
+  "description": "free_energy.calculate_free_energy(seq) with all defaults (RNA_NN3 / DNA_TMM1 / DNA_IMM1 / RNA_DE2, Na=20 K=50 saltcorr=5). Floats are repr() strings."
+}

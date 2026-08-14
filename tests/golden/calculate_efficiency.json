@@ -1,0 +1,4615 @@
+{
+  "cases": [
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "0.0002646979", 
+      "result": {
+        "value": "(False, False, False, False, False)"
+      }, 
+      "sirna_name": "sirna8", 
+      "sirna_sequence": "AAGTGGTTTGCGCCGAGCACG", 
+      "sirna_sequence_n2": "GGAAGTGGTTTGCGCCGAGCA"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "0.0", 
+      "result": {
+        "value": "(False, False, False, False, False)"
+      }, 
+      "sirna_name": "sirna8", 
+      "sirna_sequence": "AAGTGGTTTGCGCCGAGCACG", 
+      "sirna_sequence_n2": "GGAAGTGGTTTGCGCCGAGCA"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "1.0", 
+      "result": {
+        "value": "(False, False, False, True, False)"
+      }, 
+      "sirna_name": "sirna8", 
+      "sirna_sequence": "AAGTGGTTTGCGCCGAGCACG", 
+      "sirna_sequence_n2": "GGAAGTGGTTTGCGCCGAGCA"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "0.007986903", 
+      "result": {
+        "value": "(False, False, False, False, False)"
+      }, 
+      "sirna_name": "sirna13", 
+      "sirna_sequence": "GTTTGCGCCGAGCACGGCATC", 
+      "sirna_sequence_n2": "TGGTTTGCGCCGAGCACGGCA"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "0.0", 
+      "result": {
+        "value": "(False, False, False, False, False)"
+      }, 
+      "sirna_name": "sirna13", 
+      "sirna_sequence": "GTTTGCGCCGAGCACGGCATC", 
+      "sirna_sequence_n2": "TGGTTTGCGCCGAGCACGGCA"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "1.0", 
+      "result": {
+        "value": "(False, False, False, True, False)"
+      }, 
+      "sirna_name": "sirna13", 
+      "sirna_sequence": "GTTTGCGCCGAGCACGGCATC", 
+      "sirna_sequence_n2": "TGGTTTGCGCCGAGCACGGCA"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "0.004446382", 
+      "result": {
+        "value": "(False, False, False, False, False)"
+      }, 
+      "sirna_name": "sirna14", 
+      "sirna_sequence": "TTTGCGCCGAGCACGGCATCG", 
+      "sirna_sequence_n2": "GGTTTGCGCCGAGCACGGCAT"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "0.0", 
+      "result": {
+        "value": "(False, False, False, False, False)"
+      }, 
+      "sirna_name": "sirna14", 
+      "sirna_sequence": "TTTGCGCCGAGCACGGCATCG", 
+      "sirna_sequence_n2": "GGTTTGCGCCGAGCACGGCAT"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "1.0", 
+      "result": {
+        "value": "(False, False, False, True, False)"
+      }, 
+      "sirna_name": "sirna14", 
+      "sirna_sequence": "TTTGCGCCGAGCACGGCATCG", 
+      "sirna_sequence_n2": "GGTTTGCGCCGAGCACGGCAT"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "4.86583e-06", 
+      "result": {
+        "value": "(False, True, True, False, False)"
+      }, 
+      "sirna_name": "sirna5", 
+      "sirna_sequence": "GGGAAGTGGTTTGCGCCGAGC", 
+      "sirna_sequence_n2": "CTGGGAAGTGGTTTGCGCCGA"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "0.0", 
+      "result": {
+        "value": "(False, True, True, False, False)"
+      }, 
+      "sirna_name": "sirna5", 
+      "sirna_sequence": "GGGAAGTGGTTTGCGCCGAGC", 
+      "sirna_sequence_n2": "CTGGGAAGTGGTTTGCGCCGA"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "1.0", 
+      "result": {
+        "value": "(True, True, True, True, True)"
+      }, 
+      "sirna_name": "sirna5", 
+      "sirna_sequence": "GGGAAGTGGTTTGCGCCGAGC", 
+      "sirna_sequence_n2": "CTGGGAAGTGGTTTGCGCCGA"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "0.03097893", 
+      "result": {
+        "value": "(False, True, True, False, False)"
+      }, 
+      "sirna_name": "sirna17", 
+      "sirna_sequence": "GCGCCGAGCACGGCATCGATC", 
+      "sirna_sequence_n2": "TTGCGCCGAGCACGGCATCGA"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "0.0", 
+      "result": {
+        "value": "(False, True, True, False, False)"
+      }, 
+      "sirna_name": "sirna17", 
+      "sirna_sequence": "GCGCCGAGCACGGCATCGATC", 
+      "sirna_sequence_n2": "TTGCGCCGAGCACGGCATCGA"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "1.0", 
+      "result": {
+        "value": "(True, True, True, True, True)"
+      }, 
+      "sirna_name": "sirna17", 
+      "sirna_sequence": "GCGCCGAGCACGGCATCGATC", 
+      "sirna_sequence_n2": "TTGCGCCGAGCACGGCATCGA"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "0.0758944", 
+      "result": {
+        "value": "(False, True, True, False, False)"
+      }, 
+      "sirna_name": "sirna18", 
+      "sirna_sequence": "CGCCGAGCACGGCATCGATCC", 
+      "sirna_sequence_n2": "TGCGCCGAGCACGGCATCGAT"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "0.0", 
+      "result": {
+        "value": "(False, True, True, False, False)"
+      }, 
+      "sirna_name": "sirna18", 
+      "sirna_sequence": "CGCCGAGCACGGCATCGATCC", 
+      "sirna_sequence_n2": "TGCGCCGAGCACGGCATCGAT"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "1.0", 
+      "result": {
+        "value": "(True, True, True, True, True)"
+      }, 
+      "sirna_name": "sirna18", 
+      "sirna_sequence": "CGCCGAGCACGGCATCGATCC", 
+      "sirna_sequence_n2": "TGCGCCGAGCACGGCATCGAT"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "3.637177e-06", 
+      "result": {
+        "value": "(False, False, False, False, False)"
+      }, 
+      "sirna_name": "sirna1", 
+      "sirna_sequence": "TTCTGGGAAGTGGTTTGCGCC", 
+      "sirna_sequence_n2": null
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "0.0", 
+      "result": {
+        "value": "(False, False, False, False, False)"
+      }, 
+      "sirna_name": "sirna1", 
+      "sirna_sequence": "TTCTGGGAAGTGGTTTGCGCC", 
+      "sirna_sequence_n2": null
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "1.0", 
+      "result": {
+        "value": "(False, False, False, True, False)"
+      }, 
+      "sirna_name": "sirna1", 
+      "sirna_sequence": "TTCTGGGAAGTGGTTTGCGCC", 
+      "sirna_sequence_n2": null
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "5.59196e-06", 
+      "result": {
+        "value": "(False, False, False, False, False)"
+      }, 
+      "sirna_name": "sirna3", 
+      "sirna_sequence": "CTGGGAAGTGGTTTGCGCCGA", 
+      "sirna_sequence_n2": "TTCTGGGAAGTGGTTTGCGCC"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "0.0", 
+      "result": {
+        "value": "(False, False, False, False, False)"
+      }, 
+      "sirna_name": "sirna3", 
+      "sirna_sequence": "CTGGGAAGTGGTTTGCGCCGA", 
+      "sirna_sequence_n2": "TTCTGGGAAGTGGTTTGCGCC"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "1.0", 
+      "result": {
+        "value": "(False, False, False, True, False)"
+      }, 
+      "sirna_name": "sirna3", 
+      "sirna_sequence": "CTGGGAAGTGGTTTGCGCCGA", 
+      "sirna_sequence_n2": "TTCTGGGAAGTGGTTTGCGCC"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "0.0001625693", 
+      "result": {
+        "value": "(False, False, False, False, False)"
+      }, 
+      "sirna_name": "sirna7", 
+      "sirna_sequence": "GAAGTGGTTTGCGCCGAGCAC", 
+      "sirna_sequence_n2": "GGGAAGTGGTTTGCGCCGAGC"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "0.0", 
+      "result": {
+        "value": "(False, False, False, False, False)"
+      }, 
+      "sirna_name": "sirna7", 
+      "sirna_sequence": "GAAGTGGTTTGCGCCGAGCAC", 
+      "sirna_sequence_n2": "GGGAAGTGGTTTGCGCCGAGC"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "1.0", 
+      "result": {
+        "value": "(False, False, False, True, False)"
+      }, 
+      "sirna_name": "sirna7", 
+      "sirna_sequence": "GAAGTGGTTTGCGCCGAGCAC", 
+      "sirna_sequence_n2": "GGGAAGTGGTTTGCGCCGAGC"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "7.475359e-06", 
+      "result": {
+        "value": "(False, False, False, False, False)"
+      }, 
+      "sirna_name": "sirna2", 
+      "sirna_sequence": "TCTGGGAAGTGGTTTGCGCCG", 
+      "sirna_sequence_n2": null
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "0.0", 
+      "result": {
+        "value": "(False, False, False, False, False)"
+      }, 
+      "sirna_name": "sirna2", 
+      "sirna_sequence": "TCTGGGAAGTGGTTTGCGCCG", 
+      "sirna_sequence_n2": null
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "1.0", 
+      "result": {
+        "value": "(False, False, False, True, False)"
+      }, 
+      "sirna_name": "sirna2", 
+      "sirna_sequence": "TCTGGGAAGTGGTTTGCGCCG", 
+      "sirna_sequence_n2": null
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "5.064855e-06", 
+      "result": {
+        "value": "(False, False, False, False, False)"
+      }, 
+      "sirna_name": "sirna4", 
+      "sirna_sequence": "TGGGAAGTGGTTTGCGCCGAG", 
+      "sirna_sequence_n2": "TCTGGGAAGTGGTTTGCGCCG"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "0.0", 
+      "result": {
+        "value": "(False, False, False, False, False)"
+      }, 
+      "sirna_name": "sirna4", 
+      "sirna_sequence": "TGGGAAGTGGTTTGCGCCGAG", 
+      "sirna_sequence_n2": "TCTGGGAAGTGGTTTGCGCCG"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "1.0", 
+      "result": {
+        "value": "(False, False, False, True, False)"
+      }, 
+      "sirna_name": "sirna4", 
+      "sirna_sequence": "TGGGAAGTGGTTTGCGCCGAG", 
+      "sirna_sequence_n2": "TCTGGGAAGTGGTTTGCGCCG"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "3.677182e-05", 
+      "result": {
+        "value": "(False, True, True, False, False)"
+      }, 
+      "sirna_name": "sirna6", 
+      "sirna_sequence": "GGAAGTGGTTTGCGCCGAGCA", 
+      "sirna_sequence_n2": "TGGGAAGTGGTTTGCGCCGAG"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "0.0", 
+      "result": {
+        "value": "(False, True, True, False, False)"
+      }, 
+      "sirna_name": "sirna6", 
+      "sirna_sequence": "GGAAGTGGTTTGCGCCGAGCA", 
+      "sirna_sequence_n2": "TGGGAAGTGGTTTGCGCCGAG"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "1.0", 
+      "result": {
+        "value": "(True, True, True, True, True)"
+      }, 
+      "sirna_name": "sirna6", 
+      "sirna_sequence": "GGAAGTGGTTTGCGCCGAGCA", 
+      "sirna_sequence_n2": "TGGGAAGTGGTTTGCGCCGAG"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": false
+      }, 
+      "lunp_data_xmer": "0.0002646979", 
+      "result": {
+        "value": "(False, False, False, False, False)"
+      }, 
+      "sirna_name": "sirna8", 
+      "sirna_sequence": "AAGTGGTTTGCGCCGAGCACG", 
+      "sirna_sequence_n2": "GGAAGTGGTTTGCGCCGAGCA"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": false
+      }, 
+      "lunp_data_xmer": "0.0", 
+      "result": {
+        "value": "(False, False, False, False, False)"
+      }, 
+      "sirna_name": "sirna8", 
+      "sirna_sequence": "AAGTGGTTTGCGCCGAGCACG", 
+      "sirna_sequence_n2": "GGAAGTGGTTTGCGCCGAGCA"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": false
+      }, 
+      "lunp_data_xmer": "1.0", 
+      "result": {
+        "value": "(False, False, False, True, False)"
+      }, 
+      "sirna_name": "sirna8", 
+      "sirna_sequence": "AAGTGGTTTGCGCCGAGCACG", 
+      "sirna_sequence_n2": "GGAAGTGGTTTGCGCCGAGCA"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": false
+      }, 
+      "lunp_data_xmer": "0.007986903", 
+      "result": {
+        "value": "(False, False, False, False, False)"
+      }, 
+      "sirna_name": "sirna13", 
+      "sirna_sequence": "GTTTGCGCCGAGCACGGCATC", 
+      "sirna_sequence_n2": "TGGTTTGCGCCGAGCACGGCA"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": false
+      }, 
+      "lunp_data_xmer": "0.0", 
+      "result": {
+        "value": "(False, False, False, False, False)"
+      }, 
+      "sirna_name": "sirna13", 
+      "sirna_sequence": "GTTTGCGCCGAGCACGGCATC", 
+      "sirna_sequence_n2": "TGGTTTGCGCCGAGCACGGCA"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": false
+      }, 
+      "lunp_data_xmer": "1.0", 
+      "result": {
+        "value": "(False, False, False, True, False)"
+      }, 
+      "sirna_name": "sirna13", 
+      "sirna_sequence": "GTTTGCGCCGAGCACGGCATC", 
+      "sirna_sequence_n2": "TGGTTTGCGCCGAGCACGGCA"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": false
+      }, 
+      "lunp_data_xmer": "0.004446382", 
+      "result": {
+        "value": "(False, False, False, False, False)"
+      }, 
+      "sirna_name": "sirna14", 
+      "sirna_sequence": "TTTGCGCCGAGCACGGCATCG", 
+      "sirna_sequence_n2": "GGTTTGCGCCGAGCACGGCAT"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": false
+      }, 
+      "lunp_data_xmer": "0.0", 
+      "result": {
+        "value": "(False, False, False, False, False)"
+      }, 
+      "sirna_name": "sirna14", 
+      "sirna_sequence": "TTTGCGCCGAGCACGGCATCG", 
+      "sirna_sequence_n2": "GGTTTGCGCCGAGCACGGCAT"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": false
+      }, 
+      "lunp_data_xmer": "1.0", 
+      "result": {
+        "value": "(False, False, False, True, False)"
+      }, 
+      "sirna_name": "sirna14", 
+      "sirna_sequence": "TTTGCGCCGAGCACGGCATCG", 
+      "sirna_sequence_n2": "GGTTTGCGCCGAGCACGGCAT"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": false
+      }, 
+      "lunp_data_xmer": "4.86583e-06", 
+      "result": {
+        "value": "(False, True, True, False, False)"
+      }, 
+      "sirna_name": "sirna5", 
+      "sirna_sequence": "GGGAAGTGGTTTGCGCCGAGC", 
+      "sirna_sequence_n2": "CTGGGAAGTGGTTTGCGCCGA"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": false
+      }, 
+      "lunp_data_xmer": "0.0", 
+      "result": {
+        "value": "(False, True, True, False, False)"
+      }, 
+      "sirna_name": "sirna5", 
+      "sirna_sequence": "GGGAAGTGGTTTGCGCCGAGC", 
+      "sirna_sequence_n2": "CTGGGAAGTGGTTTGCGCCGA"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": false
+      }, 
+      "lunp_data_xmer": "1.0", 
+      "result": {
+        "value": "(True, True, True, True, True)"
+      }, 
+      "sirna_name": "sirna5", 
+      "sirna_sequence": "GGGAAGTGGTTTGCGCCGAGC", 
+      "sirna_sequence_n2": "CTGGGAAGTGGTTTGCGCCGA"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": false
+      }, 
+      "lunp_data_xmer": "0.03097893", 
+      "result": {
+        "value": "(False, True, True, False, False)"
+      }, 
+      "sirna_name": "sirna17", 
+      "sirna_sequence": "GCGCCGAGCACGGCATCGATC", 
+      "sirna_sequence_n2": "TTGCGCCGAGCACGGCATCGA"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": false
+      }, 
+      "lunp_data_xmer": "0.0", 
+      "result": {
+        "value": "(False, True, True, False, False)"
+      }, 
+      "sirna_name": "sirna17", 
+      "sirna_sequence": "GCGCCGAGCACGGCATCGATC", 
+      "sirna_sequence_n2": "TTGCGCCGAGCACGGCATCGA"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": false
+      }, 
+      "lunp_data_xmer": "1.0", 
+      "result": {
+        "value": "(True, True, True, True, True)"
+      }, 
+      "sirna_name": "sirna17", 
+      "sirna_sequence": "GCGCCGAGCACGGCATCGATC", 
+      "sirna_sequence_n2": "TTGCGCCGAGCACGGCATCGA"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": false
+      }, 
+      "lunp_data_xmer": "0.0758944", 
+      "result": {
+        "value": "(False, True, True, False, False)"
+      }, 
+      "sirna_name": "sirna18", 
+      "sirna_sequence": "CGCCGAGCACGGCATCGATCC", 
+      "sirna_sequence_n2": "TGCGCCGAGCACGGCATCGAT"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": false
+      }, 
+      "lunp_data_xmer": "0.0", 
+      "result": {
+        "value": "(False, True, True, False, False)"
+      }, 
+      "sirna_name": "sirna18", 
+      "sirna_sequence": "CGCCGAGCACGGCATCGATCC", 
+      "sirna_sequence_n2": "TGCGCCGAGCACGGCATCGAT"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": false
+      }, 
+      "lunp_data_xmer": "1.0", 
+      "result": {
+        "value": "(True, True, True, True, True)"
+      }, 
+      "sirna_name": "sirna18", 
+      "sirna_sequence": "CGCCGAGCACGGCATCGATCC", 
+      "sirna_sequence_n2": "TGCGCCGAGCACGGCATCGAT"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": false
+      }, 
+      "lunp_data_xmer": "3.637177e-06", 
+      "result": {
+        "value": "(False, False, False, False, False)"
+      }, 
+      "sirna_name": "sirna1", 
+      "sirna_sequence": "TTCTGGGAAGTGGTTTGCGCC", 
+      "sirna_sequence_n2": null
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": false
+      }, 
+      "lunp_data_xmer": "0.0", 
+      "result": {
+        "value": "(False, False, False, False, False)"
+      }, 
+      "sirna_name": "sirna1", 
+      "sirna_sequence": "TTCTGGGAAGTGGTTTGCGCC", 
+      "sirna_sequence_n2": null
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": false
+      }, 
+      "lunp_data_xmer": "1.0", 
+      "result": {
+        "value": "(False, False, False, True, False)"
+      }, 
+      "sirna_name": "sirna1", 
+      "sirna_sequence": "TTCTGGGAAGTGGTTTGCGCC", 
+      "sirna_sequence_n2": null
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": false
+      }, 
+      "lunp_data_xmer": "5.59196e-06", 
+      "result": {
+        "value": "(False, False, False, False, False)"
+      }, 
+      "sirna_name": "sirna3", 
+      "sirna_sequence": "CTGGGAAGTGGTTTGCGCCGA", 
+      "sirna_sequence_n2": "TTCTGGGAAGTGGTTTGCGCC"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": false
+      }, 
+      "lunp_data_xmer": "0.0", 
+      "result": {
+        "value": "(False, False, False, False, False)"
+      }, 
+      "sirna_name": "sirna3", 
+      "sirna_sequence": "CTGGGAAGTGGTTTGCGCCGA", 
+      "sirna_sequence_n2": "TTCTGGGAAGTGGTTTGCGCC"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": false
+      }, 
+      "lunp_data_xmer": "1.0", 
+      "result": {
+        "value": "(False, False, False, True, False)"
+      }, 
+      "sirna_name": "sirna3", 
+      "sirna_sequence": "CTGGGAAGTGGTTTGCGCCGA", 
+      "sirna_sequence_n2": "TTCTGGGAAGTGGTTTGCGCC"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": false
+      }, 
+      "lunp_data_xmer": "0.0001625693", 
+      "result": {
+        "value": "(False, False, False, False, False)"
+      }, 
+      "sirna_name": "sirna7", 
+      "sirna_sequence": "GAAGTGGTTTGCGCCGAGCAC", 
+      "sirna_sequence_n2": "GGGAAGTGGTTTGCGCCGAGC"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": false
+      }, 
+      "lunp_data_xmer": "0.0", 
+      "result": {
+        "value": "(False, False, False, False, False)"
+      }, 
+      "sirna_name": "sirna7", 
+      "sirna_sequence": "GAAGTGGTTTGCGCCGAGCAC", 
+      "sirna_sequence_n2": "GGGAAGTGGTTTGCGCCGAGC"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": false
+      }, 
+      "lunp_data_xmer": "1.0", 
+      "result": {
+        "value": "(False, False, False, True, False)"
+      }, 
+      "sirna_name": "sirna7", 
+      "sirna_sequence": "GAAGTGGTTTGCGCCGAGCAC", 
+      "sirna_sequence_n2": "GGGAAGTGGTTTGCGCCGAGC"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": false
+      }, 
+      "lunp_data_xmer": "7.475359e-06", 
+      "result": {
+        "value": "(False, False, False, False, False)"
+      }, 
+      "sirna_name": "sirna2", 
+      "sirna_sequence": "TCTGGGAAGTGGTTTGCGCCG", 
+      "sirna_sequence_n2": null
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": false
+      }, 
+      "lunp_data_xmer": "0.0", 
+      "result": {
+        "value": "(False, False, False, False, False)"
+      }, 
+      "sirna_name": "sirna2", 
+      "sirna_sequence": "TCTGGGAAGTGGTTTGCGCCG", 
+      "sirna_sequence_n2": null
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": false
+      }, 
+      "lunp_data_xmer": "1.0", 
+      "result": {
+        "value": "(False, False, False, True, False)"
+      }, 
+      "sirna_name": "sirna2", 
+      "sirna_sequence": "TCTGGGAAGTGGTTTGCGCCG", 
+      "sirna_sequence_n2": null
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": false
+      }, 
+      "lunp_data_xmer": "5.064855e-06", 
+      "result": {
+        "value": "(False, False, False, False, False)"
+      }, 
+      "sirna_name": "sirna4", 
+      "sirna_sequence": "TGGGAAGTGGTTTGCGCCGAG", 
+      "sirna_sequence_n2": "TCTGGGAAGTGGTTTGCGCCG"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": false
+      }, 
+      "lunp_data_xmer": "0.0", 
+      "result": {
+        "value": "(False, False, False, False, False)"
+      }, 
+      "sirna_name": "sirna4", 
+      "sirna_sequence": "TGGGAAGTGGTTTGCGCCGAG", 
+      "sirna_sequence_n2": "TCTGGGAAGTGGTTTGCGCCG"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": false
+      }, 
+      "lunp_data_xmer": "1.0", 
+      "result": {
+        "value": "(False, False, False, True, False)"
+      }, 
+      "sirna_name": "sirna4", 
+      "sirna_sequence": "TGGGAAGTGGTTTGCGCCGAG", 
+      "sirna_sequence_n2": "TCTGGGAAGTGGTTTGCGCCG"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": false
+      }, 
+      "lunp_data_xmer": "3.677182e-05", 
+      "result": {
+        "value": "(False, True, True, False, False)"
+      }, 
+      "sirna_name": "sirna6", 
+      "sirna_sequence": "GGAAGTGGTTTGCGCCGAGCA", 
+      "sirna_sequence_n2": "TGGGAAGTGGTTTGCGCCGAG"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": false
+      }, 
+      "lunp_data_xmer": "0.0", 
+      "result": {
+        "value": "(False, True, True, False, False)"
+      }, 
+      "sirna_name": "sirna6", 
+      "sirna_sequence": "GGAAGTGGTTTGCGCCGAGCA", 
+      "sirna_sequence_n2": "TGGGAAGTGGTTTGCGCCGAG"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": false
+      }, 
+      "lunp_data_xmer": "1.0", 
+      "result": {
+        "value": "(True, True, True, True, True)"
+      }, 
+      "sirna_name": "sirna6", 
+      "sirna_sequence": "GGAAGTGGTTTGCGCCGAGCA", 
+      "sirna_sequence_n2": "TGGGAAGTGGTTTGCGCCGAG"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": true, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "0.0002646979", 
+      "result": {
+        "value": "(False, None, None, None, None)"
+      }, 
+      "sirna_name": "sirna8", 
+      "sirna_sequence": "AAGTGGTTTGCGCCGAGCACG", 
+      "sirna_sequence_n2": "GGAAGTGGTTTGCGCCGAGCA"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": true, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "0.0", 
+      "result": {
+        "value": "(False, None, None, None, None)"
+      }, 
+      "sirna_name": "sirna8", 
+      "sirna_sequence": "AAGTGGTTTGCGCCGAGCACG", 
+      "sirna_sequence_n2": "GGAAGTGGTTTGCGCCGAGCA"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": true, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "1.0", 
+      "result": {
+        "value": "(False, None, None, None, None)"
+      }, 
+      "sirna_name": "sirna8", 
+      "sirna_sequence": "AAGTGGTTTGCGCCGAGCACG", 
+      "sirna_sequence_n2": "GGAAGTGGTTTGCGCCGAGCA"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": true, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "0.007986903", 
+      "result": {
+        "value": "(False, None, None, None, None)"
+      }, 
+      "sirna_name": "sirna13", 
+      "sirna_sequence": "GTTTGCGCCGAGCACGGCATC", 
+      "sirna_sequence_n2": "TGGTTTGCGCCGAGCACGGCA"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": true, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "0.0", 
+      "result": {
+        "value": "(False, None, None, None, None)"
+      }, 
+      "sirna_name": "sirna13", 
+      "sirna_sequence": "GTTTGCGCCGAGCACGGCATC", 
+      "sirna_sequence_n2": "TGGTTTGCGCCGAGCACGGCA"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": true, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "1.0", 
+      "result": {
+        "value": "(False, None, None, None, None)"
+      }, 
+      "sirna_name": "sirna13", 
+      "sirna_sequence": "GTTTGCGCCGAGCACGGCATC", 
+      "sirna_sequence_n2": "TGGTTTGCGCCGAGCACGGCA"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": true, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "0.004446382", 
+      "result": {
+        "value": "(False, None, None, None, None)"
+      }, 
+      "sirna_name": "sirna14", 
+      "sirna_sequence": "TTTGCGCCGAGCACGGCATCG", 
+      "sirna_sequence_n2": "GGTTTGCGCCGAGCACGGCAT"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": true, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "0.0", 
+      "result": {
+        "value": "(False, None, None, None, None)"
+      }, 
+      "sirna_name": "sirna14", 
+      "sirna_sequence": "TTTGCGCCGAGCACGGCATCG", 
+      "sirna_sequence_n2": "GGTTTGCGCCGAGCACGGCAT"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": true, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "1.0", 
+      "result": {
+        "value": "(False, None, None, None, None)"
+      }, 
+      "sirna_name": "sirna14", 
+      "sirna_sequence": "TTTGCGCCGAGCACGGCATCG", 
+      "sirna_sequence_n2": "GGTTTGCGCCGAGCACGGCAT"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": true, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "4.86583e-06", 
+      "result": {
+        "value": "(False, None, None, None, None)"
+      }, 
+      "sirna_name": "sirna5", 
+      "sirna_sequence": "GGGAAGTGGTTTGCGCCGAGC", 
+      "sirna_sequence_n2": "CTGGGAAGTGGTTTGCGCCGA"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": true, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "0.0", 
+      "result": {
+        "value": "(False, None, None, None, None)"
+      }, 
+      "sirna_name": "sirna5", 
+      "sirna_sequence": "GGGAAGTGGTTTGCGCCGAGC", 
+      "sirna_sequence_n2": "CTGGGAAGTGGTTTGCGCCGA"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": true, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "1.0", 
+      "result": {
+        "value": "(False, None, None, None, None)"
+      }, 
+      "sirna_name": "sirna5", 
+      "sirna_sequence": "GGGAAGTGGTTTGCGCCGAGC", 
+      "sirna_sequence_n2": "CTGGGAAGTGGTTTGCGCCGA"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": true, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "0.03097893", 
+      "result": {
+        "value": "(False, None, None, None, None)"
+      }, 
+      "sirna_name": "sirna17", 
+      "sirna_sequence": "GCGCCGAGCACGGCATCGATC", 
+      "sirna_sequence_n2": "TTGCGCCGAGCACGGCATCGA"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": true, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "0.0", 
+      "result": {
+        "value": "(False, None, None, None, None)"
+      }, 
+      "sirna_name": "sirna17", 
+      "sirna_sequence": "GCGCCGAGCACGGCATCGATC", 
+      "sirna_sequence_n2": "TTGCGCCGAGCACGGCATCGA"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": true, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "1.0", 
+      "result": {
+        "value": "(False, None, None, None, None)"
+      }, 
+      "sirna_name": "sirna17", 
+      "sirna_sequence": "GCGCCGAGCACGGCATCGATC", 
+      "sirna_sequence_n2": "TTGCGCCGAGCACGGCATCGA"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": true, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "0.0758944", 
+      "result": {
+        "value": "(False, None, None, None, None)"
+      }, 
+      "sirna_name": "sirna18", 
+      "sirna_sequence": "CGCCGAGCACGGCATCGATCC", 
+      "sirna_sequence_n2": "TGCGCCGAGCACGGCATCGAT"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": true, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "0.0", 
+      "result": {
+        "value": "(False, None, None, None, None)"
+      }, 
+      "sirna_name": "sirna18", 
+      "sirna_sequence": "CGCCGAGCACGGCATCGATCC", 
+      "sirna_sequence_n2": "TGCGCCGAGCACGGCATCGAT"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": true, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "1.0", 
+      "result": {
+        "value": "(False, None, None, None, None)"
+      }, 
+      "sirna_name": "sirna18", 
+      "sirna_sequence": "CGCCGAGCACGGCATCGATCC", 
+      "sirna_sequence_n2": "TGCGCCGAGCACGGCATCGAT"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": true, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "3.637177e-06", 
+      "result": {
+        "value": "(False, None, None, None, None)"
+      }, 
+      "sirna_name": "sirna1", 
+      "sirna_sequence": "TTCTGGGAAGTGGTTTGCGCC", 
+      "sirna_sequence_n2": null
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": true, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "0.0", 
+      "result": {
+        "value": "(False, None, None, None, None)"
+      }, 
+      "sirna_name": "sirna1", 
+      "sirna_sequence": "TTCTGGGAAGTGGTTTGCGCC", 
+      "sirna_sequence_n2": null
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": true, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "1.0", 
+      "result": {
+        "value": "(False, None, None, None, None)"
+      }, 
+      "sirna_name": "sirna1", 
+      "sirna_sequence": "TTCTGGGAAGTGGTTTGCGCC", 
+      "sirna_sequence_n2": null
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": true, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "5.59196e-06", 
+      "result": {
+        "value": "(False, None, None, None, None)"
+      }, 
+      "sirna_name": "sirna3", 
+      "sirna_sequence": "CTGGGAAGTGGTTTGCGCCGA", 
+      "sirna_sequence_n2": "TTCTGGGAAGTGGTTTGCGCC"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": true, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "0.0", 
+      "result": {
+        "value": "(False, None, None, None, None)"
+      }, 
+      "sirna_name": "sirna3", 
+      "sirna_sequence": "CTGGGAAGTGGTTTGCGCCGA", 
+      "sirna_sequence_n2": "TTCTGGGAAGTGGTTTGCGCC"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": true, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "1.0", 
+      "result": {
+        "value": "(False, None, None, None, None)"
+      }, 
+      "sirna_name": "sirna3", 
+      "sirna_sequence": "CTGGGAAGTGGTTTGCGCCGA", 
+      "sirna_sequence_n2": "TTCTGGGAAGTGGTTTGCGCC"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": true, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "0.0001625693", 
+      "result": {
+        "value": "(False, None, None, None, None)"
+      }, 
+      "sirna_name": "sirna7", 
+      "sirna_sequence": "GAAGTGGTTTGCGCCGAGCAC", 
+      "sirna_sequence_n2": "GGGAAGTGGTTTGCGCCGAGC"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": true, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "0.0", 
+      "result": {
+        "value": "(False, None, None, None, None)"
+      }, 
+      "sirna_name": "sirna7", 
+      "sirna_sequence": "GAAGTGGTTTGCGCCGAGCAC", 
+      "sirna_sequence_n2": "GGGAAGTGGTTTGCGCCGAGC"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": true, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "1.0", 
+      "result": {
+        "value": "(False, None, None, None, None)"
+      }, 
+      "sirna_name": "sirna7", 
+      "sirna_sequence": "GAAGTGGTTTGCGCCGAGCAC", 
+      "sirna_sequence_n2": "GGGAAGTGGTTTGCGCCGAGC"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": true, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "7.475359e-06", 
+      "result": {
+        "value": "(False, None, None, None, None)"
+      }, 
+      "sirna_name": "sirna2", 
+      "sirna_sequence": "TCTGGGAAGTGGTTTGCGCCG", 
+      "sirna_sequence_n2": null
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": true, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "0.0", 
+      "result": {
+        "value": "(False, None, None, None, None)"
+      }, 
+      "sirna_name": "sirna2", 
+      "sirna_sequence": "TCTGGGAAGTGGTTTGCGCCG", 
+      "sirna_sequence_n2": null
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": true, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "1.0", 
+      "result": {
+        "value": "(False, None, None, None, None)"
+      }, 
+      "sirna_name": "sirna2", 
+      "sirna_sequence": "TCTGGGAAGTGGTTTGCGCCG", 
+      "sirna_sequence_n2": null
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": true, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "5.064855e-06", 
+      "result": {
+        "value": "(False, None, None, None, None)"
+      }, 
+      "sirna_name": "sirna4", 
+      "sirna_sequence": "TGGGAAGTGGTTTGCGCCGAG", 
+      "sirna_sequence_n2": "TCTGGGAAGTGGTTTGCGCCG"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": true, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "0.0", 
+      "result": {
+        "value": "(False, None, None, None, None)"
+      }, 
+      "sirna_name": "sirna4", 
+      "sirna_sequence": "TGGGAAGTGGTTTGCGCCGAG", 
+      "sirna_sequence_n2": "TCTGGGAAGTGGTTTGCGCCG"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": true, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "1.0", 
+      "result": {
+        "value": "(False, None, None, None, None)"
+      }, 
+      "sirna_name": "sirna4", 
+      "sirna_sequence": "TGGGAAGTGGTTTGCGCCGAG", 
+      "sirna_sequence_n2": "TCTGGGAAGTGGTTTGCGCCG"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": true, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "3.677182e-05", 
+      "result": {
+        "value": "(False, None, None, None, None)"
+      }, 
+      "sirna_name": "sirna6", 
+      "sirna_sequence": "GGAAGTGGTTTGCGCCGAGCA", 
+      "sirna_sequence_n2": "TGGGAAGTGGTTTGCGCCGAG"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": true, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "0.0", 
+      "result": {
+        "value": "(False, None, None, None, None)"
+      }, 
+      "sirna_name": "sirna6", 
+      "sirna_sequence": "GGAAGTGGTTTGCGCCGAGCA", 
+      "sirna_sequence_n2": "TGGGAAGTGGTTTGCGCCGAG"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": true, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "1.0", 
+      "result": {
+        "value": "(False, None, None, None, None)"
+      }, 
+      "sirna_name": "sirna6", 
+      "sirna_sequence": "GGAAGTGGTTTGCGCCGAGCA", 
+      "sirna_sequence_n2": "TGGGAAGTGGTTTGCGCCGAG"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": false, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "0.0002646979", 
+      "result": {
+        "value": "(False, False, False, False, False)"
+      }, 
+      "sirna_name": "sirna8", 
+      "sirna_sequence": "AAGTGGTTTGCGCCGAGCACG", 
+      "sirna_sequence_n2": "GGAAGTGGTTTGCGCCGAGCA"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": false, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "0.0", 
+      "result": {
+        "value": "(False, False, False, False, False)"
+      }, 
+      "sirna_name": "sirna8", 
+      "sirna_sequence": "AAGTGGTTTGCGCCGAGCACG", 
+      "sirna_sequence_n2": "GGAAGTGGTTTGCGCCGAGCA"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": false, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "1.0", 
+      "result": {
+        "value": "(False, False, False, True, False)"
+      }, 
+      "sirna_name": "sirna8", 
+      "sirna_sequence": "AAGTGGTTTGCGCCGAGCACG", 
+      "sirna_sequence_n2": "GGAAGTGGTTTGCGCCGAGCA"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": false, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "0.007986903", 
+      "result": {
+        "value": "(False, False, False, False, False)"
+      }, 
+      "sirna_name": "sirna13", 
+      "sirna_sequence": "GTTTGCGCCGAGCACGGCATC", 
+      "sirna_sequence_n2": "TGGTTTGCGCCGAGCACGGCA"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": false, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "0.0", 
+      "result": {
+        "value": "(False, False, False, False, False)"
+      }, 
+      "sirna_name": "sirna13", 
+      "sirna_sequence": "GTTTGCGCCGAGCACGGCATC", 
+      "sirna_sequence_n2": "TGGTTTGCGCCGAGCACGGCA"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": false, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "1.0", 
+      "result": {
+        "value": "(False, False, False, True, False)"
+      }, 
+      "sirna_name": "sirna13", 
+      "sirna_sequence": "GTTTGCGCCGAGCACGGCATC", 
+      "sirna_sequence_n2": "TGGTTTGCGCCGAGCACGGCA"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": false, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "0.004446382", 
+      "result": {
+        "value": "(False, False, False, False, False)"
+      }, 
+      "sirna_name": "sirna14", 
+      "sirna_sequence": "TTTGCGCCGAGCACGGCATCG", 
+      "sirna_sequence_n2": "GGTTTGCGCCGAGCACGGCAT"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": false, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "0.0", 
+      "result": {
+        "value": "(False, False, False, False, False)"
+      }, 
+      "sirna_name": "sirna14", 
+      "sirna_sequence": "TTTGCGCCGAGCACGGCATCG", 
+      "sirna_sequence_n2": "GGTTTGCGCCGAGCACGGCAT"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": false, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "1.0", 
+      "result": {
+        "value": "(False, False, False, True, False)"
+      }, 
+      "sirna_name": "sirna14", 
+      "sirna_sequence": "TTTGCGCCGAGCACGGCATCG", 
+      "sirna_sequence_n2": "GGTTTGCGCCGAGCACGGCAT"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": false, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "4.86583e-06", 
+      "result": {
+        "value": "(False, True, True, False, False)"
+      }, 
+      "sirna_name": "sirna5", 
+      "sirna_sequence": "GGGAAGTGGTTTGCGCCGAGC", 
+      "sirna_sequence_n2": "CTGGGAAGTGGTTTGCGCCGA"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": false, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "0.0", 
+      "result": {
+        "value": "(False, True, True, False, False)"
+      }, 
+      "sirna_name": "sirna5", 
+      "sirna_sequence": "GGGAAGTGGTTTGCGCCGAGC", 
+      "sirna_sequence_n2": "CTGGGAAGTGGTTTGCGCCGA"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": false, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "1.0", 
+      "result": {
+        "value": "(True, True, True, True, True)"
+      }, 
+      "sirna_name": "sirna5", 
+      "sirna_sequence": "GGGAAGTGGTTTGCGCCGAGC", 
+      "sirna_sequence_n2": "CTGGGAAGTGGTTTGCGCCGA"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": false, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "0.03097893", 
+      "result": {
+        "value": "(False, True, True, False, False)"
+      }, 
+      "sirna_name": "sirna17", 
+      "sirna_sequence": "GCGCCGAGCACGGCATCGATC", 
+      "sirna_sequence_n2": "TTGCGCCGAGCACGGCATCGA"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": false, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "0.0", 
+      "result": {
+        "value": "(False, True, True, False, False)"
+      }, 
+      "sirna_name": "sirna17", 
+      "sirna_sequence": "GCGCCGAGCACGGCATCGATC", 
+      "sirna_sequence_n2": "TTGCGCCGAGCACGGCATCGA"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": false, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "1.0", 
+      "result": {
+        "value": "(True, True, True, True, True)"
+      }, 
+      "sirna_name": "sirna17", 
+      "sirna_sequence": "GCGCCGAGCACGGCATCGATC", 
+      "sirna_sequence_n2": "TTGCGCCGAGCACGGCATCGA"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": false, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "0.0758944", 
+      "result": {
+        "value": "(False, True, True, False, False)"
+      }, 
+      "sirna_name": "sirna18", 
+      "sirna_sequence": "CGCCGAGCACGGCATCGATCC", 
+      "sirna_sequence_n2": "TGCGCCGAGCACGGCATCGAT"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": false, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "0.0", 
+      "result": {
+        "value": "(False, True, True, False, False)"
+      }, 
+      "sirna_name": "sirna18", 
+      "sirna_sequence": "CGCCGAGCACGGCATCGATCC", 
+      "sirna_sequence_n2": "TGCGCCGAGCACGGCATCGAT"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": false, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "1.0", 
+      "result": {
+        "value": "(True, True, True, True, True)"
+      }, 
+      "sirna_name": "sirna18", 
+      "sirna_sequence": "CGCCGAGCACGGCATCGATCC", 
+      "sirna_sequence_n2": "TGCGCCGAGCACGGCATCGAT"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": false, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "3.637177e-06", 
+      "result": {
+        "value": "(False, False, False, False, False)"
+      }, 
+      "sirna_name": "sirna1", 
+      "sirna_sequence": "TTCTGGGAAGTGGTTTGCGCC", 
+      "sirna_sequence_n2": null
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": false, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "0.0", 
+      "result": {
+        "value": "(False, False, False, False, False)"
+      }, 
+      "sirna_name": "sirna1", 
+      "sirna_sequence": "TTCTGGGAAGTGGTTTGCGCC", 
+      "sirna_sequence_n2": null
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": false, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "1.0", 
+      "result": {
+        "value": "(False, False, False, True, False)"
+      }, 
+      "sirna_name": "sirna1", 
+      "sirna_sequence": "TTCTGGGAAGTGGTTTGCGCC", 
+      "sirna_sequence_n2": null
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": false, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "5.59196e-06", 
+      "result": {
+        "value": "(False, False, False, False, False)"
+      }, 
+      "sirna_name": "sirna3", 
+      "sirna_sequence": "CTGGGAAGTGGTTTGCGCCGA", 
+      "sirna_sequence_n2": "TTCTGGGAAGTGGTTTGCGCC"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": false, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "0.0", 
+      "result": {
+        "value": "(False, False, False, False, False)"
+      }, 
+      "sirna_name": "sirna3", 
+      "sirna_sequence": "CTGGGAAGTGGTTTGCGCCGA", 
+      "sirna_sequence_n2": "TTCTGGGAAGTGGTTTGCGCC"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": false, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "1.0", 
+      "result": {
+        "value": "(False, False, False, True, False)"
+      }, 
+      "sirna_name": "sirna3", 
+      "sirna_sequence": "CTGGGAAGTGGTTTGCGCCGA", 
+      "sirna_sequence_n2": "TTCTGGGAAGTGGTTTGCGCC"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": false, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "0.0001625693", 
+      "result": {
+        "value": "(False, False, False, False, False)"
+      }, 
+      "sirna_name": "sirna7", 
+      "sirna_sequence": "GAAGTGGTTTGCGCCGAGCAC", 
+      "sirna_sequence_n2": "GGGAAGTGGTTTGCGCCGAGC"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": false, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "0.0", 
+      "result": {
+        "value": "(False, False, False, False, False)"
+      }, 
+      "sirna_name": "sirna7", 
+      "sirna_sequence": "GAAGTGGTTTGCGCCGAGCAC", 
+      "sirna_sequence_n2": "GGGAAGTGGTTTGCGCCGAGC"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": false, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "1.0", 
+      "result": {
+        "value": "(False, False, False, True, False)"
+      }, 
+      "sirna_name": "sirna7", 
+      "sirna_sequence": "GAAGTGGTTTGCGCCGAGCAC", 
+      "sirna_sequence_n2": "GGGAAGTGGTTTGCGCCGAGC"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": false, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "7.475359e-06", 
+      "result": {
+        "value": "(False, False, False, False, False)"
+      }, 
+      "sirna_name": "sirna2", 
+      "sirna_sequence": "TCTGGGAAGTGGTTTGCGCCG", 
+      "sirna_sequence_n2": null
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": false, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "0.0", 
+      "result": {
+        "value": "(False, False, False, False, False)"
+      }, 
+      "sirna_name": "sirna2", 
+      "sirna_sequence": "TCTGGGAAGTGGTTTGCGCCG", 
+      "sirna_sequence_n2": null
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": false, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "1.0", 
+      "result": {
+        "value": "(False, False, False, True, False)"
+      }, 
+      "sirna_name": "sirna2", 
+      "sirna_sequence": "TCTGGGAAGTGGTTTGCGCCG", 
+      "sirna_sequence_n2": null
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": false, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "5.064855e-06", 
+      "result": {
+        "value": "(False, False, False, False, False)"
+      }, 
+      "sirna_name": "sirna4", 
+      "sirna_sequence": "TGGGAAGTGGTTTGCGCCGAG", 
+      "sirna_sequence_n2": "TCTGGGAAGTGGTTTGCGCCG"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": false, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "0.0", 
+      "result": {
+        "value": "(False, False, False, False, False)"
+      }, 
+      "sirna_name": "sirna4", 
+      "sirna_sequence": "TGGGAAGTGGTTTGCGCCGAG", 
+      "sirna_sequence_n2": "TCTGGGAAGTGGTTTGCGCCG"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": false, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "1.0", 
+      "result": {
+        "value": "(False, False, False, True, False)"
+      }, 
+      "sirna_name": "sirna4", 
+      "sirna_sequence": "TGGGAAGTGGTTTGCGCCGAG", 
+      "sirna_sequence_n2": "TCTGGGAAGTGGTTTGCGCCG"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": false, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "3.677182e-05", 
+      "result": {
+        "value": "(False, True, True, False, False)"
+      }, 
+      "sirna_name": "sirna6", 
+      "sirna_sequence": "GGAAGTGGTTTGCGCCGAGCA", 
+      "sirna_sequence_n2": "TGGGAAGTGGTTTGCGCCGAG"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": false, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "0.0", 
+      "result": {
+        "value": "(False, True, True, False, False)"
+      }, 
+      "sirna_name": "sirna6", 
+      "sirna_sequence": "GGAAGTGGTTTGCGCCGAGCA", 
+      "sirna_sequence_n2": "TGGGAAGTGGTTTGCGCCGAG"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": false, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "1.0", 
+      "result": {
+        "value": "(True, True, True, True, True)"
+      }, 
+      "sirna_name": "sirna6", 
+      "sirna_sequence": "GGAAGTGGTTTGCGCCGAGCA", 
+      "sirna_sequence_n2": "TGGGAAGTGGTTTGCGCCGAG"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": false, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "0.0002646979", 
+      "result": {
+        "value": "(False, False, False, False, False)"
+      }, 
+      "sirna_name": "sirna8", 
+      "sirna_sequence": "AAGTGGTTTGCGCCGAGCACG", 
+      "sirna_sequence_n2": "GGAAGTGGTTTGCGCCGAGCA"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": false, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "0.0", 
+      "result": {
+        "value": "(False, False, False, False, False)"
+      }, 
+      "sirna_name": "sirna8", 
+      "sirna_sequence": "AAGTGGTTTGCGCCGAGCACG", 
+      "sirna_sequence_n2": "GGAAGTGGTTTGCGCCGAGCA"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": false, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "1.0", 
+      "result": {
+        "value": "(False, False, False, True, False)"
+      }, 
+      "sirna_name": "sirna8", 
+      "sirna_sequence": "AAGTGGTTTGCGCCGAGCACG", 
+      "sirna_sequence_n2": "GGAAGTGGTTTGCGCCGAGCA"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": false, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "0.007986903", 
+      "result": {
+        "value": "(False, False, False, False, False)"
+      }, 
+      "sirna_name": "sirna13", 
+      "sirna_sequence": "GTTTGCGCCGAGCACGGCATC", 
+      "sirna_sequence_n2": "TGGTTTGCGCCGAGCACGGCA"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": false, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "0.0", 
+      "result": {
+        "value": "(False, False, False, False, False)"
+      }, 
+      "sirna_name": "sirna13", 
+      "sirna_sequence": "GTTTGCGCCGAGCACGGCATC", 
+      "sirna_sequence_n2": "TGGTTTGCGCCGAGCACGGCA"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": false, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "1.0", 
+      "result": {
+        "value": "(False, False, False, True, False)"
+      }, 
+      "sirna_name": "sirna13", 
+      "sirna_sequence": "GTTTGCGCCGAGCACGGCATC", 
+      "sirna_sequence_n2": "TGGTTTGCGCCGAGCACGGCA"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": false, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "0.004446382", 
+      "result": {
+        "value": "(False, False, False, False, False)"
+      }, 
+      "sirna_name": "sirna14", 
+      "sirna_sequence": "TTTGCGCCGAGCACGGCATCG", 
+      "sirna_sequence_n2": "GGTTTGCGCCGAGCACGGCAT"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": false, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "0.0", 
+      "result": {
+        "value": "(False, False, False, False, False)"
+      }, 
+      "sirna_name": "sirna14", 
+      "sirna_sequence": "TTTGCGCCGAGCACGGCATCG", 
+      "sirna_sequence_n2": "GGTTTGCGCCGAGCACGGCAT"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": false, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "1.0", 
+      "result": {
+        "value": "(False, False, False, True, False)"
+      }, 
+      "sirna_name": "sirna14", 
+      "sirna_sequence": "TTTGCGCCGAGCACGGCATCG", 
+      "sirna_sequence_n2": "GGTTTGCGCCGAGCACGGCAT"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": false, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "4.86583e-06", 
+      "result": {
+        "value": "(False, True, True, False, False)"
+      }, 
+      "sirna_name": "sirna5", 
+      "sirna_sequence": "GGGAAGTGGTTTGCGCCGAGC", 
+      "sirna_sequence_n2": "CTGGGAAGTGGTTTGCGCCGA"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": false, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "0.0", 
+      "result": {
+        "value": "(False, True, True, False, False)"
+      }, 
+      "sirna_name": "sirna5", 
+      "sirna_sequence": "GGGAAGTGGTTTGCGCCGAGC", 
+      "sirna_sequence_n2": "CTGGGAAGTGGTTTGCGCCGA"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": false, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "1.0", 
+      "result": {
+        "value": "(True, True, True, True, True)"
+      }, 
+      "sirna_name": "sirna5", 
+      "sirna_sequence": "GGGAAGTGGTTTGCGCCGAGC", 
+      "sirna_sequence_n2": "CTGGGAAGTGGTTTGCGCCGA"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": false, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "0.03097893", 
+      "result": {
+        "value": "(False, True, True, False, False)"
+      }, 
+      "sirna_name": "sirna17", 
+      "sirna_sequence": "GCGCCGAGCACGGCATCGATC", 
+      "sirna_sequence_n2": "TTGCGCCGAGCACGGCATCGA"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": false, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "0.0", 
+      "result": {
+        "value": "(False, True, True, False, False)"
+      }, 
+      "sirna_name": "sirna17", 
+      "sirna_sequence": "GCGCCGAGCACGGCATCGATC", 
+      "sirna_sequence_n2": "TTGCGCCGAGCACGGCATCGA"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": false, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "1.0", 
+      "result": {
+        "value": "(True, True, True, True, True)"
+      }, 
+      "sirna_name": "sirna17", 
+      "sirna_sequence": "GCGCCGAGCACGGCATCGATC", 
+      "sirna_sequence_n2": "TTGCGCCGAGCACGGCATCGA"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": false, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "0.0758944", 
+      "result": {
+        "value": "(False, True, True, False, False)"
+      }, 
+      "sirna_name": "sirna18", 
+      "sirna_sequence": "CGCCGAGCACGGCATCGATCC", 
+      "sirna_sequence_n2": "TGCGCCGAGCACGGCATCGAT"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": false, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "0.0", 
+      "result": {
+        "value": "(False, True, True, False, False)"
+      }, 
+      "sirna_name": "sirna18", 
+      "sirna_sequence": "CGCCGAGCACGGCATCGATCC", 
+      "sirna_sequence_n2": "TGCGCCGAGCACGGCATCGAT"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": false, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "1.0", 
+      "result": {
+        "value": "(True, True, True, True, True)"
+      }, 
+      "sirna_name": "sirna18", 
+      "sirna_sequence": "CGCCGAGCACGGCATCGATCC", 
+      "sirna_sequence_n2": "TGCGCCGAGCACGGCATCGAT"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": false, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "3.637177e-06", 
+      "result": {
+        "value": "(False, False, False, False, False)"
+      }, 
+      "sirna_name": "sirna1", 
+      "sirna_sequence": "TTCTGGGAAGTGGTTTGCGCC", 
+      "sirna_sequence_n2": null
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": false, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "0.0", 
+      "result": {
+        "value": "(False, False, False, False, False)"
+      }, 
+      "sirna_name": "sirna1", 
+      "sirna_sequence": "TTCTGGGAAGTGGTTTGCGCC", 
+      "sirna_sequence_n2": null
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": false, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "1.0", 
+      "result": {
+        "value": "(False, False, False, True, False)"
+      }, 
+      "sirna_name": "sirna1", 
+      "sirna_sequence": "TTCTGGGAAGTGGTTTGCGCC", 
+      "sirna_sequence_n2": null
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": false, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "5.59196e-06", 
+      "result": {
+        "value": "(False, False, False, False, False)"
+      }, 
+      "sirna_name": "sirna3", 
+      "sirna_sequence": "CTGGGAAGTGGTTTGCGCCGA", 
+      "sirna_sequence_n2": "TTCTGGGAAGTGGTTTGCGCC"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": false, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "0.0", 
+      "result": {
+        "value": "(False, False, False, False, False)"
+      }, 
+      "sirna_name": "sirna3", 
+      "sirna_sequence": "CTGGGAAGTGGTTTGCGCCGA", 
+      "sirna_sequence_n2": "TTCTGGGAAGTGGTTTGCGCC"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": false, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "1.0", 
+      "result": {
+        "value": "(False, False, False, True, False)"
+      }, 
+      "sirna_name": "sirna3", 
+      "sirna_sequence": "CTGGGAAGTGGTTTGCGCCGA", 
+      "sirna_sequence_n2": "TTCTGGGAAGTGGTTTGCGCC"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": false, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "0.0001625693", 
+      "result": {
+        "value": "(False, False, False, False, False)"
+      }, 
+      "sirna_name": "sirna7", 
+      "sirna_sequence": "GAAGTGGTTTGCGCCGAGCAC", 
+      "sirna_sequence_n2": "GGGAAGTGGTTTGCGCCGAGC"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": false, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "0.0", 
+      "result": {
+        "value": "(False, False, False, False, False)"
+      }, 
+      "sirna_name": "sirna7", 
+      "sirna_sequence": "GAAGTGGTTTGCGCCGAGCAC", 
+      "sirna_sequence_n2": "GGGAAGTGGTTTGCGCCGAGC"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": false, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "1.0", 
+      "result": {
+        "value": "(False, False, False, True, False)"
+      }, 
+      "sirna_name": "sirna7", 
+      "sirna_sequence": "GAAGTGGTTTGCGCCGAGCAC", 
+      "sirna_sequence_n2": "GGGAAGTGGTTTGCGCCGAGC"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": false, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "7.475359e-06", 
+      "result": {
+        "value": "(False, False, False, False, False)"
+      }, 
+      "sirna_name": "sirna2", 
+      "sirna_sequence": "TCTGGGAAGTGGTTTGCGCCG", 
+      "sirna_sequence_n2": null
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": false, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "0.0", 
+      "result": {
+        "value": "(False, False, False, False, False)"
+      }, 
+      "sirna_name": "sirna2", 
+      "sirna_sequence": "TCTGGGAAGTGGTTTGCGCCG", 
+      "sirna_sequence_n2": null
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": false, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "1.0", 
+      "result": {
+        "value": "(False, False, False, True, False)"
+      }, 
+      "sirna_name": "sirna2", 
+      "sirna_sequence": "TCTGGGAAGTGGTTTGCGCCG", 
+      "sirna_sequence_n2": null
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": false, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "5.064855e-06", 
+      "result": {
+        "value": "(False, False, False, False, False)"
+      }, 
+      "sirna_name": "sirna4", 
+      "sirna_sequence": "TGGGAAGTGGTTTGCGCCGAG", 
+      "sirna_sequence_n2": "TCTGGGAAGTGGTTTGCGCCG"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": false, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "0.0", 
+      "result": {
+        "value": "(False, False, False, False, False)"
+      }, 
+      "sirna_name": "sirna4", 
+      "sirna_sequence": "TGGGAAGTGGTTTGCGCCGAG", 
+      "sirna_sequence_n2": "TCTGGGAAGTGGTTTGCGCCG"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": false, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "1.0", 
+      "result": {
+        "value": "(False, False, False, True, False)"
+      }, 
+      "sirna_name": "sirna4", 
+      "sirna_sequence": "TGGGAAGTGGTTTGCGCCGAG", 
+      "sirna_sequence_n2": "TCTGGGAAGTGGTTTGCGCCG"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": false, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "3.677182e-05", 
+      "result": {
+        "value": "(False, True, True, False, False)"
+      }, 
+      "sirna_name": "sirna6", 
+      "sirna_sequence": "GGAAGTGGTTTGCGCCGAGCA", 
+      "sirna_sequence_n2": "TGGGAAGTGGTTTGCGCCGAG"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": false, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "0.0", 
+      "result": {
+        "value": "(False, True, True, False, False)"
+      }, 
+      "sirna_name": "sirna6", 
+      "sirna_sequence": "GGAAGTGGTTTGCGCCGAGCA", 
+      "sirna_sequence_n2": "TGGGAAGTGGTTTGCGCCGAG"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": false, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "1.0", 
+      "result": {
+        "value": "(True, True, True, True, True)"
+      }, 
+      "sirna_name": "sirna6", 
+      "sirna_sequence": "GGAAGTGGTTTGCGCCGAGCA", 
+      "sirna_sequence_n2": "TGGGAAGTGGTTTGCGCCGAG"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "0.0002646979", 
+      "result": {
+        "value": "(False, False, False, False, False)"
+      }, 
+      "sirna_name": "sirna8", 
+      "sirna_sequence": "AAGTGGTTTGCGCCGAGCACG", 
+      "sirna_sequence_n2": "GGAAGTGGTTTGCGCCGAGCA"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "0.0", 
+      "result": {
+        "value": "(False, False, False, False, False)"
+      }, 
+      "sirna_name": "sirna8", 
+      "sirna_sequence": "AAGTGGTTTGCGCCGAGCACG", 
+      "sirna_sequence_n2": "GGAAGTGGTTTGCGCCGAGCA"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "1.0", 
+      "result": {
+        "value": "(False, False, False, True, False)"
+      }, 
+      "sirna_name": "sirna8", 
+      "sirna_sequence": "AAGTGGTTTGCGCCGAGCACG", 
+      "sirna_sequence_n2": "GGAAGTGGTTTGCGCCGAGCA"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "0.007986903", 
+      "result": {
+        "value": "(False, False, False, False, False)"
+      }, 
+      "sirna_name": "sirna13", 
+      "sirna_sequence": "GTTTGCGCCGAGCACGGCATC", 
+      "sirna_sequence_n2": "TGGTTTGCGCCGAGCACGGCA"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "0.0", 
+      "result": {
+        "value": "(False, False, False, False, False)"
+      }, 
+      "sirna_name": "sirna13", 
+      "sirna_sequence": "GTTTGCGCCGAGCACGGCATC", 
+      "sirna_sequence_n2": "TGGTTTGCGCCGAGCACGGCA"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "1.0", 
+      "result": {
+        "value": "(False, False, False, True, False)"
+      }, 
+      "sirna_name": "sirna13", 
+      "sirna_sequence": "GTTTGCGCCGAGCACGGCATC", 
+      "sirna_sequence_n2": "TGGTTTGCGCCGAGCACGGCA"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "0.004446382", 
+      "result": {
+        "value": "(False, False, False, False, False)"
+      }, 
+      "sirna_name": "sirna14", 
+      "sirna_sequence": "TTTGCGCCGAGCACGGCATCG", 
+      "sirna_sequence_n2": "GGTTTGCGCCGAGCACGGCAT"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "0.0", 
+      "result": {
+        "value": "(False, False, False, False, False)"
+      }, 
+      "sirna_name": "sirna14", 
+      "sirna_sequence": "TTTGCGCCGAGCACGGCATCG", 
+      "sirna_sequence_n2": "GGTTTGCGCCGAGCACGGCAT"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "1.0", 
+      "result": {
+        "value": "(False, False, False, True, False)"
+      }, 
+      "sirna_name": "sirna14", 
+      "sirna_sequence": "TTTGCGCCGAGCACGGCATCG", 
+      "sirna_sequence_n2": "GGTTTGCGCCGAGCACGGCAT"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "4.86583e-06", 
+      "result": {
+        "value": "(True, True, True, False, True)"
+      }, 
+      "sirna_name": "sirna5", 
+      "sirna_sequence": "GGGAAGTGGTTTGCGCCGAGC", 
+      "sirna_sequence_n2": "CTGGGAAGTGGTTTGCGCCGA"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "0.0", 
+      "result": {
+        "value": "(True, True, True, False, True)"
+      }, 
+      "sirna_name": "sirna5", 
+      "sirna_sequence": "GGGAAGTGGTTTGCGCCGAGC", 
+      "sirna_sequence_n2": "CTGGGAAGTGGTTTGCGCCGA"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "1.0", 
+      "result": {
+        "value": "(True, True, True, True, True)"
+      }, 
+      "sirna_name": "sirna5", 
+      "sirna_sequence": "GGGAAGTGGTTTGCGCCGAGC", 
+      "sirna_sequence_n2": "CTGGGAAGTGGTTTGCGCCGA"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "0.03097893", 
+      "result": {
+        "value": "(True, True, True, False, True)"
+      }, 
+      "sirna_name": "sirna17", 
+      "sirna_sequence": "GCGCCGAGCACGGCATCGATC", 
+      "sirna_sequence_n2": "TTGCGCCGAGCACGGCATCGA"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "0.0", 
+      "result": {
+        "value": "(True, True, True, False, True)"
+      }, 
+      "sirna_name": "sirna17", 
+      "sirna_sequence": "GCGCCGAGCACGGCATCGATC", 
+      "sirna_sequence_n2": "TTGCGCCGAGCACGGCATCGA"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "1.0", 
+      "result": {
+        "value": "(True, True, True, True, True)"
+      }, 
+      "sirna_name": "sirna17", 
+      "sirna_sequence": "GCGCCGAGCACGGCATCGATC", 
+      "sirna_sequence_n2": "TTGCGCCGAGCACGGCATCGA"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "0.0758944", 
+      "result": {
+        "value": "(True, True, True, False, True)"
+      }, 
+      "sirna_name": "sirna18", 
+      "sirna_sequence": "CGCCGAGCACGGCATCGATCC", 
+      "sirna_sequence_n2": "TGCGCCGAGCACGGCATCGAT"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "0.0", 
+      "result": {
+        "value": "(True, True, True, False, True)"
+      }, 
+      "sirna_name": "sirna18", 
+      "sirna_sequence": "CGCCGAGCACGGCATCGATCC", 
+      "sirna_sequence_n2": "TGCGCCGAGCACGGCATCGAT"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "1.0", 
+      "result": {
+        "value": "(True, True, True, True, True)"
+      }, 
+      "sirna_name": "sirna18", 
+      "sirna_sequence": "CGCCGAGCACGGCATCGATCC", 
+      "sirna_sequence_n2": "TGCGCCGAGCACGGCATCGAT"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "3.637177e-06", 
+      "result": {
+        "value": "(False, False, False, False, False)"
+      }, 
+      "sirna_name": "sirna1", 
+      "sirna_sequence": "TTCTGGGAAGTGGTTTGCGCC", 
+      "sirna_sequence_n2": null
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "0.0", 
+      "result": {
+        "value": "(False, False, False, False, False)"
+      }, 
+      "sirna_name": "sirna1", 
+      "sirna_sequence": "TTCTGGGAAGTGGTTTGCGCC", 
+      "sirna_sequence_n2": null
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "1.0", 
+      "result": {
+        "value": "(False, False, False, True, False)"
+      }, 
+      "sirna_name": "sirna1", 
+      "sirna_sequence": "TTCTGGGAAGTGGTTTGCGCC", 
+      "sirna_sequence_n2": null
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "5.59196e-06", 
+      "result": {
+        "value": "(False, False, False, False, False)"
+      }, 
+      "sirna_name": "sirna3", 
+      "sirna_sequence": "CTGGGAAGTGGTTTGCGCCGA", 
+      "sirna_sequence_n2": "TTCTGGGAAGTGGTTTGCGCC"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "0.0", 
+      "result": {
+        "value": "(False, False, False, False, False)"
+      }, 
+      "sirna_name": "sirna3", 
+      "sirna_sequence": "CTGGGAAGTGGTTTGCGCCGA", 
+      "sirna_sequence_n2": "TTCTGGGAAGTGGTTTGCGCC"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "1.0", 
+      "result": {
+        "value": "(False, False, False, True, False)"
+      }, 
+      "sirna_name": "sirna3", 
+      "sirna_sequence": "CTGGGAAGTGGTTTGCGCCGA", 
+      "sirna_sequence_n2": "TTCTGGGAAGTGGTTTGCGCC"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "0.0001625693", 
+      "result": {
+        "value": "(False, False, False, False, False)"
+      }, 
+      "sirna_name": "sirna7", 
+      "sirna_sequence": "GAAGTGGTTTGCGCCGAGCAC", 
+      "sirna_sequence_n2": "GGGAAGTGGTTTGCGCCGAGC"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "0.0", 
+      "result": {
+        "value": "(False, False, False, False, False)"
+      }, 
+      "sirna_name": "sirna7", 
+      "sirna_sequence": "GAAGTGGTTTGCGCCGAGCAC", 
+      "sirna_sequence_n2": "GGGAAGTGGTTTGCGCCGAGC"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "1.0", 
+      "result": {
+        "value": "(False, False, False, True, False)"
+      }, 
+      "sirna_name": "sirna7", 
+      "sirna_sequence": "GAAGTGGTTTGCGCCGAGCAC", 
+      "sirna_sequence_n2": "GGGAAGTGGTTTGCGCCGAGC"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "7.475359e-06", 
+      "result": {
+        "value": "(False, False, False, False, False)"
+      }, 
+      "sirna_name": "sirna2", 
+      "sirna_sequence": "TCTGGGAAGTGGTTTGCGCCG", 
+      "sirna_sequence_n2": null
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "0.0", 
+      "result": {
+        "value": "(False, False, False, False, False)"
+      }, 
+      "sirna_name": "sirna2", 
+      "sirna_sequence": "TCTGGGAAGTGGTTTGCGCCG", 
+      "sirna_sequence_n2": null
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "1.0", 
+      "result": {
+        "value": "(False, False, False, True, False)"
+      }, 
+      "sirna_name": "sirna2", 
+      "sirna_sequence": "TCTGGGAAGTGGTTTGCGCCG", 
+      "sirna_sequence_n2": null
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "5.064855e-06", 
+      "result": {
+        "value": "(False, False, False, False, False)"
+      }, 
+      "sirna_name": "sirna4", 
+      "sirna_sequence": "TGGGAAGTGGTTTGCGCCGAG", 
+      "sirna_sequence_n2": "TCTGGGAAGTGGTTTGCGCCG"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "0.0", 
+      "result": {
+        "value": "(False, False, False, False, False)"
+      }, 
+      "sirna_name": "sirna4", 
+      "sirna_sequence": "TGGGAAGTGGTTTGCGCCGAG", 
+      "sirna_sequence_n2": "TCTGGGAAGTGGTTTGCGCCG"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "1.0", 
+      "result": {
+        "value": "(False, False, False, True, False)"
+      }, 
+      "sirna_name": "sirna4", 
+      "sirna_sequence": "TGGGAAGTGGTTTGCGCCGAG", 
+      "sirna_sequence_n2": "TCTGGGAAGTGGTTTGCGCCG"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "3.677182e-05", 
+      "result": {
+        "value": "(True, True, True, False, True)"
+      }, 
+      "sirna_name": "sirna6", 
+      "sirna_sequence": "GGAAGTGGTTTGCGCCGAGCA", 
+      "sirna_sequence_n2": "TGGGAAGTGGTTTGCGCCGAG"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "0.0", 
+      "result": {
+        "value": "(True, True, True, False, True)"
+      }, 
+      "sirna_name": "sirna6", 
+      "sirna_sequence": "GGAAGTGGTTTGCGCCGAGCA", 
+      "sirna_sequence_n2": "TGGGAAGTGGTTTGCGCCGAG"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "1.0", 
+      "result": {
+        "value": "(True, True, True, True, True)"
+      }, 
+      "sirna_name": "sirna6", 
+      "sirna_sequence": "GGAAGTGGTTTGCGCCGAGCA", 
+      "sirna_sequence_n2": "TGGGAAGTGGTTTGCGCCGAG"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": false, 
+        "no_efficience": false, 
+        "strand_check": false, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "0.0002646979", 
+      "result": {
+        "value": "(True, False, False, False, True)"
+      }, 
+      "sirna_name": "sirna8", 
+      "sirna_sequence": "AAGTGGTTTGCGCCGAGCACG", 
+      "sirna_sequence_n2": "GGAAGTGGTTTGCGCCGAGCA"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": false, 
+        "no_efficience": false, 
+        "strand_check": false, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "0.0", 
+      "result": {
+        "value": "(True, False, False, False, True)"
+      }, 
+      "sirna_name": "sirna8", 
+      "sirna_sequence": "AAGTGGTTTGCGCCGAGCACG", 
+      "sirna_sequence_n2": "GGAAGTGGTTTGCGCCGAGCA"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": false, 
+        "no_efficience": false, 
+        "strand_check": false, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "1.0", 
+      "result": {
+        "value": "(True, False, False, True, True)"
+      }, 
+      "sirna_name": "sirna8", 
+      "sirna_sequence": "AAGTGGTTTGCGCCGAGCACG", 
+      "sirna_sequence_n2": "GGAAGTGGTTTGCGCCGAGCA"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": false, 
+        "no_efficience": false, 
+        "strand_check": false, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "0.007986903", 
+      "result": {
+        "value": "(True, False, False, False, True)"
+      }, 
+      "sirna_name": "sirna13", 
+      "sirna_sequence": "GTTTGCGCCGAGCACGGCATC", 
+      "sirna_sequence_n2": "TGGTTTGCGCCGAGCACGGCA"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": false, 
+        "no_efficience": false, 
+        "strand_check": false, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "0.0", 
+      "result": {
+        "value": "(True, False, False, False, True)"
+      }, 
+      "sirna_name": "sirna13", 
+      "sirna_sequence": "GTTTGCGCCGAGCACGGCATC", 
+      "sirna_sequence_n2": "TGGTTTGCGCCGAGCACGGCA"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": false, 
+        "no_efficience": false, 
+        "strand_check": false, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "1.0", 
+      "result": {
+        "value": "(True, False, False, True, True)"
+      }, 
+      "sirna_name": "sirna13", 
+      "sirna_sequence": "GTTTGCGCCGAGCACGGCATC", 
+      "sirna_sequence_n2": "TGGTTTGCGCCGAGCACGGCA"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": false, 
+        "no_efficience": false, 
+        "strand_check": false, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "0.004446382", 
+      "result": {
+        "value": "(True, False, False, False, True)"
+      }, 
+      "sirna_name": "sirna14", 
+      "sirna_sequence": "TTTGCGCCGAGCACGGCATCG", 
+      "sirna_sequence_n2": "GGTTTGCGCCGAGCACGGCAT"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": false, 
+        "no_efficience": false, 
+        "strand_check": false, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "0.0", 
+      "result": {
+        "value": "(True, False, False, False, True)"
+      }, 
+      "sirna_name": "sirna14", 
+      "sirna_sequence": "TTTGCGCCGAGCACGGCATCG", 
+      "sirna_sequence_n2": "GGTTTGCGCCGAGCACGGCAT"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": false, 
+        "no_efficience": false, 
+        "strand_check": false, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "1.0", 
+      "result": {
+        "value": "(True, False, False, True, True)"
+      }, 
+      "sirna_name": "sirna14", 
+      "sirna_sequence": "TTTGCGCCGAGCACGGCATCG", 
+      "sirna_sequence_n2": "GGTTTGCGCCGAGCACGGCAT"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": false, 
+        "no_efficience": false, 
+        "strand_check": false, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "4.86583e-06", 
+      "result": {
+        "value": "(True, True, True, False, True)"
+      }, 
+      "sirna_name": "sirna5", 
+      "sirna_sequence": "GGGAAGTGGTTTGCGCCGAGC", 
+      "sirna_sequence_n2": "CTGGGAAGTGGTTTGCGCCGA"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": false, 
+        "no_efficience": false, 
+        "strand_check": false, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "0.0", 
+      "result": {
+        "value": "(True, True, True, False, True)"
+      }, 
+      "sirna_name": "sirna5", 
+      "sirna_sequence": "GGGAAGTGGTTTGCGCCGAGC", 
+      "sirna_sequence_n2": "CTGGGAAGTGGTTTGCGCCGA"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": false, 
+        "no_efficience": false, 
+        "strand_check": false, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "1.0", 
+      "result": {
+        "value": "(True, True, True, True, True)"
+      }, 
+      "sirna_name": "sirna5", 
+      "sirna_sequence": "GGGAAGTGGTTTGCGCCGAGC", 
+      "sirna_sequence_n2": "CTGGGAAGTGGTTTGCGCCGA"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": false, 
+        "no_efficience": false, 
+        "strand_check": false, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "0.03097893", 
+      "result": {
+        "value": "(True, True, True, False, True)"
+      }, 
+      "sirna_name": "sirna17", 
+      "sirna_sequence": "GCGCCGAGCACGGCATCGATC", 
+      "sirna_sequence_n2": "TTGCGCCGAGCACGGCATCGA"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": false, 
+        "no_efficience": false, 
+        "strand_check": false, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "0.0", 
+      "result": {
+        "value": "(True, True, True, False, True)"
+      }, 
+      "sirna_name": "sirna17", 
+      "sirna_sequence": "GCGCCGAGCACGGCATCGATC", 
+      "sirna_sequence_n2": "TTGCGCCGAGCACGGCATCGA"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": false, 
+        "no_efficience": false, 
+        "strand_check": false, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "1.0", 
+      "result": {
+        "value": "(True, True, True, True, True)"
+      }, 
+      "sirna_name": "sirna17", 
+      "sirna_sequence": "GCGCCGAGCACGGCATCGATC", 
+      "sirna_sequence_n2": "TTGCGCCGAGCACGGCATCGA"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": false, 
+        "no_efficience": false, 
+        "strand_check": false, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "0.0758944", 
+      "result": {
+        "value": "(True, True, True, False, True)"
+      }, 
+      "sirna_name": "sirna18", 
+      "sirna_sequence": "CGCCGAGCACGGCATCGATCC", 
+      "sirna_sequence_n2": "TGCGCCGAGCACGGCATCGAT"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": false, 
+        "no_efficience": false, 
+        "strand_check": false, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "0.0", 
+      "result": {
+        "value": "(True, True, True, False, True)"
+      }, 
+      "sirna_name": "sirna18", 
+      "sirna_sequence": "CGCCGAGCACGGCATCGATCC", 
+      "sirna_sequence_n2": "TGCGCCGAGCACGGCATCGAT"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": false, 
+        "no_efficience": false, 
+        "strand_check": false, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "1.0", 
+      "result": {
+        "value": "(True, True, True, True, True)"
+      }, 
+      "sirna_name": "sirna18", 
+      "sirna_sequence": "CGCCGAGCACGGCATCGATCC", 
+      "sirna_sequence_n2": "TGCGCCGAGCACGGCATCGAT"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": false, 
+        "no_efficience": false, 
+        "strand_check": false, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "3.637177e-06", 
+      "result": {
+        "value": "(False, False, False, False, True)"
+      }, 
+      "sirna_name": "sirna1", 
+      "sirna_sequence": "TTCTGGGAAGTGGTTTGCGCC", 
+      "sirna_sequence_n2": null
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": false, 
+        "no_efficience": false, 
+        "strand_check": false, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "0.0", 
+      "result": {
+        "value": "(False, False, False, False, True)"
+      }, 
+      "sirna_name": "sirna1", 
+      "sirna_sequence": "TTCTGGGAAGTGGTTTGCGCC", 
+      "sirna_sequence_n2": null
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": false, 
+        "no_efficience": false, 
+        "strand_check": false, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "1.0", 
+      "result": {
+        "value": "(False, False, False, True, True)"
+      }, 
+      "sirna_name": "sirna1", 
+      "sirna_sequence": "TTCTGGGAAGTGGTTTGCGCC", 
+      "sirna_sequence_n2": null
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": false, 
+        "no_efficience": false, 
+        "strand_check": false, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "5.59196e-06", 
+      "result": {
+        "value": "(False, False, False, False, True)"
+      }, 
+      "sirna_name": "sirna3", 
+      "sirna_sequence": "CTGGGAAGTGGTTTGCGCCGA", 
+      "sirna_sequence_n2": "TTCTGGGAAGTGGTTTGCGCC"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": false, 
+        "no_efficience": false, 
+        "strand_check": false, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "0.0", 
+      "result": {
+        "value": "(False, False, False, False, True)"
+      }, 
+      "sirna_name": "sirna3", 
+      "sirna_sequence": "CTGGGAAGTGGTTTGCGCCGA", 
+      "sirna_sequence_n2": "TTCTGGGAAGTGGTTTGCGCC"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": false, 
+        "no_efficience": false, 
+        "strand_check": false, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "1.0", 
+      "result": {
+        "value": "(False, False, False, True, True)"
+      }, 
+      "sirna_name": "sirna3", 
+      "sirna_sequence": "CTGGGAAGTGGTTTGCGCCGA", 
+      "sirna_sequence_n2": "TTCTGGGAAGTGGTTTGCGCC"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": false, 
+        "no_efficience": false, 
+        "strand_check": false, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "0.0001625693", 
+      "result": {
+        "value": "(False, False, False, False, True)"
+      }, 
+      "sirna_name": "sirna7", 
+      "sirna_sequence": "GAAGTGGTTTGCGCCGAGCAC", 
+      "sirna_sequence_n2": "GGGAAGTGGTTTGCGCCGAGC"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": false, 
+        "no_efficience": false, 
+        "strand_check": false, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "0.0", 
+      "result": {
+        "value": "(False, False, False, False, True)"
+      }, 
+      "sirna_name": "sirna7", 
+      "sirna_sequence": "GAAGTGGTTTGCGCCGAGCAC", 
+      "sirna_sequence_n2": "GGGAAGTGGTTTGCGCCGAGC"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": false, 
+        "no_efficience": false, 
+        "strand_check": false, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "1.0", 
+      "result": {
+        "value": "(False, False, False, True, True)"
+      }, 
+      "sirna_name": "sirna7", 
+      "sirna_sequence": "GAAGTGGTTTGCGCCGAGCAC", 
+      "sirna_sequence_n2": "GGGAAGTGGTTTGCGCCGAGC"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": false, 
+        "no_efficience": false, 
+        "strand_check": false, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "7.475359e-06", 
+      "result": {
+        "value": "(True, False, False, False, True)"
+      }, 
+      "sirna_name": "sirna2", 
+      "sirna_sequence": "TCTGGGAAGTGGTTTGCGCCG", 
+      "sirna_sequence_n2": null
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": false, 
+        "no_efficience": false, 
+        "strand_check": false, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "0.0", 
+      "result": {
+        "value": "(True, False, False, False, True)"
+      }, 
+      "sirna_name": "sirna2", 
+      "sirna_sequence": "TCTGGGAAGTGGTTTGCGCCG", 
+      "sirna_sequence_n2": null
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": false, 
+        "no_efficience": false, 
+        "strand_check": false, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "1.0", 
+      "result": {
+        "value": "(True, False, False, True, True)"
+      }, 
+      "sirna_name": "sirna2", 
+      "sirna_sequence": "TCTGGGAAGTGGTTTGCGCCG", 
+      "sirna_sequence_n2": null
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": false, 
+        "no_efficience": false, 
+        "strand_check": false, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "5.064855e-06", 
+      "result": {
+        "value": "(True, False, False, False, True)"
+      }, 
+      "sirna_name": "sirna4", 
+      "sirna_sequence": "TGGGAAGTGGTTTGCGCCGAG", 
+      "sirna_sequence_n2": "TCTGGGAAGTGGTTTGCGCCG"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": false, 
+        "no_efficience": false, 
+        "strand_check": false, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "0.0", 
+      "result": {
+        "value": "(True, False, False, False, True)"
+      }, 
+      "sirna_name": "sirna4", 
+      "sirna_sequence": "TGGGAAGTGGTTTGCGCCGAG", 
+      "sirna_sequence_n2": "TCTGGGAAGTGGTTTGCGCCG"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": false, 
+        "no_efficience": false, 
+        "strand_check": false, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "1.0", 
+      "result": {
+        "value": "(True, False, False, True, True)"
+      }, 
+      "sirna_name": "sirna4", 
+      "sirna_sequence": "TGGGAAGTGGTTTGCGCCGAG", 
+      "sirna_sequence_n2": "TCTGGGAAGTGGTTTGCGCCG"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": false, 
+        "no_efficience": false, 
+        "strand_check": false, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "3.677182e-05", 
+      "result": {
+        "value": "(True, True, True, False, True)"
+      }, 
+      "sirna_name": "sirna6", 
+      "sirna_sequence": "GGAAGTGGTTTGCGCCGAGCA", 
+      "sirna_sequence_n2": "TGGGAAGTGGTTTGCGCCGAG"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": false, 
+        "no_efficience": false, 
+        "strand_check": false, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "0.0", 
+      "result": {
+        "value": "(True, True, True, False, True)"
+      }, 
+      "sirna_name": "sirna6", 
+      "sirna_sequence": "GGAAGTGGTTTGCGCCGAGCA", 
+      "sirna_sequence_n2": "TGGGAAGTGGTTTGCGCCGAG"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": false, 
+        "no_efficience": false, 
+        "strand_check": false, 
+        "terminal_check": true
+      }, 
+      "lunp_data_xmer": "1.0", 
+      "result": {
+        "value": "(True, True, True, True, True)"
+      }, 
+      "sirna_name": "sirna6", 
+      "sirna_sequence": "GGAAGTGGTTTGCGCCGAGCA", 
+      "sirna_sequence_n2": "TGGGAAGTGGTTTGCGCCGAG"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": false
+      }, 
+      "lunp_data_xmer": "0.0002646979", 
+      "result": {
+        "value": "(False, False, False, False, False)"
+      }, 
+      "sirna_name": "sirna8", 
+      "sirna_sequence": "AAGTGGTTTGCGCCGAGCACG", 
+      "sirna_sequence_n2": "GGAAGTGGTTTGCGCCGAGCA"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": false
+      }, 
+      "lunp_data_xmer": "0.0", 
+      "result": {
+        "value": "(False, False, False, False, False)"
+      }, 
+      "sirna_name": "sirna8", 
+      "sirna_sequence": "AAGTGGTTTGCGCCGAGCACG", 
+      "sirna_sequence_n2": "GGAAGTGGTTTGCGCCGAGCA"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": false
+      }, 
+      "lunp_data_xmer": "1.0", 
+      "result": {
+        "value": "(False, False, False, True, False)"
+      }, 
+      "sirna_name": "sirna8", 
+      "sirna_sequence": "AAGTGGTTTGCGCCGAGCACG", 
+      "sirna_sequence_n2": "GGAAGTGGTTTGCGCCGAGCA"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": false
+      }, 
+      "lunp_data_xmer": "0.007986903", 
+      "result": {
+        "value": "(False, False, False, False, False)"
+      }, 
+      "sirna_name": "sirna13", 
+      "sirna_sequence": "GTTTGCGCCGAGCACGGCATC", 
+      "sirna_sequence_n2": "TGGTTTGCGCCGAGCACGGCA"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": false
+      }, 
+      "lunp_data_xmer": "0.0", 
+      "result": {
+        "value": "(False, False, False, False, False)"
+      }, 
+      "sirna_name": "sirna13", 
+      "sirna_sequence": "GTTTGCGCCGAGCACGGCATC", 
+      "sirna_sequence_n2": "TGGTTTGCGCCGAGCACGGCA"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": false
+      }, 
+      "lunp_data_xmer": "1.0", 
+      "result": {
+        "value": "(False, False, False, True, False)"
+      }, 
+      "sirna_name": "sirna13", 
+      "sirna_sequence": "GTTTGCGCCGAGCACGGCATC", 
+      "sirna_sequence_n2": "TGGTTTGCGCCGAGCACGGCA"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": false
+      }, 
+      "lunp_data_xmer": "0.004446382", 
+      "result": {
+        "value": "(False, False, False, False, False)"
+      }, 
+      "sirna_name": "sirna14", 
+      "sirna_sequence": "TTTGCGCCGAGCACGGCATCG", 
+      "sirna_sequence_n2": "GGTTTGCGCCGAGCACGGCAT"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": false
+      }, 
+      "lunp_data_xmer": "0.0", 
+      "result": {
+        "value": "(False, False, False, False, False)"
+      }, 
+      "sirna_name": "sirna14", 
+      "sirna_sequence": "TTTGCGCCGAGCACGGCATCG", 
+      "sirna_sequence_n2": "GGTTTGCGCCGAGCACGGCAT"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": false
+      }, 
+      "lunp_data_xmer": "1.0", 
+      "result": {
+        "value": "(False, False, False, True, False)"
+      }, 
+      "sirna_name": "sirna14", 
+      "sirna_sequence": "TTTGCGCCGAGCACGGCATCG", 
+      "sirna_sequence_n2": "GGTTTGCGCCGAGCACGGCAT"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": false
+      }, 
+      "lunp_data_xmer": "4.86583e-06", 
+      "result": {
+        "value": "(True, True, True, False, True)"
+      }, 
+      "sirna_name": "sirna5", 
+      "sirna_sequence": "GGGAAGTGGTTTGCGCCGAGC", 
+      "sirna_sequence_n2": "CTGGGAAGTGGTTTGCGCCGA"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": false
+      }, 
+      "lunp_data_xmer": "0.0", 
+      "result": {
+        "value": "(True, True, True, False, True)"
+      }, 
+      "sirna_name": "sirna5", 
+      "sirna_sequence": "GGGAAGTGGTTTGCGCCGAGC", 
+      "sirna_sequence_n2": "CTGGGAAGTGGTTTGCGCCGA"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": false
+      }, 
+      "lunp_data_xmer": "1.0", 
+      "result": {
+        "value": "(True, True, True, True, True)"
+      }, 
+      "sirna_name": "sirna5", 
+      "sirna_sequence": "GGGAAGTGGTTTGCGCCGAGC", 
+      "sirna_sequence_n2": "CTGGGAAGTGGTTTGCGCCGA"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": false
+      }, 
+      "lunp_data_xmer": "0.03097893", 
+      "result": {
+        "value": "(True, True, True, False, True)"
+      }, 
+      "sirna_name": "sirna17", 
+      "sirna_sequence": "GCGCCGAGCACGGCATCGATC", 
+      "sirna_sequence_n2": "TTGCGCCGAGCACGGCATCGA"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": false
+      }, 
+      "lunp_data_xmer": "0.0", 
+      "result": {
+        "value": "(True, True, True, False, True)"
+      }, 
+      "sirna_name": "sirna17", 
+      "sirna_sequence": "GCGCCGAGCACGGCATCGATC", 
+      "sirna_sequence_n2": "TTGCGCCGAGCACGGCATCGA"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": false
+      }, 
+      "lunp_data_xmer": "1.0", 
+      "result": {
+        "value": "(True, True, True, True, True)"
+      }, 
+      "sirna_name": "sirna17", 
+      "sirna_sequence": "GCGCCGAGCACGGCATCGATC", 
+      "sirna_sequence_n2": "TTGCGCCGAGCACGGCATCGA"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": false
+      }, 
+      "lunp_data_xmer": "0.0758944", 
+      "result": {
+        "value": "(True, True, True, False, True)"
+      }, 
+      "sirna_name": "sirna18", 
+      "sirna_sequence": "CGCCGAGCACGGCATCGATCC", 
+      "sirna_sequence_n2": "TGCGCCGAGCACGGCATCGAT"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": false
+      }, 
+      "lunp_data_xmer": "0.0", 
+      "result": {
+        "value": "(True, True, True, False, True)"
+      }, 
+      "sirna_name": "sirna18", 
+      "sirna_sequence": "CGCCGAGCACGGCATCGATCC", 
+      "sirna_sequence_n2": "TGCGCCGAGCACGGCATCGAT"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": false
+      }, 
+      "lunp_data_xmer": "1.0", 
+      "result": {
+        "value": "(True, True, True, True, True)"
+      }, 
+      "sirna_name": "sirna18", 
+      "sirna_sequence": "CGCCGAGCACGGCATCGATCC", 
+      "sirna_sequence_n2": "TGCGCCGAGCACGGCATCGAT"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": false
+      }, 
+      "lunp_data_xmer": "3.637177e-06", 
+      "result": {
+        "value": "(False, False, False, False, False)"
+      }, 
+      "sirna_name": "sirna1", 
+      "sirna_sequence": "TTCTGGGAAGTGGTTTGCGCC", 
+      "sirna_sequence_n2": null
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": false
+      }, 
+      "lunp_data_xmer": "0.0", 
+      "result": {
+        "value": "(False, False, False, False, False)"
+      }, 
+      "sirna_name": "sirna1", 
+      "sirna_sequence": "TTCTGGGAAGTGGTTTGCGCC", 
+      "sirna_sequence_n2": null
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": false
+      }, 
+      "lunp_data_xmer": "1.0", 
+      "result": {
+        "value": "(False, False, False, True, False)"
+      }, 
+      "sirna_name": "sirna1", 
+      "sirna_sequence": "TTCTGGGAAGTGGTTTGCGCC", 
+      "sirna_sequence_n2": null
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": false
+      }, 
+      "lunp_data_xmer": "5.59196e-06", 
+      "result": {
+        "value": "(False, False, False, False, False)"
+      }, 
+      "sirna_name": "sirna3", 
+      "sirna_sequence": "CTGGGAAGTGGTTTGCGCCGA", 
+      "sirna_sequence_n2": "TTCTGGGAAGTGGTTTGCGCC"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": false
+      }, 
+      "lunp_data_xmer": "0.0", 
+      "result": {
+        "value": "(False, False, False, False, False)"
+      }, 
+      "sirna_name": "sirna3", 
+      "sirna_sequence": "CTGGGAAGTGGTTTGCGCCGA", 
+      "sirna_sequence_n2": "TTCTGGGAAGTGGTTTGCGCC"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": false
+      }, 
+      "lunp_data_xmer": "1.0", 
+      "result": {
+        "value": "(False, False, False, True, False)"
+      }, 
+      "sirna_name": "sirna3", 
+      "sirna_sequence": "CTGGGAAGTGGTTTGCGCCGA", 
+      "sirna_sequence_n2": "TTCTGGGAAGTGGTTTGCGCC"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": false
+      }, 
+      "lunp_data_xmer": "0.0001625693", 
+      "result": {
+        "value": "(False, False, False, False, False)"
+      }, 
+      "sirna_name": "sirna7", 
+      "sirna_sequence": "GAAGTGGTTTGCGCCGAGCAC", 
+      "sirna_sequence_n2": "GGGAAGTGGTTTGCGCCGAGC"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": false
+      }, 
+      "lunp_data_xmer": "0.0", 
+      "result": {
+        "value": "(False, False, False, False, False)"
+      }, 
+      "sirna_name": "sirna7", 
+      "sirna_sequence": "GAAGTGGTTTGCGCCGAGCAC", 
+      "sirna_sequence_n2": "GGGAAGTGGTTTGCGCCGAGC"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": false
+      }, 
+      "lunp_data_xmer": "1.0", 
+      "result": {
+        "value": "(False, False, False, True, False)"
+      }, 
+      "sirna_name": "sirna7", 
+      "sirna_sequence": "GAAGTGGTTTGCGCCGAGCAC", 
+      "sirna_sequence_n2": "GGGAAGTGGTTTGCGCCGAGC"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": false
+      }, 
+      "lunp_data_xmer": "7.475359e-06", 
+      "result": {
+        "value": "(False, False, False, False, False)"
+      }, 
+      "sirna_name": "sirna2", 
+      "sirna_sequence": "TCTGGGAAGTGGTTTGCGCCG", 
+      "sirna_sequence_n2": null
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": false
+      }, 
+      "lunp_data_xmer": "0.0", 
+      "result": {
+        "value": "(False, False, False, False, False)"
+      }, 
+      "sirna_name": "sirna2", 
+      "sirna_sequence": "TCTGGGAAGTGGTTTGCGCCG", 
+      "sirna_sequence_n2": null
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": false
+      }, 
+      "lunp_data_xmer": "1.0", 
+      "result": {
+        "value": "(False, False, False, True, False)"
+      }, 
+      "sirna_name": "sirna2", 
+      "sirna_sequence": "TCTGGGAAGTGGTTTGCGCCG", 
+      "sirna_sequence_n2": null
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": false
+      }, 
+      "lunp_data_xmer": "5.064855e-06", 
+      "result": {
+        "value": "(False, False, False, False, False)"
+      }, 
+      "sirna_name": "sirna4", 
+      "sirna_sequence": "TGGGAAGTGGTTTGCGCCGAG", 
+      "sirna_sequence_n2": "TCTGGGAAGTGGTTTGCGCCG"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": false
+      }, 
+      "lunp_data_xmer": "0.0", 
+      "result": {
+        "value": "(False, False, False, False, False)"
+      }, 
+      "sirna_name": "sirna4", 
+      "sirna_sequence": "TGGGAAGTGGTTTGCGCCGAG", 
+      "sirna_sequence_n2": "TCTGGGAAGTGGTTTGCGCCG"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": false
+      }, 
+      "lunp_data_xmer": "1.0", 
+      "result": {
+        "value": "(False, False, False, True, False)"
+      }, 
+      "sirna_name": "sirna4", 
+      "sirna_sequence": "TGGGAAGTGGTTTGCGCCGAG", 
+      "sirna_sequence_n2": "TCTGGGAAGTGGTTTGCGCCG"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": false
+      }, 
+      "lunp_data_xmer": "3.677182e-05", 
+      "result": {
+        "value": "(True, True, True, False, True)"
+      }, 
+      "sirna_name": "sirna6", 
+      "sirna_sequence": "GGAAGTGGTTTGCGCCGAGCA", 
+      "sirna_sequence_n2": "TGGGAAGTGGTTTGCGCCGAG"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": false
+      }, 
+      "lunp_data_xmer": "0.0", 
+      "result": {
+        "value": "(True, True, True, False, True)"
+      }, 
+      "sirna_name": "sirna6", 
+      "sirna_sequence": "GGAAGTGGTTTGCGCCGAGCA", 
+      "sirna_sequence_n2": "TGGGAAGTGGTTTGCGCCGAG"
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": true, 
+        "no_efficience": false, 
+        "strand_check": true, 
+        "terminal_check": false
+      }, 
+      "lunp_data_xmer": "1.0", 
+      "result": {
+        "value": "(True, True, True, True, True)"
+      }, 
+      "sirna_name": "sirna6", 
+      "sirna_sequence": "GGAAGTGGTTTGCGCCGAGCA", 
+      "sirna_sequence_n2": "TGGGAAGTGGTTTGCGCCGAG"
+    }
+  ], 
+  "description": "SifiPipeline.calculate_efficiency, returning the full 5-tuple (is_efficient, strand_selection, end_stability, target_site_accessibility, thermo_effcicient). Real siRNAs chosen to cover every terminal-rule branch, each run at its real accessibility value and at 0.0/1.0. Floats are repr() strings.", 
+  "end_stability_treshold": "1.0", 
+  "target_site_accessibility_treshold": "0.1"
+}

@@ -1,6 +1,8 @@
 # Ruff config for the Python 2 -> Python 3 port of siFi.
 # `legacy/` is the frozen Python 2 original and is excluded wholesale: ruff cannot
 # parse Python 2 syntax, so linting it would only report syntax errors.
+# `tests/py2_capture/` must keep running under Python 2.7 to regenerate the golden
+# fixtures, so the `UP` rules must not be applied to it either.
 
 target-version = "py311"
 line-length = 120
@@ -8,6 +10,7 @@ line-length = 120
 exclude = [
     "legacy",
     "ToCopy",
+    "tests/py2_capture",
 ]
 
 [lint]
