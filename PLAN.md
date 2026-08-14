@@ -18,7 +18,7 @@ make every later phase verifiable. Phases 4 and 5 can be swapped. Phase 7 is def
 
 ## Status
 
-- [ ] **Phase 0** — repo restructure, `sifi2` conda env, `pyproject.toml`
+- [x] **Phase 0** — repo restructure, `sifi2` conda env, `pyproject.toml`
 - [ ] **Phase 1** — golden fixtures captured from the Python 2 original ← *gate for everything below*
 - [ ] **Phase 2** — `thermo.py` ported, `test_thermo.py` green
 - [ ] **Phase 3** — rest of core ported, headless, Qt coupling broken
@@ -28,6 +28,18 @@ make every later phase verifiable. Phases 4 and 5 can be swapped. Phase 7 is def
 - [ ] **Phase 7** — GUI (deferred)
 
 **Notes from completed phases:** _(append here as you go)_
+
+- **Phase 0.** Env solved cleanly with no pins beyond those listed; `bowtie=1.3.1` and `viennarna=2.7.2` both
+  exist and coexist with `python=3.12`. Note the versions that landed, since they differ from what the plan's
+  breaking-change list assumed: **Biopython 1.88** (so `Bio.Alphabet` and `SeqUtils.GC` are indeed gone) and
+  **NumPy 2.5.2** (so `np.float` is gone). Two deviations from the phase text, both deliberate:
+  `environment.yml` is kept as the short curated spec and the `conda env export --no-builds` output lives
+  beside it as `environment.lock.yml`, rather than overwriting the spec with 178 lines of transitive pins; and
+  `setup.py` (the py2exe script) was moved into `legacy/` too, since leaving it at the root alongside
+  `pyproject.toml` would be actively misleading. `sifi2` is pip-installed editable into the env, so the `sifi`
+  console script resolves from Phase 0 — it currently prints a "not implemented until Phase 4" message and
+  exits 1. `LICENSE` (CC BY-NC-SA 2.0 full text + attribution + citation) added, which the Risks section asked
+  for. `ruff.toml`'s exclude list was rewritten for the new tree (`legacy/`, `ToCopy/`).
 
 ## Context
 
@@ -56,7 +68,7 @@ attributable commits**; **finish batch mode** so the CLI accepts multi-FASTA.
 
 ## Target repository shape
 
-Remote is now `git@github.com:rj-price/siFi-2.0.git` (currently `origin` still points at `snowformatics/siFi21-`).
+`origin` is `git@github.com:rj-price/siFi-2.0.git`; `upstream` is `snowformatics/siFi21-` for reference.
 
 ```
 sifi-2.0/

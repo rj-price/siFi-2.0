@@ -5,7 +5,8 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## What this is
 
 siFi — long dsRNA RNAi-target design and off-target prediction (Lück et al. 2019, doi:10.3389/fpls.2019.01023).
-Original code is **Python 2 / PyQt4**, Windows-only, packaged with `py2exe`. Upstream is unmaintained.
+The original code is **Python 2 / PyQt4**, Windows-only, packaged with `py2exe`. Upstream is unmaintained.
+This repo is a fork porting it to Python 3 with a CLI and tests.
 
 ## The port is planned — read `PLAN.md` first
 
@@ -20,9 +21,25 @@ not be the only entry point). When choosing between preserving an odd upstream c
 Python 3, prefer Python 3 — but preserve *numerical behaviour* exactly; this is scientific code and the
 thermodynamics must not silently change.
 
+## Repository layout (post Phase 0)
+
+```
+legacy/            frozen Python 2 original — never edit, never import from src/
+                   (12 modules + setup.py + Resources/ with the .ui/.qrc and generated Qt files)
+src/sifi2/         the Python 3 port; see PLAN.md for the module map (thermo, sirna, bowtie,
+                   rnaplfold, efficiency, pipeline, analysis, plots, cli)
+tests/golden/      JSON fixtures captured from legacy/ under Python 2.7 (Phase 1)
+tests/py2_capture/ the capture script and Qt stubs used to produce them
+ToCopy/Images/     icons kept for the eventual GUI, converted from TIFF to PNG
+environment.yml    curated sifi2 env spec; environment.lock.yml is the generated pin
+```
+
+`legacy/` is kept so the original stays importable under Python 2.7 for fixture regeneration. Do not lint,
+format or "fix" anything in it.
+
 ## Python 2 constructs to fix, not imitate
 
-Present throughout, so do not pattern-match on surrounding code:
+Present throughout `legacy/`, so do not pattern-match on surrounding code when porting:
 - `print x` statements (`free_energy.py`, and commented-out debug lines everywhere)
 - `from types import *` + `assert type(x) is StringType` (`database_helpers.py`) — drop these asserts or use `isinstance`
 - `dict.iteritems()` (`general_helpers.py`), `xrange` (`popup.py`)
@@ -31,38 +48,42 @@ Present throughout, so do not pattern-match on surrounding code:
 
 ## Known defects worth fixing during the port
 
-- `tempfile.mkstemp()` is called for its path only and the file descriptor is never closed
-  (`sifi_pipeline.py`, several call sites) — leaks fds over a long run.
-- `os.chdir()` is used to locate the bowtie / RNAplfold binaries before `subprocess.Popen`
-  (`sifi_pipeline.run_bowtie`, `run_rnaplfold`, `database_helpers.create_bowtie_database`). Global process
-  state; must go before anything runs concurrently or as a library. Use `cwd=` / absolute paths instead.
-- `prc.stdin.write(seq)` in `run_rnaplfold` writes `str` — needs bytes or a text-mode pipe in Python 3.
+Fix these in **separate, attributable commits** (Phase 6), not silently while porting. `PLAN.md` Phase 6 has the
+full list with file:line; the recurring ones are the leaked `mkstemp` file descriptors, the four unrestored
+`os.chdir()` calls used to locate the binaries, `prc.stdin.write(seq)` needing a text-mode pipe, and the
+minus-strand bowtie hits silently dropped from the JSON.
 
 ## External binaries
 
-The pipeline shells out to `bowtie`, `bowtie-build` and `RNAplfold`. `ToCopy/` contains **Windows `.exe`
-builds** of these and is not usable on Linux — install Linux bowtie (v1, `.ebwt` indices — *not* bowtie2) and
-ViennaRNA's RNAplfold instead. Never assume `ToCopy/` binaries can be executed here.
+The pipeline shells out to `bowtie`, `bowtie-build` and `RNAplfold`. All three are in the `sifi2` env
+(bowtie 1.3.1 — v1, `.ebwt` indices, *not* bowtie2; ViennaRNA 2.7.2). Resolve them with `shutil.which()`, never
+by `os.chdir()`. The Windows `.exe` builds that shipped with upstream have been deleted from this fork.
 
 ## Qt and generated files
 
-`Resources/ui_sifi2015.py`, `Resources/ui_db_wizard.py`, `Resources/wizard_ui.py` and `Resources/sifi_2015_rc.py`
-are **generated** from `sifi2015.ui`, `db_wizard.ui` and `sifi_2015.qrc` — edit the `.ui`/`.qrc` sources and
-regenerate, don't hand-edit the outputs. Under PyQt5 the tools are `pyuic5` / `pyrcc5`.
+`legacy/Resources/ui_sifi2015.py`, `ui_db_wizard.py` and `sifi_2015_rc.py` are **generated** from `sifi2015.ui`,
+`db_wizard.ui` and `sifi_2015.qrc` — edit the `.ui`/`.qrc` sources and regenerate, don't hand-edit the outputs.
+Under PyQt5 the tools are `pyuic5` / `pyrcc5`. The GUI is deferred to Phase 7; PyQt5 is deliberately **not** in
+the `sifi2` env, and `import sifi2.pipeline` must keep working without it.
 
 ## Environment
 
-No conda env for this project exists yet. Envs live in `/mnt/apps/users/jnprice/conda/envs`; run tools with
-`conda run -n <env> <command>`. Until an env is built, **nothing in this repo can be executed** — reason
-statically and say so rather than claiming a change was verified by running it.
+The project env is `sifi2` at `/mnt/apps/users/jnprice/conda/envs/sifi2` (Python 3.12). Run everything through
+it: `conda run -n sifi2 <command>`. `sifi2` is installed into it editable, so `import sifi2` and the `sifi`
+console script work without reinstalling after edits.
+
+Phase 1 additionally needs a throwaway `sifi2-py2` env (`python=2.7, biopython=1.76, numpy`) to run `legacy/`
+and capture the golden fixtures.
 
 ## Linting
 
-`ruff.toml` is configured (`UP` pyupgrade rules on, generated Qt files excluded). Ruff **cannot parse Python 2
-syntax**, so files that still contain `print x` will report a syntax error — that is expected and doubles as a
-checklist of what is left to port. Ruff is not installed yet; add it to the project env.
+`conda run -n sifi2 ruff check src/ tests/` and `ruff format --check src/ tests/`. `ruff.toml` selects
+`E,W,F,UP,B,SIM,I` and excludes `legacy/` and `ToCopy/` — ruff cannot parse Python 2 syntax, so never point it
+at `legacy/`.
 
 ## Testing
 
-There are no tests. The port needs them: pin the current outputs of `free_energy.py` and the siRNA-generation /
-scoring steps as fixtures before changing them, so the Python 3 version can be shown to match.
+`conda run -n sifi2 pytest`. Tests live in `tests/`, with the golden fixtures in `tests/golden/`. The fidelity
+guarantee of this port is that the ported functions reproduce those fixtures exactly, so a failing golden test
+means the port is wrong — never adjust a fixture to make a test pass unless that change is the deliberate
+subject of the commit.
