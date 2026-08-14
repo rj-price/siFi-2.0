@@ -1,0 +1,32 @@
+# Ruff config for the Python 2 -> Python 3 port of siFi.
+# Note: ruff cannot parse Python 2 syntax. Files still containing `print x` will
+# report a syntax error until they are ported — that is expected, and is itself a
+# useful checklist of what remains.
+
+target-version = "py311"
+line-length = 120
+
+exclude = [
+    "Resources/ui_sifi2015.py",
+    "Resources/ui_db_wizard.py",
+    "Resources/wizard_ui.py",
+    "Resources/sifi_2015_rc.py",
+    "sifi_2015_rc.py",
+    "ToCopy",
+]
+
+[lint]
+select = [
+    "E", "W",   # pycodestyle
+    "F",        # pyflakes
+    "UP",       # pyupgrade — flags the Py2-era constructs this port needs to remove
+    "B",        # bugbear
+    "SIM",      # simplify
+    "I",        # import sorting
+]
+ignore = [
+    "E501",     # line length is enforced by the formatter, not the linter
+]
+
+[format]
+quote-style = "double"
