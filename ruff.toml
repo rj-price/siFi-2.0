@@ -1,0 +1,27 @@
+# Ruff config for the Python 2 -> Python 3 port of siFi.
+# `legacy/` is the frozen Python 2 original and is excluded wholesale: ruff cannot
+# parse Python 2 syntax, so linting it would only report syntax errors.
+
+target-version = "py311"
+line-length = 120
+
+exclude = [
+    "legacy",
+    "ToCopy",
+]
+
+[lint]
+select = [
+    "E", "W",   # pycodestyle
+    "F",        # pyflakes
+    "UP",       # pyupgrade — flags the Py2-era constructs this port needs to remove
+    "B",        # bugbear
+    "SIM",      # simplify
+    "I",        # import sorting
+]
+ignore = [
+    "E501",     # line length is enforced by the formatter, not the linter
+]
+
+[format]
+quote-style = "double"
