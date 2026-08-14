@@ -20,7 +20,7 @@ make every later phase verifiable. Phases 4 and 5 can be swapped. Phase 7 is def
 
 - [x] **Phase 0** — repo restructure, `sifi2` conda env, `pyproject.toml`
 - [x] **Phase 1** — golden fixtures captured from the Python 2 original ← *gate for everything below*
-- [ ] **Phase 2** — `thermo.py` ported, `test_thermo.py` green
+- [x] **Phase 2** — `thermo.py` ported, `test_thermo.py` green
 - [ ] **Phase 3** — rest of core ported, headless, Qt coupling broken
 - [ ] **Phase 4** — CLI with batch mode
 - [ ] **Phase 5** — plots + end-to-end baseline
@@ -70,6 +70,36 @@ make every later phase verifiable. Phases 4 and 5 can be swapped. Phase 7 is def
   - `salt_correction` method 7 raises `ValueError: math domain error` on some ion combinations. Recorded as-is.
   - `check_efficient` never returns `None` across all 64 combinations; the all-flags-off branch hard-codes `True`.
   - `ruff.toml` now also excludes `tests/py2_capture/` — it must stay py2-parsable, so `UP` must not touch it.
+
+- **Phase 2.** `src/sifi2/thermo.py` reproduces all 502 golden cases (178 `thermo_nn`, 168 `salt_correction`,
+  140 dangling-end sub-cases, plus the wrappers left to Phase 3) bit-for-bit on the first run — no numerical
+  drift anywhere. Suite is 532 passed.
+
+  **One deliberate deviation from this phase's text, and it matters.** The phase said to replace
+  `SeqUtils.GC(seq) / 100` with `gc_fraction(seq)` and drop the `/ 100`. That is *not* numerically neutral:
+  Biopython 1.76's `GC` computes `gc * 100.0 / len(seq)`, and dividing that by 100 is not always the same
+  float as `gc / len(seq)` — they differ in the last bit for e.g. 3 G/C in 9 nt. The port therefore keeps a
+  private `_gc_percent()` returning a **percentage**, used in the original's own expressions
+  (`4.29 * _gc_percent(seq) / 100`). The risk the plan flagged was a 100× error; the real one was 1 ulp, which
+  the `salt_correction` goldens for methods 6 and 7 would have caught either way. `test_gc_percent_matches_biopython_1_76`
+  pins this.
+
+  The three inlined Biopython helpers (`_complement`, `_back_transcribe`, `_gc_percent`) were checked
+  differentially against Biopython 1.76 in the `sifi2-py2` env over 310 sequences — random IUPAC-ambiguity
+  strings, both cases, empty, and the mixed-RNA/DNA error — 0 mismatches, including the exact
+  `ValueError: Mixed RNA/DNA found` message. That check was a throwaway script, not committed; the committed
+  unit tests cover the same ground with hand-written expectations.
+
+  Other notes:
+  - `dnac1`/`dnac2` were **dropped from the signature**, not just from the body: they fed only `k`, which fed
+    only the dead `Tm`. `selfcomp` stays, because it also adds the `sym` term to ΔH/ΔS and so does move ΔG.
+  - `BiopythonWarning` (the `strict=False` path) became a module-local `ThermoWarning(UserWarning)`, keeping
+    the module import-free of Biopython. Nothing in the pipeline reaches it — every call passes `strict=True`.
+  - `ruff.toml` selects `E,W,F,UP,B,SIM,I` but **not `N`**, so the `Na`/`K`/`deltaH`/`Mon` capitalised names the
+    numerical contract depends on need no `# noqa` — don't add any.
+  - `ruff format` reflows the lookup tables one key per line. That is fine (keys and values are untouched) but
+    it means `thermo.py`'s tables no longer diff line-by-line against `legacy/free_energy.py`. The leading-space
+    `DNA_TMM1` keys survive, and `test_dna_tmm1_leading_space_keys_are_preserved` guards them until Phase 6.
 
 ## Context
 
