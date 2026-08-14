@@ -21,7 +21,7 @@ make every later phase verifiable. Phases 4 and 5 can be swapped. Phase 7 is def
 - [x] **Phase 0** — repo restructure, `sifi2` conda env, `pyproject.toml`
 - [x] **Phase 1** — golden fixtures captured from the Python 2 original ← *gate for everything below*
 - [x] **Phase 2** — `thermo.py` ported, `test_thermo.py` green
-- [ ] **Phase 3** — rest of core ported, headless, Qt coupling broken
+- [x] **Phase 3** — rest of core ported, headless, Qt coupling broken
 - [ ] **Phase 4** — CLI with batch mode
 - [ ] **Phase 5** — plots + end-to-end baseline
 - [ ] **Phase 6** — known defects fixed, one attributable commit each
@@ -100,6 +100,54 @@ make every later phase verifiable. Phases 4 and 5 can be swapped. Phase 7 is def
   - `ruff format` reflows the lookup tables one key per line. That is fine (keys and values are untouched) but
     it means `thermo.py`'s tables no longer diff line-by-line against `legacy/free_energy.py`. The leading-space
     `DNA_TMM1` keys survive, and `test_dna_tmm1_leading_space_keys_are_preserved` guards them until Phase 6.
+
+- **Phase 3.** Seven modules (`config`, `sirna`, `bowtie`, `rnaplfold`, `efficiency`, `analysis`,
+  `pipeline`) plus six test files; suite is **1218 passed, 2 skipped**. The load-bearing test is
+  `test_data_to_json_reproduces_the_captured_json`: the ported `data_to_json` rebuilds all 1370 records of
+  `tests/data/pipeline_design.json` — real Python 2 output — dict-for-dict from the committed bowtie and
+  `_lunp` files, so windowing, bowtie parsing, RNAplfold indexing and the whole efficiency chain are pinned
+  as a unit. No numerical drift anywhere; the goldens matched on the first run again.
+
+  **One real portability trap, and it is not one this plan predicted.** `get_target_data` builds
+  `main_hits_histo` by `extend`ing from a **set** of ints, so its order was CPython's set-iteration order —
+  and that is *not* the same in 2.7 and 3.12 (the resize policy differs, so a set of 21 consecutive ints
+  lands in a 32-slot table under py2 and a 64-slot one under py3, which moves the wrap-around element).
+  The port emits ascending positions instead: same multiset, and the only consumer is a histogram.
+  `test_main_hits_histo_is_ascending_not_set_ordered` pins the deviation, and the golden comparison is by
+  `sorted()`. Worth remembering for Phase 5: **any fixture ordering that came out of a Python 2 set is not
+  a contract.** The `off_target_dict`/`main_target_dict` fixtures were already serialised sorted, so they
+  were never exposed to this.
+
+  Deviations from the phase text, all deliberate:
+  - **No `mkstemp` helper.** The phase asked for one helper wrapping the seven `mkstemp` sites; instead
+    `run_query` opens a single `tempfile.TemporaryDirectory` and every file in a run gets a fixed name
+    inside it (`sirnas.fasta`, `sirnas.tab`, `bowtie.out`, `<query>_lunp`). That leaks nothing by
+    construction, which is stronger than the helper, and it makes the intermediate files greppable while
+    debugging a run.
+  - `check_efficient`'s eight mutually exclusive `if` blocks collapse to "every *enabled* rule must pass,
+    and all-disabled means True". Verified equivalent across all 64 golden combinations.
+  - `create_gbk` takes the sequence directly instead of copying a temp file to `.fasta` and re-reading it,
+    and sorts positions before `group_ranges` — the original fed it an unsorted set, which made the
+    grouping meaningless. It is unreachable dead code upstream (`PLAN.md` Phase 7 asks whether it returns
+    at all), so nothing pins it. Note Biopython rewrites the `"MT <name>"` feature key to `MT_<name>` and
+    warns; harmless, but the test asserts the rewritten form.
+  - `Mode` is a `StrEnum` (`design`/`offtarget`) rather than the original's `0`/non-zero `mode`, with
+    `Mode.from_legacy()` for the GUI's integer. `qt_flag()` normalises Qt's 0/2 checkbox states.
+  - `run()` already processes **every** FASTA record — the early `return` is gone. Phase 4 only has to add
+    `--threads` and the per-record output files.
+
+  Other notes for later phases:
+  - `bowtie.resolve_binary()` is shared with `rnaplfold.py`, so `RNAplfoldError` and `BowtieError` are
+    separate but a missing RNAplfold binary raises `BowtieError`. Tolerable; tidy it if a third caller
+    appears.
+  - `main_target_selector` returning `None` raises `PipelineCancelled`; design mode with no selector at all
+    raises the same, rather than silently defaulting. The CLI must always pass one.
+  - Design mode with no bowtie hits still produces **nothing** (Phase 6 defect 2 is faithfully preserved),
+    so `QueryResult.message` carries the "No targets found" string in that case and Phase 5's
+    efficiency-only plot has no data until Phase 6 lands.
+  - The end-to-end smoke run works today: build an index from `tests/data/reference.fasta`, then
+    `SifiPipeline(...).run("tests/data/query_multi.fasta")` returns 3 result sets (900/413/811 records at
+    `--mismatches 0`). That is the Phase 5 baseline waiting to be committed.
 
 ## Context
 
