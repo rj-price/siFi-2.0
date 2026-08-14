@@ -1,0 +1,965 @@
+{
+  "cases": [
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": false, 
+        "strand_check": false
+      }, 
+      "inputs": {
+        "end_stability": false, 
+        "strand_selection": false, 
+        "target_site_accessibility": false
+      }, 
+      "result": {
+        "value": "True"
+      }
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": false, 
+        "strand_check": false
+      }, 
+      "inputs": {
+        "end_stability": false, 
+        "strand_selection": false, 
+        "target_site_accessibility": true
+      }, 
+      "result": {
+        "value": "True"
+      }
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": false, 
+        "strand_check": false
+      }, 
+      "inputs": {
+        "end_stability": true, 
+        "strand_selection": false, 
+        "target_site_accessibility": false
+      }, 
+      "result": {
+        "value": "True"
+      }
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": false, 
+        "strand_check": false
+      }, 
+      "inputs": {
+        "end_stability": true, 
+        "strand_selection": false, 
+        "target_site_accessibility": true
+      }, 
+      "result": {
+        "value": "True"
+      }
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": false, 
+        "strand_check": false
+      }, 
+      "inputs": {
+        "end_stability": false, 
+        "strand_selection": true, 
+        "target_site_accessibility": false
+      }, 
+      "result": {
+        "value": "True"
+      }
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": false, 
+        "strand_check": false
+      }, 
+      "inputs": {
+        "end_stability": false, 
+        "strand_selection": true, 
+        "target_site_accessibility": true
+      }, 
+      "result": {
+        "value": "True"
+      }
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": false, 
+        "strand_check": false
+      }, 
+      "inputs": {
+        "end_stability": true, 
+        "strand_selection": true, 
+        "target_site_accessibility": false
+      }, 
+      "result": {
+        "value": "True"
+      }
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": false, 
+        "strand_check": false
+      }, 
+      "inputs": {
+        "end_stability": true, 
+        "strand_selection": true, 
+        "target_site_accessibility": true
+      }, 
+      "result": {
+        "value": "True"
+      }
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": false, 
+        "strand_check": false
+      }, 
+      "inputs": {
+        "end_stability": false, 
+        "strand_selection": false, 
+        "target_site_accessibility": false
+      }, 
+      "result": {
+        "value": "False"
+      }
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": false, 
+        "strand_check": false
+      }, 
+      "inputs": {
+        "end_stability": false, 
+        "strand_selection": false, 
+        "target_site_accessibility": true
+      }, 
+      "result": {
+        "value": "True"
+      }
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": false, 
+        "strand_check": false
+      }, 
+      "inputs": {
+        "end_stability": true, 
+        "strand_selection": false, 
+        "target_site_accessibility": false
+      }, 
+      "result": {
+        "value": "False"
+      }
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": false, 
+        "strand_check": false
+      }, 
+      "inputs": {
+        "end_stability": true, 
+        "strand_selection": false, 
+        "target_site_accessibility": true
+      }, 
+      "result": {
+        "value": "True"
+      }
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": false, 
+        "strand_check": false
+      }, 
+      "inputs": {
+        "end_stability": false, 
+        "strand_selection": true, 
+        "target_site_accessibility": false
+      }, 
+      "result": {
+        "value": "False"
+      }
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": false, 
+        "strand_check": false
+      }, 
+      "inputs": {
+        "end_stability": false, 
+        "strand_selection": true, 
+        "target_site_accessibility": true
+      }, 
+      "result": {
+        "value": "True"
+      }
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": false, 
+        "strand_check": false
+      }, 
+      "inputs": {
+        "end_stability": true, 
+        "strand_selection": true, 
+        "target_site_accessibility": false
+      }, 
+      "result": {
+        "value": "False"
+      }
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": false, 
+        "strand_check": false
+      }, 
+      "inputs": {
+        "end_stability": true, 
+        "strand_selection": true, 
+        "target_site_accessibility": true
+      }, 
+      "result": {
+        "value": "True"
+      }
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": true, 
+        "strand_check": false
+      }, 
+      "inputs": {
+        "end_stability": false, 
+        "strand_selection": false, 
+        "target_site_accessibility": false
+      }, 
+      "result": {
+        "value": "False"
+      }
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": true, 
+        "strand_check": false
+      }, 
+      "inputs": {
+        "end_stability": false, 
+        "strand_selection": false, 
+        "target_site_accessibility": true
+      }, 
+      "result": {
+        "value": "False"
+      }
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": true, 
+        "strand_check": false
+      }, 
+      "inputs": {
+        "end_stability": true, 
+        "strand_selection": false, 
+        "target_site_accessibility": false
+      }, 
+      "result": {
+        "value": "True"
+      }
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": true, 
+        "strand_check": false
+      }, 
+      "inputs": {
+        "end_stability": true, 
+        "strand_selection": false, 
+        "target_site_accessibility": true
+      }, 
+      "result": {
+        "value": "True"
+      }
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": true, 
+        "strand_check": false
+      }, 
+      "inputs": {
+        "end_stability": false, 
+        "strand_selection": true, 
+        "target_site_accessibility": false
+      }, 
+      "result": {
+        "value": "False"
+      }
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": true, 
+        "strand_check": false
+      }, 
+      "inputs": {
+        "end_stability": false, 
+        "strand_selection": true, 
+        "target_site_accessibility": true
+      }, 
+      "result": {
+        "value": "False"
+      }
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": true, 
+        "strand_check": false
+      }, 
+      "inputs": {
+        "end_stability": true, 
+        "strand_selection": true, 
+        "target_site_accessibility": false
+      }, 
+      "result": {
+        "value": "True"
+      }
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": true, 
+        "strand_check": false
+      }, 
+      "inputs": {
+        "end_stability": true, 
+        "strand_selection": true, 
+        "target_site_accessibility": true
+      }, 
+      "result": {
+        "value": "True"
+      }
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "strand_check": false
+      }, 
+      "inputs": {
+        "end_stability": false, 
+        "strand_selection": false, 
+        "target_site_accessibility": false
+      }, 
+      "result": {
+        "value": "False"
+      }
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "strand_check": false
+      }, 
+      "inputs": {
+        "end_stability": false, 
+        "strand_selection": false, 
+        "target_site_accessibility": true
+      }, 
+      "result": {
+        "value": "False"
+      }
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "strand_check": false
+      }, 
+      "inputs": {
+        "end_stability": true, 
+        "strand_selection": false, 
+        "target_site_accessibility": false
+      }, 
+      "result": {
+        "value": "False"
+      }
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "strand_check": false
+      }, 
+      "inputs": {
+        "end_stability": true, 
+        "strand_selection": false, 
+        "target_site_accessibility": true
+      }, 
+      "result": {
+        "value": "True"
+      }
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "strand_check": false
+      }, 
+      "inputs": {
+        "end_stability": false, 
+        "strand_selection": true, 
+        "target_site_accessibility": false
+      }, 
+      "result": {
+        "value": "False"
+      }
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "strand_check": false
+      }, 
+      "inputs": {
+        "end_stability": false, 
+        "strand_selection": true, 
+        "target_site_accessibility": true
+      }, 
+      "result": {
+        "value": "False"
+      }
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "strand_check": false
+      }, 
+      "inputs": {
+        "end_stability": true, 
+        "strand_selection": true, 
+        "target_site_accessibility": false
+      }, 
+      "result": {
+        "value": "False"
+      }
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "strand_check": false
+      }, 
+      "inputs": {
+        "end_stability": true, 
+        "strand_selection": true, 
+        "target_site_accessibility": true
+      }, 
+      "result": {
+        "value": "True"
+      }
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": false, 
+        "strand_check": true
+      }, 
+      "inputs": {
+        "end_stability": false, 
+        "strand_selection": false, 
+        "target_site_accessibility": false
+      }, 
+      "result": {
+        "value": "False"
+      }
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": false, 
+        "strand_check": true
+      }, 
+      "inputs": {
+        "end_stability": false, 
+        "strand_selection": false, 
+        "target_site_accessibility": true
+      }, 
+      "result": {
+        "value": "False"
+      }
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": false, 
+        "strand_check": true
+      }, 
+      "inputs": {
+        "end_stability": true, 
+        "strand_selection": false, 
+        "target_site_accessibility": false
+      }, 
+      "result": {
+        "value": "False"
+      }
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": false, 
+        "strand_check": true
+      }, 
+      "inputs": {
+        "end_stability": true, 
+        "strand_selection": false, 
+        "target_site_accessibility": true
+      }, 
+      "result": {
+        "value": "False"
+      }
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": false, 
+        "strand_check": true
+      }, 
+      "inputs": {
+        "end_stability": false, 
+        "strand_selection": true, 
+        "target_site_accessibility": false
+      }, 
+      "result": {
+        "value": "True"
+      }
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": false, 
+        "strand_check": true
+      }, 
+      "inputs": {
+        "end_stability": false, 
+        "strand_selection": true, 
+        "target_site_accessibility": true
+      }, 
+      "result": {
+        "value": "True"
+      }
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": false, 
+        "strand_check": true
+      }, 
+      "inputs": {
+        "end_stability": true, 
+        "strand_selection": true, 
+        "target_site_accessibility": false
+      }, 
+      "result": {
+        "value": "True"
+      }
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": false, 
+        "strand_check": true
+      }, 
+      "inputs": {
+        "end_stability": true, 
+        "strand_selection": true, 
+        "target_site_accessibility": true
+      }, 
+      "result": {
+        "value": "True"
+      }
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": false, 
+        "strand_check": true
+      }, 
+      "inputs": {
+        "end_stability": false, 
+        "strand_selection": false, 
+        "target_site_accessibility": false
+      }, 
+      "result": {
+        "value": "False"
+      }
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": false, 
+        "strand_check": true
+      }, 
+      "inputs": {
+        "end_stability": false, 
+        "strand_selection": false, 
+        "target_site_accessibility": true
+      }, 
+      "result": {
+        "value": "False"
+      }
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": false, 
+        "strand_check": true
+      }, 
+      "inputs": {
+        "end_stability": true, 
+        "strand_selection": false, 
+        "target_site_accessibility": false
+      }, 
+      "result": {
+        "value": "False"
+      }
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": false, 
+        "strand_check": true
+      }, 
+      "inputs": {
+        "end_stability": true, 
+        "strand_selection": false, 
+        "target_site_accessibility": true
+      }, 
+      "result": {
+        "value": "False"
+      }
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": false, 
+        "strand_check": true
+      }, 
+      "inputs": {
+        "end_stability": false, 
+        "strand_selection": true, 
+        "target_site_accessibility": false
+      }, 
+      "result": {
+        "value": "False"
+      }
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": false, 
+        "strand_check": true
+      }, 
+      "inputs": {
+        "end_stability": false, 
+        "strand_selection": true, 
+        "target_site_accessibility": true
+      }, 
+      "result": {
+        "value": "True"
+      }
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": false, 
+        "strand_check": true
+      }, 
+      "inputs": {
+        "end_stability": true, 
+        "strand_selection": true, 
+        "target_site_accessibility": false
+      }, 
+      "result": {
+        "value": "False"
+      }
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": false, 
+        "strand_check": true
+      }, 
+      "inputs": {
+        "end_stability": true, 
+        "strand_selection": true, 
+        "target_site_accessibility": true
+      }, 
+      "result": {
+        "value": "True"
+      }
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": true, 
+        "strand_check": true
+      }, 
+      "inputs": {
+        "end_stability": false, 
+        "strand_selection": false, 
+        "target_site_accessibility": false
+      }, 
+      "result": {
+        "value": "False"
+      }
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": true, 
+        "strand_check": true
+      }, 
+      "inputs": {
+        "end_stability": false, 
+        "strand_selection": false, 
+        "target_site_accessibility": true
+      }, 
+      "result": {
+        "value": "False"
+      }
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": true, 
+        "strand_check": true
+      }, 
+      "inputs": {
+        "end_stability": true, 
+        "strand_selection": false, 
+        "target_site_accessibility": false
+      }, 
+      "result": {
+        "value": "False"
+      }
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": true, 
+        "strand_check": true
+      }, 
+      "inputs": {
+        "end_stability": true, 
+        "strand_selection": false, 
+        "target_site_accessibility": true
+      }, 
+      "result": {
+        "value": "False"
+      }
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": true, 
+        "strand_check": true
+      }, 
+      "inputs": {
+        "end_stability": false, 
+        "strand_selection": true, 
+        "target_site_accessibility": false
+      }, 
+      "result": {
+        "value": "False"
+      }
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": true, 
+        "strand_check": true
+      }, 
+      "inputs": {
+        "end_stability": false, 
+        "strand_selection": true, 
+        "target_site_accessibility": true
+      }, 
+      "result": {
+        "value": "False"
+      }
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": true, 
+        "strand_check": true
+      }, 
+      "inputs": {
+        "end_stability": true, 
+        "strand_selection": true, 
+        "target_site_accessibility": false
+      }, 
+      "result": {
+        "value": "True"
+      }
+    }, 
+    {
+      "flags": {
+        "accessibility_check": false, 
+        "end_check": true, 
+        "strand_check": true
+      }, 
+      "inputs": {
+        "end_stability": true, 
+        "strand_selection": true, 
+        "target_site_accessibility": true
+      }, 
+      "result": {
+        "value": "True"
+      }
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "strand_check": true
+      }, 
+      "inputs": {
+        "end_stability": false, 
+        "strand_selection": false, 
+        "target_site_accessibility": false
+      }, 
+      "result": {
+        "value": "False"
+      }
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "strand_check": true
+      }, 
+      "inputs": {
+        "end_stability": false, 
+        "strand_selection": false, 
+        "target_site_accessibility": true
+      }, 
+      "result": {
+        "value": "False"
+      }
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "strand_check": true
+      }, 
+      "inputs": {
+        "end_stability": true, 
+        "strand_selection": false, 
+        "target_site_accessibility": false
+      }, 
+      "result": {
+        "value": "False"
+      }
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "strand_check": true
+      }, 
+      "inputs": {
+        "end_stability": true, 
+        "strand_selection": false, 
+        "target_site_accessibility": true
+      }, 
+      "result": {
+        "value": "False"
+      }
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "strand_check": true
+      }, 
+      "inputs": {
+        "end_stability": false, 
+        "strand_selection": true, 
+        "target_site_accessibility": false
+      }, 
+      "result": {
+        "value": "False"
+      }
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "strand_check": true
+      }, 
+      "inputs": {
+        "end_stability": false, 
+        "strand_selection": true, 
+        "target_site_accessibility": true
+      }, 
+      "result": {
+        "value": "False"
+      }
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "strand_check": true
+      }, 
+      "inputs": {
+        "end_stability": true, 
+        "strand_selection": true, 
+        "target_site_accessibility": false
+      }, 
+      "result": {
+        "value": "False"
+      }
+    }, 
+    {
+      "flags": {
+        "accessibility_check": true, 
+        "end_check": true, 
+        "strand_check": true
+      }, 
+      "inputs": {
+        "end_stability": true, 
+        "strand_selection": true, 
+        "target_site_accessibility": true
+      }, 
+      "result": {
+        "value": "True"
+      }
+    }
+  ], 
+  "description": "SifiPipeline.check_efficient, exhaustive: 2**3 inputs x 2**3 check flags = 64 cases."
+}

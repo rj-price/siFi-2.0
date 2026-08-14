@@ -1,0 +1,15 @@
+---
+# Throwaway Python 2.7 environment used ONLY to run legacy/ and capture the
+# golden fixtures in tests/golden/ (PLAN.md Phase 1). Nothing in src/ uses it.
+#
+#   conda env create -f environment-py2.yml
+#   conda run -n sifi2-py2 python tests/py2_capture/capture.py
+name: sifi2-py2
+channels:
+  - conda-forge
+  - bioconda
+  - nodefaults
+dependencies:
+  - python=2.7
+  - biopython=1.76
+  - numpy

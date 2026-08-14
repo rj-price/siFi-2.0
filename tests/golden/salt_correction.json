@@ -1,0 +1,2567 @@
+{
+  "cases": [
+    {
+      "kwargs": {
+        "K": "50", 
+        "Mg": "0", 
+        "Na": "20", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 0, 
+        "seq": "GGGATGGCTCAAAGGCGTAGT"
+      }, 
+      "result": {
+        "value": "0"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "50", 
+        "Mg": "0", 
+        "Na": "20", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 0, 
+        "seq": "AAAAAAAAAAAAAAAAAAAAA"
+      }, 
+      "result": {
+        "value": "0"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "50", 
+        "Mg": "0", 
+        "Na": "20", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 0, 
+        "seq": "GCGCGCGCGCGCGCGCGCGCG"
+      }, 
+      "result": {
+        "value": "0"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "50", 
+        "Mg": "0", 
+        "Na": "20", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 0, 
+        "seq": "TTCTGGGAAGTGGTTTGCGCC"
+      }, 
+      "result": {
+        "value": "0"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "0", 
+        "Na": "50", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 0, 
+        "seq": "GGGATGGCTCAAAGGCGTAGT"
+      }, 
+      "result": {
+        "value": "0"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "0", 
+        "Na": "50", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 0, 
+        "seq": "AAAAAAAAAAAAAAAAAAAAA"
+      }, 
+      "result": {
+        "value": "0"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "0", 
+        "Na": "50", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 0, 
+        "seq": "GCGCGCGCGCGCGCGCGCGCG"
+      }, 
+      "result": {
+        "value": "0"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "0", 
+        "Na": "50", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 0, 
+        "seq": "TTCTGGGAAGTGGTTTGCGCC"
+      }, 
+      "result": {
+        "value": "0"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "1.5", 
+        "Na": "0", 
+        "Tris": "10", 
+        "dNTPs": "0.2", 
+        "method": 0, 
+        "seq": "GGGATGGCTCAAAGGCGTAGT"
+      }, 
+      "result": {
+        "value": "0"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "1.5", 
+        "Na": "0", 
+        "Tris": "10", 
+        "dNTPs": "0.2", 
+        "method": 0, 
+        "seq": "AAAAAAAAAAAAAAAAAAAAA"
+      }, 
+      "result": {
+        "value": "0"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "1.5", 
+        "Na": "0", 
+        "Tris": "10", 
+        "dNTPs": "0.2", 
+        "method": 0, 
+        "seq": "GCGCGCGCGCGCGCGCGCGCG"
+      }, 
+      "result": {
+        "value": "0"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "1.5", 
+        "Na": "0", 
+        "Tris": "10", 
+        "dNTPs": "0.2", 
+        "method": 0, 
+        "seq": "TTCTGGGAAGTGGTTTGCGCC"
+      }, 
+      "result": {
+        "value": "0"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "1.5", 
+        "Na": "0", 
+        "Tris": "10", 
+        "dNTPs": "2.0", 
+        "method": 0, 
+        "seq": "GGGATGGCTCAAAGGCGTAGT"
+      }, 
+      "result": {
+        "value": "0"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "1.5", 
+        "Na": "0", 
+        "Tris": "10", 
+        "dNTPs": "2.0", 
+        "method": 0, 
+        "seq": "AAAAAAAAAAAAAAAAAAAAA"
+      }, 
+      "result": {
+        "value": "0"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "1.5", 
+        "Na": "0", 
+        "Tris": "10", 
+        "dNTPs": "2.0", 
+        "method": 0, 
+        "seq": "GCGCGCGCGCGCGCGCGCGCG"
+      }, 
+      "result": {
+        "value": "0"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "1.5", 
+        "Na": "0", 
+        "Tris": "10", 
+        "dNTPs": "2.0", 
+        "method": 0, 
+        "seq": "TTCTGGGAAGTGGTTTGCGCC"
+      }, 
+      "result": {
+        "value": "0"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "0", 
+        "Na": "0", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 0, 
+        "seq": "GGGATGGCTCAAAGGCGTAGT"
+      }, 
+      "result": {
+        "value": "0"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "0", 
+        "Na": "0", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 0, 
+        "seq": "AAAAAAAAAAAAAAAAAAAAA"
+      }, 
+      "result": {
+        "value": "0"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "0", 
+        "Na": "0", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 0, 
+        "seq": "GCGCGCGCGCGCGCGCGCGCG"
+      }, 
+      "result": {
+        "value": "0"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "0", 
+        "Na": "0", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 0, 
+        "seq": "TTCTGGGAAGTGGTTTGCGCC"
+      }, 
+      "result": {
+        "value": "0"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "50", 
+        "Mg": "0", 
+        "Na": "20", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 1, 
+        "seq": "GGGATGGCTCAAAGGCGTAGT"
+      }, 
+      "result": {
+        "value": "-19.171372535763336"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "50", 
+        "Mg": "0", 
+        "Na": "20", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 1, 
+        "seq": "AAAAAAAAAAAAAAAAAAAAA"
+      }, 
+      "result": {
+        "value": "-19.171372535763336"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "50", 
+        "Mg": "0", 
+        "Na": "20", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 1, 
+        "seq": "GCGCGCGCGCGCGCGCGCGCG"
+      }, 
+      "result": {
+        "value": "-19.171372535763336"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "50", 
+        "Mg": "0", 
+        "Na": "20", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 1, 
+        "seq": "TTCTGGGAAGTGGTTTGCGCC"
+      }, 
+      "result": {
+        "value": "-19.171372535763336"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "0", 
+        "Na": "50", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 1, 
+        "seq": "GGGATGGCTCAAAGGCGTAGT"
+      }, 
+      "result": {
+        "value": "-21.59709792802209"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "0", 
+        "Na": "50", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 1, 
+        "seq": "AAAAAAAAAAAAAAAAAAAAA"
+      }, 
+      "result": {
+        "value": "-21.59709792802209"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "0", 
+        "Na": "50", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 1, 
+        "seq": "GCGCGCGCGCGCGCGCGCGCG"
+      }, 
+      "result": {
+        "value": "-21.59709792802209"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "0", 
+        "Na": "50", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 1, 
+        "seq": "TTCTGGGAAGTGGTTTGCGCC"
+      }, 
+      "result": {
+        "value": "-21.59709792802209"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "1.5", 
+        "Na": "0", 
+        "Tris": "10", 
+        "dNTPs": "0.2", 
+        "method": 1, 
+        "seq": "GGGATGGCTCAAAGGCGTAGT"
+      }, 
+      "result": {
+        "value": "-14.081104387741856"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "1.5", 
+        "Na": "0", 
+        "Tris": "10", 
+        "dNTPs": "0.2", 
+        "method": 1, 
+        "seq": "AAAAAAAAAAAAAAAAAAAAA"
+      }, 
+      "result": {
+        "value": "-14.081104387741856"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "1.5", 
+        "Na": "0", 
+        "Tris": "10", 
+        "dNTPs": "0.2", 
+        "method": 1, 
+        "seq": "GCGCGCGCGCGCGCGCGCGCG"
+      }, 
+      "result": {
+        "value": "-14.081104387741856"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "1.5", 
+        "Na": "0", 
+        "Tris": "10", 
+        "dNTPs": "0.2", 
+        "method": 1, 
+        "seq": "TTCTGGGAAGTGGTTTGCGCC"
+      }, 
+      "result": {
+        "value": "-14.081104387741856"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "1.5", 
+        "Na": "0", 
+        "Tris": "10", 
+        "dNTPs": "2.0", 
+        "method": 1, 
+        "seq": "GGGATGGCTCAAAGGCGTAGT"
+      }, 
+      "result": {
+        "value": "-38.19709792802209"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "1.5", 
+        "Na": "0", 
+        "Tris": "10", 
+        "dNTPs": "2.0", 
+        "method": 1, 
+        "seq": "AAAAAAAAAAAAAAAAAAAAA"
+      }, 
+      "result": {
+        "value": "-38.19709792802209"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "1.5", 
+        "Na": "0", 
+        "Tris": "10", 
+        "dNTPs": "2.0", 
+        "method": 1, 
+        "seq": "GCGCGCGCGCGCGCGCGCGCG"
+      }, 
+      "result": {
+        "value": "-38.19709792802209"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "1.5", 
+        "Na": "0", 
+        "Tris": "10", 
+        "dNTPs": "2.0", 
+        "method": 1, 
+        "seq": "TTCTGGGAAGTGGTTTGCGCC"
+      }, 
+      "result": {
+        "value": "-38.19709792802209"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "0", 
+        "Na": "0", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 1, 
+        "seq": "GGGATGGCTCAAAGGCGTAGT"
+      }, 
+      "result": {
+        "error": "ValueError: Total ion concentration of zero is not allowed in this method."
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "0", 
+        "Na": "0", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 1, 
+        "seq": "AAAAAAAAAAAAAAAAAAAAA"
+      }, 
+      "result": {
+        "error": "ValueError: Total ion concentration of zero is not allowed in this method."
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "0", 
+        "Na": "0", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 1, 
+        "seq": "GCGCGCGCGCGCGCGCGCGCG"
+      }, 
+      "result": {
+        "error": "ValueError: Total ion concentration of zero is not allowed in this method."
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "0", 
+        "Na": "0", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 1, 
+        "seq": "TTCTGGGAAGTGGTTTGCGCC"
+      }, 
+      "result": {
+        "error": "ValueError: Total ion concentration of zero is not allowed in this method."
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "50", 
+        "Mg": "0", 
+        "Na": "20", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 2, 
+        "seq": "GGGATGGCTCAAAGGCGTAGT"
+      }, 
+      "result": {
+        "value": "-19.516245639776397"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "50", 
+        "Mg": "0", 
+        "Na": "20", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 2, 
+        "seq": "AAAAAAAAAAAAAAAAAAAAA"
+      }, 
+      "result": {
+        "value": "-19.516245639776397"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "50", 
+        "Mg": "0", 
+        "Na": "20", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 2, 
+        "seq": "GCGCGCGCGCGCGCGCGCGCG"
+      }, 
+      "result": {
+        "value": "-19.516245639776397"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "50", 
+        "Mg": "0", 
+        "Na": "20", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 2, 
+        "seq": "TTCTGGGAAGTGGTTTGCGCC"
+      }, 
+      "result": {
+        "value": "-19.516245639776397"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "0", 
+        "Na": "50", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 2, 
+        "seq": "GGGATGGCTCAAAGGCGTAGT"
+      }, 
+      "result": {
+        "value": "-21.845107734584833"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "0", 
+        "Na": "50", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 2, 
+        "seq": "AAAAAAAAAAAAAAAAAAAAA"
+      }, 
+      "result": {
+        "value": "-21.845107734584833"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "0", 
+        "Na": "50", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 2, 
+        "seq": "GCGCGCGCGCGCGCGCGCGCG"
+      }, 
+      "result": {
+        "value": "-21.845107734584833"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "0", 
+        "Na": "50", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 2, 
+        "seq": "TTCTGGGAAGTGGTTTGCGCC"
+      }, 
+      "result": {
+        "value": "-21.845107734584833"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "1.5", 
+        "Na": "0", 
+        "Tris": "10", 
+        "dNTPs": "0.2", 
+        "method": 2, 
+        "seq": "GGGATGGCTCAAAGGCGTAGT"
+      }, 
+      "result": {
+        "value": "-14.76346808509101"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "1.5", 
+        "Na": "0", 
+        "Tris": "10", 
+        "dNTPs": "0.2", 
+        "method": 2, 
+        "seq": "AAAAAAAAAAAAAAAAAAAAA"
+      }, 
+      "result": {
+        "value": "-14.76346808509101"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "1.5", 
+        "Na": "0", 
+        "Tris": "10", 
+        "dNTPs": "0.2", 
+        "method": 2, 
+        "seq": "GCGCGCGCGCGCGCGCGCGCG"
+      }, 
+      "result": {
+        "value": "-14.76346808509101"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "1.5", 
+        "Na": "0", 
+        "Tris": "10", 
+        "dNTPs": "0.2", 
+        "method": 2, 
+        "seq": "TTCTGGGAAGTGGTTTGCGCC"
+      }, 
+      "result": {
+        "value": "-14.76346808509101"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "1.5", 
+        "Na": "0", 
+        "Tris": "10", 
+        "dNTPs": "2.0", 
+        "method": 2, 
+        "seq": "GGGATGGCTCAAAGGCGTAGT"
+      }, 
+      "result": {
+        "value": "-38.222286383292264"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "1.5", 
+        "Na": "0", 
+        "Tris": "10", 
+        "dNTPs": "2.0", 
+        "method": 2, 
+        "seq": "AAAAAAAAAAAAAAAAAAAAA"
+      }, 
+      "result": {
+        "value": "-38.222286383292264"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "1.5", 
+        "Na": "0", 
+        "Tris": "10", 
+        "dNTPs": "2.0", 
+        "method": 2, 
+        "seq": "GCGCGCGCGCGCGCGCGCGCG"
+      }, 
+      "result": {
+        "value": "-38.222286383292264"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "1.5", 
+        "Na": "0", 
+        "Tris": "10", 
+        "dNTPs": "2.0", 
+        "method": 2, 
+        "seq": "TTCTGGGAAGTGGTTTGCGCC"
+      }, 
+      "result": {
+        "value": "-38.222286383292264"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "0", 
+        "Na": "0", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 2, 
+        "seq": "GGGATGGCTCAAAGGCGTAGT"
+      }, 
+      "result": {
+        "error": "ValueError: Total ion concentration of zero is not allowed in this method."
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "0", 
+        "Na": "0", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 2, 
+        "seq": "AAAAAAAAAAAAAAAAAAAAA"
+      }, 
+      "result": {
+        "error": "ValueError: Total ion concentration of zero is not allowed in this method."
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "0", 
+        "Na": "0", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 2, 
+        "seq": "GCGCGCGCGCGCGCGCGCGCG"
+      }, 
+      "result": {
+        "error": "ValueError: Total ion concentration of zero is not allowed in this method."
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "0", 
+        "Na": "0", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 2, 
+        "seq": "TTCTGGGAAGTGGTTTGCGCC"
+      }, 
+      "result": {
+        "error": "ValueError: Total ion concentration of zero is not allowed in this method."
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "50", 
+        "Mg": "0", 
+        "Na": "20", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 3, 
+        "seq": "GGGATGGCTCAAAGGCGTAGT"
+      }, 
+      "result": {
+        "value": "-14.436274499821788"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "50", 
+        "Mg": "0", 
+        "Na": "20", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 3, 
+        "seq": "AAAAAAAAAAAAAAAAAAAAA"
+      }, 
+      "result": {
+        "value": "-14.436274499821788"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "50", 
+        "Mg": "0", 
+        "Na": "20", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 3, 
+        "seq": "GCGCGCGCGCGCGCGCGCGCG"
+      }, 
+      "result": {
+        "value": "-14.436274499821788"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "50", 
+        "Mg": "0", 
+        "Na": "20", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 3, 
+        "seq": "TTCTGGGAAGTGGTTTGCGCC"
+      }, 
+      "result": {
+        "value": "-14.436274499821788"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "0", 
+        "Na": "50", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 3, 
+        "seq": "GGGATGGCTCAAAGGCGTAGT"
+      }, 
+      "result": {
+        "value": "-16.262874945799766"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "0", 
+        "Na": "50", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 3, 
+        "seq": "AAAAAAAAAAAAAAAAAAAAA"
+      }, 
+      "result": {
+        "value": "-16.262874945799766"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "0", 
+        "Na": "50", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 3, 
+        "seq": "GCGCGCGCGCGCGCGCGCGCG"
+      }, 
+      "result": {
+        "value": "-16.262874945799766"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "0", 
+        "Na": "50", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 3, 
+        "seq": "TTCTGGGAAGTGGTTTGCGCC"
+      }, 
+      "result": {
+        "value": "-16.262874945799766"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "1.5", 
+        "Na": "0", 
+        "Tris": "10", 
+        "dNTPs": "0.2", 
+        "method": 3, 
+        "seq": "GGGATGGCTCAAAGGCGTAGT"
+      }, 
+      "result": {
+        "value": "-10.60324125582971"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "1.5", 
+        "Na": "0", 
+        "Tris": "10", 
+        "dNTPs": "0.2", 
+        "method": 3, 
+        "seq": "AAAAAAAAAAAAAAAAAAAAA"
+      }, 
+      "result": {
+        "value": "-10.60324125582971"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "1.5", 
+        "Na": "0", 
+        "Tris": "10", 
+        "dNTPs": "0.2", 
+        "method": 3, 
+        "seq": "GCGCGCGCGCGCGCGCGCGCG"
+      }, 
+      "result": {
+        "value": "-10.60324125582971"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "1.5", 
+        "Na": "0", 
+        "Tris": "10", 
+        "dNTPs": "0.2", 
+        "method": 3, 
+        "seq": "TTCTGGGAAGTGGTTTGCGCC"
+      }, 
+      "result": {
+        "value": "-10.60324125582971"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "1.5", 
+        "Na": "0", 
+        "Tris": "10", 
+        "dNTPs": "2.0", 
+        "method": 3, 
+        "seq": "GGGATGGCTCAAAGGCGTAGT"
+      }, 
+      "result": {
+        "value": "-28.762874945799766"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "1.5", 
+        "Na": "0", 
+        "Tris": "10", 
+        "dNTPs": "2.0", 
+        "method": 3, 
+        "seq": "AAAAAAAAAAAAAAAAAAAAA"
+      }, 
+      "result": {
+        "value": "-28.762874945799766"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "1.5", 
+        "Na": "0", 
+        "Tris": "10", 
+        "dNTPs": "2.0", 
+        "method": 3, 
+        "seq": "GCGCGCGCGCGCGCGCGCGCG"
+      }, 
+      "result": {
+        "value": "-28.762874945799766"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "1.5", 
+        "Na": "0", 
+        "Tris": "10", 
+        "dNTPs": "2.0", 
+        "method": 3, 
+        "seq": "TTCTGGGAAGTGGTTTGCGCC"
+      }, 
+      "result": {
+        "value": "-28.762874945799766"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "0", 
+        "Na": "0", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 3, 
+        "seq": "GGGATGGCTCAAAGGCGTAGT"
+      }, 
+      "result": {
+        "error": "ValueError: Total ion concentration of zero is not allowed in this method."
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "0", 
+        "Na": "0", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 3, 
+        "seq": "AAAAAAAAAAAAAAAAAAAAA"
+      }, 
+      "result": {
+        "error": "ValueError: Total ion concentration of zero is not allowed in this method."
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "0", 
+        "Na": "0", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 3, 
+        "seq": "GCGCGCGCGCGCGCGCGCGCG"
+      }, 
+      "result": {
+        "error": "ValueError: Total ion concentration of zero is not allowed in this method."
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "0", 
+        "Na": "0", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 3, 
+        "seq": "TTCTGGGAAGTGGTTTGCGCC"
+      }, 
+      "result": {
+        "error": "ValueError: Total ion concentration of zero is not allowed in this method."
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "50", 
+        "Mg": "0", 
+        "Na": "20", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 4, 
+        "seq": "GGGATGGCTCAAAGGCGTAGT"
+      }, 
+      "result": {
+        "value": "-13.512352931833194"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "50", 
+        "Mg": "0", 
+        "Na": "20", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 4, 
+        "seq": "AAAAAAAAAAAAAAAAAAAAA"
+      }, 
+      "result": {
+        "value": "-13.512352931833194"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "50", 
+        "Mg": "0", 
+        "Na": "20", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 4, 
+        "seq": "GCGCGCGCGCGCGCGCGCGCG"
+      }, 
+      "result": {
+        "value": "-13.512352931833194"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "50", 
+        "Mg": "0", 
+        "Na": "20", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 4, 
+        "seq": "TTCTGGGAAGTGGTTTGCGCC"
+      }, 
+      "result": {
+        "value": "-13.512352931833194"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "0", 
+        "Na": "50", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 4, 
+        "seq": "GGGATGGCTCAAAGGCGTAGT"
+      }, 
+      "result": {
+        "value": "-15.22205094926858"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "0", 
+        "Na": "50", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 4, 
+        "seq": "AAAAAAAAAAAAAAAAAAAAA"
+      }, 
+      "result": {
+        "value": "-15.22205094926858"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "0", 
+        "Na": "50", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 4, 
+        "seq": "GCGCGCGCGCGCGCGCGCGCG"
+      }, 
+      "result": {
+        "value": "-15.22205094926858"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "0", 
+        "Na": "50", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 4, 
+        "seq": "TTCTGGGAAGTGGTTTGCGCC"
+      }, 
+      "result": {
+        "value": "-15.22205094926858"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "1.5", 
+        "Na": "0", 
+        "Tris": "10", 
+        "dNTPs": "0.2", 
+        "method": 4, 
+        "seq": "GGGATGGCTCAAAGGCGTAGT"
+      }, 
+      "result": {
+        "value": "-9.924633815456607"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "1.5", 
+        "Na": "0", 
+        "Tris": "10", 
+        "dNTPs": "0.2", 
+        "method": 4, 
+        "seq": "AAAAAAAAAAAAAAAAAAAAA"
+      }, 
+      "result": {
+        "value": "-9.924633815456607"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "1.5", 
+        "Na": "0", 
+        "Tris": "10", 
+        "dNTPs": "0.2", 
+        "method": 4, 
+        "seq": "GCGCGCGCGCGCGCGCGCGCG"
+      }, 
+      "result": {
+        "value": "-9.924633815456607"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "1.5", 
+        "Na": "0", 
+        "Tris": "10", 
+        "dNTPs": "0.2", 
+        "method": 4, 
+        "seq": "TTCTGGGAAGTGGTTTGCGCC"
+      }, 
+      "result": {
+        "value": "-9.924633815456607"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "1.5", 
+        "Na": "0", 
+        "Tris": "10", 
+        "dNTPs": "2.0", 
+        "method": 4, 
+        "seq": "GGGATGGCTCAAAGGCGTAGT"
+      }, 
+      "result": {
+        "value": "-26.92205094926858"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "1.5", 
+        "Na": "0", 
+        "Tris": "10", 
+        "dNTPs": "2.0", 
+        "method": 4, 
+        "seq": "AAAAAAAAAAAAAAAAAAAAA"
+      }, 
+      "result": {
+        "value": "-26.92205094926858"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "1.5", 
+        "Na": "0", 
+        "Tris": "10", 
+        "dNTPs": "2.0", 
+        "method": 4, 
+        "seq": "GCGCGCGCGCGCGCGCGCGCG"
+      }, 
+      "result": {
+        "value": "-26.92205094926858"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "1.5", 
+        "Na": "0", 
+        "Tris": "10", 
+        "dNTPs": "2.0", 
+        "method": 4, 
+        "seq": "TTCTGGGAAGTGGTTTGCGCC"
+      }, 
+      "result": {
+        "value": "-26.92205094926858"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "0", 
+        "Na": "0", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 4, 
+        "seq": "GGGATGGCTCAAAGGCGTAGT"
+      }, 
+      "result": {
+        "error": "ValueError: Total ion concentration of zero is not allowed in this method."
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "0", 
+        "Na": "0", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 4, 
+        "seq": "AAAAAAAAAAAAAAAAAAAAA"
+      }, 
+      "result": {
+        "error": "ValueError: Total ion concentration of zero is not allowed in this method."
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "0", 
+        "Na": "0", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 4, 
+        "seq": "GCGCGCGCGCGCGCGCGCGCG"
+      }, 
+      "result": {
+        "error": "ValueError: Total ion concentration of zero is not allowed in this method."
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "0", 
+        "Na": "0", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 4, 
+        "seq": "TTCTGGGAAGTGGTTTGCGCC"
+      }, 
+      "result": {
+        "error": "ValueError: Total ion concentration of zero is not allowed in this method."
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "50", 
+        "Mg": "0", 
+        "Na": "20", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 5, 
+        "seq": "GGGATGGCTCAAAGGCGTAGT"
+      }, 
+      "result": {
+        "value": "-19.572153871825243"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "50", 
+        "Mg": "0", 
+        "Na": "20", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 5, 
+        "seq": "AAAAAAAAAAAAAAAAAAAAA"
+      }, 
+      "result": {
+        "value": "-19.572153871825243"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "50", 
+        "Mg": "0", 
+        "Na": "20", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 5, 
+        "seq": "GCGCGCGCGCGCGCGCGCGCG"
+      }, 
+      "result": {
+        "value": "-19.572153871825243"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "50", 
+        "Mg": "0", 
+        "Na": "20", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 5, 
+        "seq": "TTCTGGGAAGTGGTTTGCGCC"
+      }, 
+      "result": {
+        "value": "-19.572153871825243"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "0", 
+        "Na": "50", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 5, 
+        "seq": "GGGATGGCTCAAAGGCGTAGT"
+      }, 
+      "result": {
+        "value": "-22.048589533357372"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "0", 
+        "Na": "50", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 5, 
+        "seq": "AAAAAAAAAAAAAAAAAAAAA"
+      }, 
+      "result": {
+        "value": "-22.048589533357372"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "0", 
+        "Na": "50", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 5, 
+        "seq": "GCGCGCGCGCGCGCGCGCGCG"
+      }, 
+      "result": {
+        "value": "-22.048589533357372"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "0", 
+        "Na": "50", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 5, 
+        "seq": "TTCTGGGAAGTGGTTTGCGCC"
+      }, 
+      "result": {
+        "value": "-22.048589533357372"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "1.5", 
+        "Na": "0", 
+        "Tris": "10", 
+        "dNTPs": "0.2", 
+        "method": 5, 
+        "seq": "GGGATGGCTCAAAGGCGTAGT"
+      }, 
+      "result": {
+        "value": "-14.37547266102113"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "1.5", 
+        "Na": "0", 
+        "Tris": "10", 
+        "dNTPs": "0.2", 
+        "method": 5, 
+        "seq": "AAAAAAAAAAAAAAAAAAAAA"
+      }, 
+      "result": {
+        "value": "-14.37547266102113"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "1.5", 
+        "Na": "0", 
+        "Tris": "10", 
+        "dNTPs": "0.2", 
+        "method": 5, 
+        "seq": "GCGCGCGCGCGCGCGCGCGCG"
+      }, 
+      "result": {
+        "value": "-14.37547266102113"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "1.5", 
+        "Na": "0", 
+        "Tris": "10", 
+        "dNTPs": "0.2", 
+        "method": 5, 
+        "seq": "TTCTGGGAAGTGGTTTGCGCC"
+      }, 
+      "result": {
+        "value": "-14.37547266102113"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "1.5", 
+        "Na": "0", 
+        "Tris": "10", 
+        "dNTPs": "2.0", 
+        "method": 5, 
+        "seq": "GGGATGGCTCAAAGGCGTAGT"
+      }, 
+      "result": {
+        "value": "-38.99561581779354"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "1.5", 
+        "Na": "0", 
+        "Tris": "10", 
+        "dNTPs": "2.0", 
+        "method": 5, 
+        "seq": "AAAAAAAAAAAAAAAAAAAAA"
+      }, 
+      "result": {
+        "value": "-38.99561581779354"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "1.5", 
+        "Na": "0", 
+        "Tris": "10", 
+        "dNTPs": "2.0", 
+        "method": 5, 
+        "seq": "GCGCGCGCGCGCGCGCGCGCG"
+      }, 
+      "result": {
+        "value": "-38.99561581779354"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "1.5", 
+        "Na": "0", 
+        "Tris": "10", 
+        "dNTPs": "2.0", 
+        "method": 5, 
+        "seq": "TTCTGGGAAGTGGTTTGCGCC"
+      }, 
+      "result": {
+        "value": "-38.99561581779354"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "0", 
+        "Na": "0", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 5, 
+        "seq": "GGGATGGCTCAAAGGCGTAGT"
+      }, 
+      "result": {
+        "error": "ValueError: Total ion concentration of zero is not allowed in this method."
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "0", 
+        "Na": "0", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 5, 
+        "seq": "AAAAAAAAAAAAAAAAAAAAA"
+      }, 
+      "result": {
+        "error": "ValueError: Total ion concentration of zero is not allowed in this method."
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "0", 
+        "Na": "0", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 5, 
+        "seq": "GCGCGCGCGCGCGCGCGCGCG"
+      }, 
+      "result": {
+        "error": "ValueError: Total ion concentration of zero is not allowed in this method."
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "0", 
+        "Na": "0", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 5, 
+        "seq": "TTCTGGGAAGTGGTTTGCGCC"
+      }, 
+      "result": {
+        "error": "ValueError: Total ion concentration of zero is not allowed in this method."
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "50", 
+        "Mg": "0", 
+        "Na": "20", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 6, 
+        "seq": "GGGATGGCTCAAAGGCGTAGT"
+      }, 
+      "result": {
+        "value": "0.00010632455219875319"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "50", 
+        "Mg": "0", 
+        "Na": "20", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 6, 
+        "seq": "AAAAAAAAAAAAAAAAAAAAA"
+      }, 
+      "result": {
+        "value": "0.0001715144125327053"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "50", 
+        "Mg": "0", 
+        "Na": "20", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 6, 
+        "seq": "GCGCGCGCGCGCGCGCGCGCG"
+      }, 
+      "result": {
+        "value": "5.743215694828911e-05"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "50", 
+        "Mg": "0", 
+        "Na": "20", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 6, 
+        "seq": "TTCTGGGAAGTGGTTTGCGCC"
+      }, 
+      "result": {
+        "value": "0.00010632455219875319"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "0", 
+        "Na": "50", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 6, 
+        "seq": "GGGATGGCTCAAAGGCGTAGT"
+      }, 
+      "result": {
+        "value": "0.00012925265936321523"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "0", 
+        "Na": "50", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 6, 
+        "seq": "AAAAAAAAAAAAAAAAAAAAA"
+      }, 
+      "result": {
+        "value": "0.00020269089624062452"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "0", 
+        "Na": "50", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 6, 
+        "seq": "GCGCGCGCGCGCGCGCGCGCG"
+      }, 
+      "result": {
+        "value": "7.41739817051583e-05"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "0", 
+        "Na": "50", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 6, 
+        "seq": "TTCTGGGAAGTGGTTTGCGCC"
+      }, 
+      "result": {
+        "value": "0.00012925265936321523"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "1.5", 
+        "Na": "0", 
+        "Tris": "10", 
+        "dNTPs": "0.2", 
+        "method": 6, 
+        "seq": "GGGATGGCTCAAAGGCGTAGT"
+      }, 
+      "result": {
+        "value": "6.513044802341857e-05"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "1.5", 
+        "Na": "0", 
+        "Tris": "10", 
+        "dNTPs": "0.2", 
+        "method": 6, 
+        "seq": "AAAAAAAAAAAAAAAAAAAAA"
+      }, 
+      "result": {
+        "value": "0.00011301148662262714"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "1.5", 
+        "Na": "0", 
+        "Tris": "10", 
+        "dNTPs": "0.2", 
+        "method": 6, 
+        "seq": "GCGCGCGCGCGCGCGCGCGCG"
+      }, 
+      "result": {
+        "value": "2.921966907401213e-05"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "1.5", 
+        "Na": "0", 
+        "Tris": "10", 
+        "dNTPs": "0.2", 
+        "method": 6, 
+        "seq": "TTCTGGGAAGTGGTTTGCGCC"
+      }, 
+      "result": {
+        "value": "6.513044802341857e-05"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "1.5", 
+        "Na": "0", 
+        "Tris": "10", 
+        "dNTPs": "2.0", 
+        "method": 6, 
+        "seq": "GGGATGGCTCAAAGGCGTAGT"
+      }, 
+      "result": {
+        "value": "0.00034327743926677347"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "1.5", 
+        "Na": "0", 
+        "Tris": "10", 
+        "dNTPs": "2.0", 
+        "method": 6, 
+        "seq": "AAAAAAAAAAAAAAAAAAAAA"
+      }, 
+      "result": {
+        "value": "0.0004731619049952939"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "1.5", 
+        "Na": "0", 
+        "Tris": "10", 
+        "dNTPs": "2.0", 
+        "method": 6, 
+        "seq": "GCGCGCGCGCGCGCGCGCGCG"
+      }, 
+      "result": {
+        "value": "0.00024586408997038313"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "1.5", 
+        "Na": "0", 
+        "Tris": "10", 
+        "dNTPs": "2.0", 
+        "method": 6, 
+        "seq": "TTCTGGGAAGTGGTTTGCGCC"
+      }, 
+      "result": {
+        "value": "0.00034327743926677347"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "0", 
+        "Na": "0", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 6, 
+        "seq": "GGGATGGCTCAAAGGCGTAGT"
+      }, 
+      "result": {
+        "error": "ValueError: Total ion concentration of zero is not allowed in this method."
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "0", 
+        "Na": "0", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 6, 
+        "seq": "AAAAAAAAAAAAAAAAAAAAA"
+      }, 
+      "result": {
+        "error": "ValueError: Total ion concentration of zero is not allowed in this method."
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "0", 
+        "Na": "0", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 6, 
+        "seq": "GCGCGCGCGCGCGCGCGCGCG"
+      }, 
+      "result": {
+        "error": "ValueError: Total ion concentration of zero is not allowed in this method."
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "0", 
+        "Na": "0", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 6, 
+        "seq": "TTCTGGGAAGTGGTTTGCGCC"
+      }, 
+      "result": {
+        "error": "ValueError: Total ion concentration of zero is not allowed in this method."
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "50", 
+        "Mg": "0", 
+        "Na": "20", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 7, 
+        "seq": "GGGATGGCTCAAAGGCGTAGT"
+      }, 
+      "result": {
+        "value": "0.00010632455219875319"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "50", 
+        "Mg": "0", 
+        "Na": "20", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 7, 
+        "seq": "AAAAAAAAAAAAAAAAAAAAA"
+      }, 
+      "result": {
+        "value": "0.0001715144125327053"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "50", 
+        "Mg": "0", 
+        "Na": "20", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 7, 
+        "seq": "GCGCGCGCGCGCGCGCGCGCG"
+      }, 
+      "result": {
+        "value": "5.743215694828911e-05"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "50", 
+        "Mg": "0", 
+        "Na": "20", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 7, 
+        "seq": "TTCTGGGAAGTGGTTTGCGCC"
+      }, 
+      "result": {
+        "value": "0.00010632455219875319"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "0", 
+        "Na": "50", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 7, 
+        "seq": "GGGATGGCTCAAAGGCGTAGT"
+      }, 
+      "result": {
+        "value": "0.00012925265936321523"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "0", 
+        "Na": "50", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 7, 
+        "seq": "AAAAAAAAAAAAAAAAAAAAA"
+      }, 
+      "result": {
+        "value": "0.00020269089624062452"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "0", 
+        "Na": "50", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 7, 
+        "seq": "GCGCGCGCGCGCGCGCGCGCG"
+      }, 
+      "result": {
+        "value": "7.41739817051583e-05"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "0", 
+        "Na": "50", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 7, 
+        "seq": "TTCTGGGAAGTGGTTTGCGCC"
+      }, 
+      "result": {
+        "value": "0.00012925265936321523"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "1.5", 
+        "Na": "0", 
+        "Tris": "10", 
+        "dNTPs": "0.2", 
+        "method": 7, 
+        "seq": "GGGATGGCTCAAAGGCGTAGT"
+      }, 
+      "result": {
+        "value": "7.40033384725238e-05"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "1.5", 
+        "Na": "0", 
+        "Tris": "10", 
+        "dNTPs": "0.2", 
+        "method": 7, 
+        "seq": "AAAAAAAAAAAAAAAAAAAAA"
+      }, 
+      "result": {
+        "value": "9.212347806738251e-05"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "1.5", 
+        "Na": "0", 
+        "Tris": "10", 
+        "dNTPs": "0.2", 
+        "method": 7, 
+        "seq": "GCGCGCGCGCGCGCGCGCGCG"
+      }, 
+      "result": {
+        "value": "6.0413233776379784e-05"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "1.5", 
+        "Na": "0", 
+        "Tris": "10", 
+        "dNTPs": "0.2", 
+        "method": 7, 
+        "seq": "TTCTGGGAAGTGGTTTGCGCC"
+      }, 
+      "result": {
+        "value": "7.40033384725238e-05"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "1.5", 
+        "Na": "0", 
+        "Tris": "10", 
+        "dNTPs": "2.0", 
+        "method": 7, 
+        "seq": "GGGATGGCTCAAAGGCGTAGT"
+      }, 
+      "result": {
+        "value": "0.00013950101460952707"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "1.5", 
+        "Na": "0", 
+        "Tris": "10", 
+        "dNTPs": "2.0", 
+        "method": 7, 
+        "seq": "AAAAAAAAAAAAAAAAAAAAA"
+      }, 
+      "result": {
+        "value": "0.00018586609921339423"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "1.5", 
+        "Na": "0", 
+        "Tris": "10", 
+        "dNTPs": "2.0", 
+        "method": 7, 
+        "seq": "GCGCGCGCGCGCGCGCGCGCG"
+      }, 
+      "result": {
+        "value": "0.00010472720115662672"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "1.5", 
+        "Na": "0", 
+        "Tris": "10", 
+        "dNTPs": "2.0", 
+        "method": 7, 
+        "seq": "TTCTGGGAAGTGGTTTGCGCC"
+      }, 
+      "result": {
+        "value": "0.00013950101460952707"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "0", 
+        "Na": "0", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 7, 
+        "seq": "GGGATGGCTCAAAGGCGTAGT"
+      }, 
+      "result": {
+        "error": "ValueError: math domain error"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "0", 
+        "Na": "0", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 7, 
+        "seq": "AAAAAAAAAAAAAAAAAAAAA"
+      }, 
+      "result": {
+        "error": "ValueError: math domain error"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "0", 
+        "Na": "0", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 7, 
+        "seq": "GCGCGCGCGCGCGCGCGCGCG"
+      }, 
+      "result": {
+        "error": "ValueError: math domain error"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "0", 
+        "Na": "0", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 7, 
+        "seq": "TTCTGGGAAGTGGTTTGCGCC"
+      }, 
+      "result": {
+        "error": "ValueError: math domain error"
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "50", 
+        "Mg": "0", 
+        "Na": "20", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 8, 
+        "seq": "GGGATGGCTCAAAGGCGTAGT"
+      }, 
+      "result": {
+        "error": "ValueError: Allowed values for parameter 'method' are 1-7."
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "50", 
+        "Mg": "0", 
+        "Na": "20", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 8, 
+        "seq": "AAAAAAAAAAAAAAAAAAAAA"
+      }, 
+      "result": {
+        "error": "ValueError: Allowed values for parameter 'method' are 1-7."
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "50", 
+        "Mg": "0", 
+        "Na": "20", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 8, 
+        "seq": "GCGCGCGCGCGCGCGCGCGCG"
+      }, 
+      "result": {
+        "error": "ValueError: Allowed values for parameter 'method' are 1-7."
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "50", 
+        "Mg": "0", 
+        "Na": "20", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 8, 
+        "seq": "TTCTGGGAAGTGGTTTGCGCC"
+      }, 
+      "result": {
+        "error": "ValueError: Allowed values for parameter 'method' are 1-7."
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "0", 
+        "Na": "50", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 8, 
+        "seq": "GGGATGGCTCAAAGGCGTAGT"
+      }, 
+      "result": {
+        "error": "ValueError: Allowed values for parameter 'method' are 1-7."
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "0", 
+        "Na": "50", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 8, 
+        "seq": "AAAAAAAAAAAAAAAAAAAAA"
+      }, 
+      "result": {
+        "error": "ValueError: Allowed values for parameter 'method' are 1-7."
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "0", 
+        "Na": "50", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 8, 
+        "seq": "GCGCGCGCGCGCGCGCGCGCG"
+      }, 
+      "result": {
+        "error": "ValueError: Allowed values for parameter 'method' are 1-7."
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "0", 
+        "Na": "50", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 8, 
+        "seq": "TTCTGGGAAGTGGTTTGCGCC"
+      }, 
+      "result": {
+        "error": "ValueError: Allowed values for parameter 'method' are 1-7."
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "1.5", 
+        "Na": "0", 
+        "Tris": "10", 
+        "dNTPs": "0.2", 
+        "method": 8, 
+        "seq": "GGGATGGCTCAAAGGCGTAGT"
+      }, 
+      "result": {
+        "error": "ValueError: Allowed values for parameter 'method' are 1-7."
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "1.5", 
+        "Na": "0", 
+        "Tris": "10", 
+        "dNTPs": "0.2", 
+        "method": 8, 
+        "seq": "AAAAAAAAAAAAAAAAAAAAA"
+      }, 
+      "result": {
+        "error": "ValueError: Allowed values for parameter 'method' are 1-7."
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "1.5", 
+        "Na": "0", 
+        "Tris": "10", 
+        "dNTPs": "0.2", 
+        "method": 8, 
+        "seq": "GCGCGCGCGCGCGCGCGCGCG"
+      }, 
+      "result": {
+        "error": "ValueError: Allowed values for parameter 'method' are 1-7."
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "1.5", 
+        "Na": "0", 
+        "Tris": "10", 
+        "dNTPs": "0.2", 
+        "method": 8, 
+        "seq": "TTCTGGGAAGTGGTTTGCGCC"
+      }, 
+      "result": {
+        "error": "ValueError: Allowed values for parameter 'method' are 1-7."
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "1.5", 
+        "Na": "0", 
+        "Tris": "10", 
+        "dNTPs": "2.0", 
+        "method": 8, 
+        "seq": "GGGATGGCTCAAAGGCGTAGT"
+      }, 
+      "result": {
+        "error": "ValueError: Allowed values for parameter 'method' are 1-7."
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "1.5", 
+        "Na": "0", 
+        "Tris": "10", 
+        "dNTPs": "2.0", 
+        "method": 8, 
+        "seq": "AAAAAAAAAAAAAAAAAAAAA"
+      }, 
+      "result": {
+        "error": "ValueError: Allowed values for parameter 'method' are 1-7."
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "1.5", 
+        "Na": "0", 
+        "Tris": "10", 
+        "dNTPs": "2.0", 
+        "method": 8, 
+        "seq": "GCGCGCGCGCGCGCGCGCGCG"
+      }, 
+      "result": {
+        "error": "ValueError: Allowed values for parameter 'method' are 1-7."
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "1.5", 
+        "Na": "0", 
+        "Tris": "10", 
+        "dNTPs": "2.0", 
+        "method": 8, 
+        "seq": "TTCTGGGAAGTGGTTTGCGCC"
+      }, 
+      "result": {
+        "error": "ValueError: Allowed values for parameter 'method' are 1-7."
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "0", 
+        "Na": "0", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 8, 
+        "seq": "GGGATGGCTCAAAGGCGTAGT"
+      }, 
+      "result": {
+        "error": "ValueError: Allowed values for parameter 'method' are 1-7."
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "0", 
+        "Na": "0", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 8, 
+        "seq": "AAAAAAAAAAAAAAAAAAAAA"
+      }, 
+      "result": {
+        "error": "ValueError: Allowed values for parameter 'method' are 1-7."
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "0", 
+        "Na": "0", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 8, 
+        "seq": "GCGCGCGCGCGCGCGCGCGCG"
+      }, 
+      "result": {
+        "error": "ValueError: Allowed values for parameter 'method' are 1-7."
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "0", 
+        "Mg": "0", 
+        "Na": "0", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 8, 
+        "seq": "TTCTGGGAAGTGGTTTGCGCC"
+      }, 
+      "result": {
+        "error": "ValueError: Allowed values for parameter 'method' are 1-7."
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "50", 
+        "Mg": "0", 
+        "Na": "20", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 5, 
+        "seq": null
+      }, 
+      "result": {
+        "error": "ValueError: sequence is missing (is needed to calculate GC content or sequence length)."
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "50", 
+        "Mg": "0", 
+        "Na": "20", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 6, 
+        "seq": null
+      }, 
+      "result": {
+        "error": "ValueError: sequence is missing (is needed to calculate GC content or sequence length)."
+      }
+    }, 
+    {
+      "kwargs": {
+        "K": "50", 
+        "Mg": "0", 
+        "Na": "20", 
+        "Tris": "0", 
+        "dNTPs": "0", 
+        "method": 7, 
+        "seq": null
+      }, 
+      "result": {
+        "error": "ValueError: sequence is missing (is needed to calculate GC content or sequence length)."
+      }
+    }
+  ], 
+  "description": "free_energy.salt_correction, methods 0-8 (8 is the error case) across four sequences and five ion combinations. Methods 6 and 7 are the SeqUtils.GC ones. Floats are repr() strings."
+}
