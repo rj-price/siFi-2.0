@@ -26,9 +26,12 @@ thermodynamics must not silently change.
 ```
 legacy/            frozen Python 2 original — never edit, never import from src/
                    (12 modules + setup.py + Resources/ with the .ui/.qrc and generated Qt files)
-src/sifi2/         the Python 3 port; see PLAN.md for the module map. Ported so far: thermo,
+src/sifi2/         the Python 3 port; see PLAN.md for the module map. Ported: thermo,
                    config (the SifiConfig dataclass), sirna, bowtie, rnaplfold, efficiency,
-                   analysis, pipeline, cli. Still to come: plots (Phase 5)
+                   analysis, pipeline, cli, plots. The core is complete; Phase 6 (defect fixes)
+                   and Phase 7 (GUI) remain
+tests/baseline/    the port's own end-to-end output for both modes, pinned by test_end_to_end.py;
+                   see its README.md — these are not golden fixtures, they pin the port against itself
 tests/golden/      JSON fixtures captured from legacy/ under Python 2.7 (Phase 1)
 tests/data/        real inputs the fixtures are built from — query/reference FASTA, captured
                    bowtie and RNAplfold output, and a real data_to_json result

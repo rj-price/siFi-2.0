@@ -12,6 +12,7 @@ import pytest
 
 GOLDEN = Path(__file__).parent / "golden"
 DATA = Path(__file__).parent / "data"
+BASELINE = Path(__file__).parent / "baseline"
 
 
 def load_golden(name):

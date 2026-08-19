@@ -21,9 +21,9 @@ for design and off for off-target prediction. Both are overridable.
 **Batch mode.** The original's ``for seq_record in SeqIO.parse(...)`` loop
 ``return``ed inside its first iteration, so every record after the first was
 silently dropped — and the GUI refused multi-record input citing a batch mode
-that was never written. Here every record is processed and gets its own pair of
-output files; ``--threads`` runs records concurrently, which is only safe now
-that the ``os.chdir()`` calls are gone.
+that was never written. Here every record is processed and gets its own set of
+output files (JSON, TSV and PNG); ``--threads`` runs records concurrently, which is
+safe now that the ``os.chdir()`` calls are gone.
 """
 
 from __future__ import annotations
@@ -155,6 +155,9 @@ def _add_common_arguments(parser: argparse.ArgumentParser) -> None:
     binaries.add_argument("--bowtie-path", metavar="PATH", help="bowtie binary, or the directory holding it")
     binaries.add_argument("--rnaplfold-path", metavar="PATH", help="RNAplfold binary, or the directory holding it")
 
+    parser.add_argument(
+        "--plot", action=argparse.BooleanOptionalAction, default=True, help="write <query>.png (default: on)"
+    )
     parser.add_argument("--threads", type=int, default=1, metavar="N", help="query records to process at once")
     parser.add_argument("-q", "--quiet", action="store_true", help="suppress progress messages")
 
@@ -292,11 +295,8 @@ def safe_stem(query_name: str) -> str:
     return stem.strip("._") or "query"
 
 
-def write_results(result: QueryResult, outdir: Path, stem: str) -> list[Path]:
-    """Write ``<query>.json`` and ``<query>.tsv``; returns what was written.
-
-    ``<query>.png`` arrives with ``plots.py`` in Phase 5.
-    """
+def write_results(result: QueryResult, outdir: Path, stem: str, config: SifiConfig, plot: bool = True) -> list[Path]:
+    """Write ``<query>.json``, ``<query>.tsv`` and ``<query>.png``; returns what was written."""
     json_path = outdir / f"{stem}.json"
     tsv_path = outdir / f"{stem}.tsv"
 
@@ -309,7 +309,16 @@ def write_results(result: QueryResult, outdir: Path, stem: str) -> list[Path]:
         for record in result.records:
             writer.writerow(["" if record[column] is None else record[column] for column in TSV_COLUMNS])
 
-    return [json_path, tsv_path]
+    written = [json_path, tsv_path]
+    if plot:
+        # Imported here so `sifi db ...` and a failed run never pay for
+        # matplotlib and seaborn, which together are most of the import cost.
+        from . import plots
+
+        png_path = outdir / f"{stem}.png"
+        plots.save_plot(result, png_path, config.sirna_size, config.is_design)
+        written.append(png_path)
+    return written
 
 
 # ----------------------------------------------------------------------
@@ -346,7 +355,7 @@ def run_analysis(args: argparse.Namespace, mode: Mode) -> int:
             futures = pool.map(lambda query: pipeline.run_query(*query), queries)
             results = list(zip([name for name, _ in queries], futures, strict=True))
 
-    return report_results(results, outdir, log)
+    return report_results(results, outdir, config, log, plot=args.plot)
 
 
 def read_queries(query_file: str) -> list[tuple[str, str]]:
@@ -365,14 +374,16 @@ def read_queries(query_file: str) -> list[tuple[str, str]]:
     return queries
 
 
-def report_results(results: list[tuple[str, QueryResult]], outdir: Path, log) -> int:
+def report_results(
+    results: list[tuple[str, QueryResult]], outdir: Path, config: SifiConfig, log, plot: bool = True
+) -> int:
     """Write each result and summarise; non-zero only if nothing was produced."""
     written_any = False
     for name, result in results:
         if not result.has_hits:
             log(f"sifi: {name}: {result.message or 'no records produced'}")
             continue
-        paths = write_results(result, outdir, safe_stem(name))
+        paths = write_results(result, outdir, safe_stem(name), config, plot=plot)
         written_any = True
         efficient = sum(1 for record in result.records if record["is_efficient"])
         log(
