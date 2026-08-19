@@ -28,8 +28,8 @@ legacy/            frozen Python 2 original — never edit, never import from sr
                    (12 modules + setup.py + Resources/ with the .ui/.qrc and generated Qt files)
 src/sifi2/         the Python 3 port; see PLAN.md for the module map. Ported: thermo,
                    config (the SifiConfig dataclass), sirna, bowtie, rnaplfold, efficiency,
-                   analysis, pipeline, cli, plots. The core is complete; Phase 6 (defect fixes)
-                   and Phase 7 (GUI) remain
+                   analysis, pipeline, cli, plots. The core is complete and the known defects are
+                   fixed; only Phase 7 (GUI) remains
 tests/baseline/    the port's own end-to-end output for both modes, pinned by test_end_to_end.py;
                    see its README.md — these are not golden fixtures, they pin the port against itself
 tests/golden/      JSON fixtures captured from legacy/ under Python 2.7 (Phase 1)
@@ -53,12 +53,15 @@ Present throughout `legacy/`, so do not pattern-match on surrounding code when p
 - **Integer division**: `/` on ints changes meaning in Python 3. Check every division in `free_energy.py`,
   `sifi_pipeline.py` and `general_helpers.py` before assuming a port is behaviour-preserving.
 
-## Known defects worth fixing during the port
+## Known defects — fixed, and how to add to them
 
-Fix these in **separate, attributable commits** (Phase 6), not silently while porting. `PLAN.md` Phase 6 has the
-full list with file:line; the recurring ones are the leaked `mkstemp` file descriptors, the four unrestored
-`os.chdir()` calls used to locate the binaries, `prc.stdin.write(seq)` needing a text-mode pipe, and the
-minus-strand bowtie hits silently dropped from the JSON.
+Every defect `PLAN.md` listed is fixed: the leaked `mkstemp` descriptors and the four unrestored `os.chdir()`
+calls went in Phase 3, and Phase 6 did the five that move numbers (minus-strand hits dropped, design mode with no
+hits producing nothing, the unreachable `DNA_TMM1` keys, the discarded `sirna.upper()`, and the per-target
+position sets). One is left, in `legacy/main.py:279`, and it is Qt — see `PLAN.md` Phase 7.
+
+If another one turns up, fix it the same way: **one attributable commit per defect**, whose message says which
+numbers moved and by how much. Never fold a behaviour change into an unrelated commit.
 
 ## External binaries
 
@@ -96,7 +99,10 @@ guarantee of this port is that the ported functions reproduce those fixtures exa
 means the port is wrong — never adjust a fixture to make a test pass unless that change is the deliberate
 subject of the commit.
 
-The fixtures record the original's behaviour **including its bugs** — that is deliberate. `PLAN.md` Phase 6
-fixes them one attributable commit at a time, each showing up as a reviewed golden diff. Regenerate with
+The fixtures record the original's behaviour **including its bugs**, and they keep doing so now that Phase 6 has
+fixed those bugs in the port: `tests/golden/` is a capture of the original and stays byte-for-byte identical.
+Where the port deliberately diverges, the *test* carries the divergence and says which defect it is; the
+whole-pipeline diff lands in `tests/baseline/`, which is regenerated as part of the commit that moves it.
+Regenerate the goldens with
 `conda run -n sifi2-py2 python tests/py2_capture/capture.py`; it is deterministic, so a re-run must leave
 `tests/golden/` byte-for-byte identical. See `tests/py2_capture/README.md`.

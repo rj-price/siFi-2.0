@@ -37,11 +37,13 @@ def create_sirnas(query_sequence: str, sirna_size: int, start_position: int = 0)
     Returns ``[(name, sequence)]`` with names ``sirna1``, ``sirna2``, ... — the
     name carries the 1-based start position on the query.
 
-    The original called ``sirna.upper()`` and discarded the result; that no-op is
-    preserved here (``PLAN.md`` Phase 6 defect 4) because the terminal-nucleotide
-    rule compares against uppercase literals, so lowercase input changes the
-    result and fixing it is a deliberate, attributable change.
+    The sequence is upper-cased. The original intended this — it called
+    ``sirna.upper()`` and discarded the return value — and it matters, because
+    the terminal-nucleotide rule compares against uppercase literals, so a
+    lowercase or soft-masked FASTA silently failed every siRNA
+    (``PLAN.md`` Phase 6 defect 4).
     """
+    query_sequence = query_sequence.upper()
     start = start_position
     end = start_position + sirna_size
     sirnas = []

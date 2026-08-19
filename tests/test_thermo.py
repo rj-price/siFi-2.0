@@ -75,14 +75,56 @@ def test_salt_correction(kwargs, expected):
     check(expected, thermo.salt_correction, **kw)
 
 
-def test_dna_tmm1_leading_space_keys_are_preserved():
-    """PLAN.md Phase 6 defect 3: two DNA_TMM1 keys carry a leading space, so the
-    exact-string lookup can never reach them. Keep the typo until Phase 6 removes
-    it deliberately, with the golden diff attached."""
-    assert " CC/GC" in thermo.DNA_TMM1
-    assert " GG/CA" in thermo.DNA_TMM1
-    assert "CC/GC" not in thermo.DNA_TMM1
-    assert "GG/CA" not in thermo.DNA_TMM1
+def test_dna_tmm1_has_no_unreachable_keys():
+    """PLAN.md Phase 6 defect 3, fixed: two DNA_TMM1 keys carried a leading space
+    upstream, so the exact-string lookup could never reach them. Their values are
+    unchanged, and the table still has one entry per key."""
+    assert [key for key in thermo.DNA_TMM1 if key != key.strip()] == []
+    assert thermo.DNA_TMM1["CC/GC"] == (-2.1, -5.1)
+    assert thermo.DNA_TMM1["GG/CA"] == (-4.6, -11.4)
+    assert len(thermo.DNA_TMM1) == 48
+
+
+def test_the_terminal_mismatch_table_is_unreachable_from_sifis_own_call_shapes():
+    """Why fixing those two keys moves no published number: the table is
+    consulted only for a *terminal mismatch*, and siFi never presents one. Its
+    dangling-end duplex pairs siRNA n with the reverse complement of siRNA n-2,
+    which overlap by 19 nt and so pair exactly."""
+    from sifi2 import efficiency, sirna
+    from sifi2.config import SifiConfig
+
+    class Watched(dict):
+        def __init__(self, base):
+            super().__init__(base)
+            self.matched = 0
+
+        def __contains__(self, key):
+            found = dict.__contains__(self, key)
+            self.matched += found
+            return found
+
+    watched = Watched(thermo.DNA_TMM1)
+    defaults = list(thermo.calculate_free_energy.__defaults__)
+    names = thermo.calculate_free_energy.__code__.co_varnames
+    index = names.index("tmm_table") - 1
+    original = defaults[index]
+    defaults[index] = watched
+    thermo.calculate_free_energy.__defaults__ = tuple(defaults)
+    try:
+        from conftest import DATA
+
+        lines = (DATA / "query.fasta").read_text().splitlines()
+        query = "".join(line.strip() for line in lines[1:] if not line.startswith(">"))
+        config = SifiConfig()
+        sirnas = sirna.create_sirnas(query, config.sirna_size)
+        for position, (_name, sequence) in enumerate(sirnas, start=1):
+            neighbour = None if position in (1, 2) else sirnas[position - 3][1]
+            efficiency.calculate_efficiency(config, sequence, neighbour, 0.5)
+    finally:
+        defaults[index] = original
+        thermo.calculate_free_energy.__defaults__ = tuple(defaults)
+
+    assert watched.matched == 0
 
 
 def test_sifi_defaults_are_not_biopythons():

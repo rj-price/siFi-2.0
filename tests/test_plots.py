@@ -12,6 +12,7 @@ import json
 
 import pytest
 from conftest import DATA
+from matplotlib.colors import to_rgb
 from matplotlib.figure import Figure
 
 from sifi2 import plots
@@ -107,12 +108,39 @@ def test_design_plot_y_axis_leaves_room_above_the_taller_of_the_two(result):
     assert axes.get_ylim() == (0, max(tallest, 21) + 3)
 
 
-def test_design_plot_shades_main_targets_green_and_off_targets_red(result):
-    axes = plots.plot_design(Figure(), result, 21)
+def test_design_plot_shades_main_targets_green_and_off_targets_red(query_sequence):
+    """Green for positions only the main target covers, red for off-target ones,
+    both at alpha 0.2 and nothing else."""
+    records = [
+        {
+            "sirna_position": 10,
+            "sirna_name": "sirna10",
+            "hit_name": "main",
+            "is_efficient": False,
+            "is_off_target": False,
+        },
+        {
+            "sirna_position": 100,
+            "sirna_name": "sirna100",
+            "hit_name": "other",
+            "is_efficient": False,
+            "is_off_target": True,
+        },
+    ]
+    axes = plots.plot_design(Figure(), make_result(records, query_sequence, ["main"]), 21)
     colours = {patch.get_facecolor()[:3] for patch in axes.patches}
-    # Green and red, both at alpha 0.2, and nothing else.
-    assert len(colours) == 2
+    # ``apply_style()`` rebinds the single-letter colours, so resolve them now.
+    assert colours == {to_rgb("g"), to_rgb("r")}
     assert all(patch.get_alpha() == 0.2 for patch in axes.patches)
+
+
+def test_design_plot_shades_a_position_hit_both_ways_as_an_off_target(result):
+    """On the captured run every query position is covered by some off-target,
+    so no green survives the subtraction — which is the warning the plot exists
+    to give. Before Phase 6 defect 4 was fixed, one stray position stayed green:
+    the running off-target set was incomplete when it was subtracted."""
+    axes = plots.plot_design(Figure(), result, 21)
+    assert {patch.get_facecolor()[:3] for patch in axes.patches} == {to_rgb("r")}
 
 
 def test_design_plot_shades_contiguous_runs_as_one_patch(query_sequence):

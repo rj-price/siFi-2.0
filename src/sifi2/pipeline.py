@@ -49,6 +49,10 @@ NO_TARGETS_MESSAGE = (
     "No targets found. Please make sure that the query and/or database sequences are in correct orientation."
 )
 
+#: Design mode with no database hits still scores the siRNAs themselves, so the
+#: run produces records — just none attributed to a target.
+NO_TARGETS_DESIGN_MESSAGE = NO_TARGETS_MESSAGE + " Reporting siRNA efficiency only, with no target attribution."
+
 
 class PipelineCancelled(Exception):
     """The main-target selector cancelled the run."""
@@ -150,6 +154,7 @@ class SifiPipeline:
             records=records,
             table_data=analysis.get_table_data(records),
             main_targets=main_targets,
+            message=NO_TARGETS_DESIGN_MESSAGE if no_target else None,
         )
 
     # ------------------------------------------------------------------
@@ -186,11 +191,18 @@ class SifiPipeline:
         One record per bowtie hit, carrying the siRNA, its position on the query,
         the target it hit and its efficiency verdict.
 
-        Note the ``strand == "+"`` guard: minus-strand hits produce no record at
-        all, and neither does the no-hits design path, since it sets
-        ``strand = None``. Both are ``PLAN.md`` Phase 6 defects 1 and 2, kept
-        here so that fixing them is a reviewed golden diff rather than a silent
-        change of published numbers.
+        Minus-strand hits are reported (``PLAN.md`` Phase 6 defect 1): the
+        original built the record inside ``if strand == "+":``, so every hit on
+        the reverse strand of a database sequence was silently discarded — a
+        substantive defect for off-target *prediction*, whose whole point is to
+        find every sequence a construct can silence.
+
+        The no-hits design path (``no_target``) produces a record per siRNA, with
+        no strand, target or mismatch information and an efficiency verdict as
+        its only content — the "design a construct against a sequence with no
+        database hits" case the original explicitly provided for but could not
+        reach, since it set ``strand = None`` and the guard above then discarded
+        every record (``PLAN.md`` Phase 6 defect 2).
         """
         config = self.config
         json_lst = []
@@ -204,22 +216,24 @@ class SifiPipeline:
                 reference_strand_pos = int(data_split[3])
                 # Position on the query sequence, starting at 1.
                 query_position = int(sirna_name.split("sirna")[1])
-                sirna_sequence = data_split[4]
+                # bowtie reports the read as it aligned, so a minus-strand hit
+                # carries the reverse complement of the siRNA. The efficiency
+                # rules are about the siRNA itself, so take it from the query
+                # windowing; for a plus-strand hit the two are identical.
+                sirna_sequence = sirnas[query_position - 1][1]
                 missmatches = data_split[7]
                 off_target = (hit_name not in main_targets) if config.is_design else None
             else:
-                # No bowtie hits: the siRNA file carries the efficiency data.
+                # No bowtie hits: the siRNA file carries the efficiency data, and
+                # there is no target to report against.
                 sirna_name = data_split[0]
                 query_position = int(sirna_name.split("sirna")[1])
                 sirna_sequence = data_split[1]
                 off_target = False
                 strand = None
-                hit_name = False
+                hit_name = None
                 reference_strand_pos = None
                 missmatches = None
-
-            if strand != "+":
-                continue
 
             # The dangling-end partner is the siRNA two positions upstream, so
             # the first two siRNAs of a query have none.

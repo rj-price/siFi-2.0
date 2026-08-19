@@ -234,9 +234,11 @@ def test_batch_mode_writes_one_result_set_per_record(test_db, tmp_path, capsys):
         [f"{stem}.{extension}" for stem in stems for extension in ("json", "tsv", "png")]
     )
 
-    # Record counts are the Phase 3 end-to-end baseline at --mismatches 0.
+    # Record counts at --mismatches 0, after Phase 6 defect 1 (minus-strand hits
+    # were dropped): 900/413/811 before the fix. TUB4 gains most, since the
+    # reference holds it reverse-complemented and so it hits its own deposit.
     counts = [len(json.loads((outdir / f"{stem}.json").read_text())) for stem in stems]
-    assert counts == [900, 413, 811]
+    assert counts == [912, 793, 820]
 
     for stem, count in zip(stems, counts, strict=True):
         lines = (outdir / f"{stem}.tsv").read_text().splitlines()
@@ -270,6 +272,50 @@ def test_design_marks_unchosen_hits_as_off_targets(test_db, tmp_path):
     records = json.loads((outdir / "TUB3_fragment.json").read_text())
     assert {record["is_off_target"] for record in records} == {True, False}
     assert {record["hit_name"] for record in records if not record["is_off_target"]} == {"NM_125665.4"}
+
+
+#: A random sequence, so no 21mer of it is in the tubulin reference.
+NO_HIT_FASTA = """>nohits
+ATGAACTGGAGTCTACGATGAGTGTACGAACGTCAGCTGGAACAGGCTTCCCACCAGGGT
+TGCTACTTATCATTTATTGTACGTTCAAAGGCGTGGTTTGTTTCTTGTGGCTGGTTCGAT
+"""
+
+
+@needs_binaries
+def test_design_without_database_hits_still_writes_efficiency_results(test_db, tmp_path, capsys):
+    """PLAN.md Phase 6 defect 2: designing against a sequence with no database
+    hits is a supported case, and now produces the efficiency-only output the
+    original provided for but discarded."""
+    query = tmp_path / "nohits.fasta"
+    query.write_text(NO_HIT_FASTA)
+    outdir = tmp_path / "out"
+    argv = [
+        "design", "--query", str(query), "--db", "testdb",
+        "--db-location", test_db, "--outdir", str(outdir), "--all-targets-main",
+    ]  # fmt: skip
+    assert main(argv) == 0
+
+    records = json.loads((outdir / "nohits.json").read_text())
+    assert len(records) == 120 - 21 + 1
+    assert {record["hit_name"] for record in records} == {None}
+    assert sorted(path.name for path in outdir.iterdir()) == ["nohits.json", "nohits.png", "nohits.tsv"]
+    # The run is still reported as having found no targets.
+    assert "No targets found" in capsys.readouterr().out
+
+
+@needs_binaries
+def test_offtarget_without_database_hits_produces_nothing(test_db, tmp_path, capsys):
+    """Off-target mode has no efficiency-only fallback: with no hits there is
+    nothing to predict, so the run reports that and exits non-zero."""
+    query = tmp_path / "nohits.fasta"
+    query.write_text(NO_HIT_FASTA)
+    outdir = tmp_path / "out"
+    argv = [
+        "offtarget", "--query", str(query), "--db", "testdb",
+        "--db-location", test_db, "--outdir", str(outdir),
+    ]  # fmt: skip
+    assert main(argv) == 1
+    assert "No targets found" in capsys.readouterr().out
 
 
 # ----------------------------------------------------------------------

@@ -6,9 +6,10 @@ Port of ``legacy/free_energy.py``, which is itself a vendored, modified copy of
 Two things here are the numerical contract of the whole tool and must not be
 "tidied" (see ``PLAN.md`` Phase 2):
 
-* the lookup tables below are verbatim, **including the two ``DNA_TMM1`` keys
-  with a leading space** (``' CC/GC'``, ``' GG/CA'``) which the exact-string
-  lookup can therefore never reach — removing the spaces changes ΔG;
+* the lookup tables below are verbatim, with one deliberate exception: two
+  ``DNA_TMM1`` keys carried a leading space upstream (``' CC/GC'``, ``' GG/CA'``)
+  and so could never be reached by the exact-string lookup. The spaces are gone
+  (``PLAN.md`` Phase 6 defect 3) — see :data:`DNA_TMM1`;
 * the siFi-specific defaults — RNA nearest neighbours (``RNA_NN3``) with *DNA*
   mismatch tables, ``RNA_DE2`` dangling ends, ``Na=20, K=50, saltcorr=5`` —
   differ from Biopython's own defaults.
@@ -260,6 +261,14 @@ DNA_IMM1 = {
 
 # Terminal mismatch table (DNA)
 # SantaLucia & Peyret (2001) Patent Application WO 01/94611
+#
+# ``CC/GC`` and ``GG/CA`` are spelled without the leading space upstream typo'd
+# into them (``PLAN.md`` Phase 6 defect 3), which had made those two entries
+# unreachable. It moves no siFi number: this table is consulted only for a
+# *terminal mismatch*, and siFi's two call shapes never present one — the
+# dangling-end duplex is built from siRNAs n and n-2, which overlap by 19 nt and
+# so pair exactly. Measured over ~7,000 duplexes from the committed data: 140,960
+# lookups, none of which matched any key of this table.
 DNA_TMM1 = {
     "AA/TA": (-3.1, -7.8),
     "TA/AA": (-2.5, -6.3),
@@ -267,7 +276,7 @@ DNA_TMM1 = {
     "GA/CA": (-8.0, -22.5),
     "AC/TC": (-0.1, 0.5),
     "TC/AC": (-0.7, -1.3),
-    " CC/GC": (-2.1, -5.1),
+    "CC/GC": (-2.1, -5.1),
     "GC/CC": (-3.9, -10.6),
     "AG/TG": (-1.1, -2.1),
     "TG/AG": (-1.1, -2.7),
@@ -298,7 +307,7 @@ DNA_TMM1 = {
     "CA/GG": (-3.9, -9.6),
     "CG/GA": (-6.0, -15.5),
     "GA/CG": (-4.3, -11.1),
-    " GG/CA": (-4.6, -11.4),
+    "GG/CA": (-4.6, -11.4),
     "TA/AG": (-2.0, -4.7),
     "TG/AA": (-2.4, -5.8),
     "AG/TT": (-3.2, -8.7),

@@ -9,8 +9,9 @@ port:
     string back to the identical float (Python 2.7 and Python 3 both use the
     shortest-round-trip repr, but the port depends on it, so it is pinned here);
   * the fixtures cover what PLAN.md Phase 1 says they cover;
-  * the defects PLAN.md Phase 6 will later fix are present in the fixtures, so
-    that fixing them shows up as a deliberate golden diff rather than a surprise.
+  * the defects PLAN.md Phase 6 fixes are present in the fixtures and stay
+    there — the fixtures are a capture of the original, so a fix shows up as a
+    deliberate diff in the port's tests rather than a surprise here.
 """
 
 import ast
@@ -178,12 +179,13 @@ def test_sirna_windows_match_the_query():
     assert data["fasta"].startswith("> sirna1\n")
 
 
-def test_analysis_pins_the_minus_strand_defect():
-    """PLAN.md Phase 6 defect 1: data_to_json builds its record inside
-    `if strand == '+':`, so minus-strand bowtie hits are silently discarded.
+def test_the_goldens_record_the_original_minus_strand_defect():
+    """PLAN.md Phase 6 defect 1: the original built its record inside
+    `if strand == '+':`, so minus-strand bowtie hits were silently discarded.
 
-    The fixtures must show the defect, so that Phase 6's fix produces a visible,
-    attributable golden diff rather than a silent change.
+    The port now reports them, but these fixtures are a capture of the original
+    and must keep showing the defect — it is what makes the fix an attributable
+    diff. `tests/test_pipeline.py` holds the port side of the comparison.
     """
     analysis = load("analysis.json")
     bowtie = load("bowtie_parse.json")
@@ -191,7 +193,7 @@ def test_analysis_pins_the_minus_strand_defect():
     minus = sum(1 for r in bowtie["rows"] if r[1] == "-")
     assert minus > 0
     assert analysis["record_count"] == plus, (
-        "the golden must record the buggy behaviour: "
+        "the golden must keep recording the original's behaviour: "
         f"{minus} minus-strand hits dropped from {bowtie['input_lines']} bowtie rows"
     )
 

@@ -24,7 +24,7 @@ make every later phase verifiable. Phases 4 and 5 can be swapped. Phase 7 is def
 - [x] **Phase 3** — rest of core ported, headless, Qt coupling broken
 - [x] **Phase 4** — CLI with batch mode
 - [x] **Phase 5** — plots + end-to-end baseline
-- [ ] **Phase 6** — known defects fixed, one attributable commit each
+- [x] **Phase 6** — known defects fixed, one attributable commit each
 - [ ] **Phase 7** — GUI (deferred)
 
 **Notes from completed phases:** _(append here as you go)_
@@ -223,6 +223,44 @@ make every later phase verifiable. Phases 4 and 5 can be swapped. Phase 7 is def
   - There is no golden fixture for a plot and there should not be: the original needed PyQt4 and a display, and a
     PNG is not a stable comparison artefact. `test_plots.py` asserts the *structure* the original prescribed —
     panel count, axis limits, tick spacing, shaded regions, legend labels.
+
+- **Phase 6.** Five commits, one per defect, suite **1283 passed, 2 skipped**. `tests/golden/` is **byte-for-byte
+  untouched** and must stay that way: those fixtures are a capture of the original, so the attributable diff of a
+  fix appears in the port's *tests* and in `tests/baseline/`, never in the goldens. That is a correction to this
+  phase's own text, which said each commit "changes the golden file".
+
+  - **Defect 1 (minus-strand hits).** Fixed; `tests/baseline/` regenerated. 900 -> 912 records for both modes at
+    `--mismatches 0`, batch counts 900/413/811 -> 912/793/820 (TUB4 gains most — the reference holds it
+    reverse-complemented, so its own deposit was what was being dropped). One thing the plan did not flag: bowtie
+    reports a read *as it aligned*, so column 5 of a minus-strand row is the reverse complement of the siRNA.
+    Simply removing the guard would have scored a sequence the construct never contains, so `data_to_json` now
+    takes the siRNA from the windowing — identical for a plus hit, correct for a minus one.
+  - **Defect 2 (design mode with no hits).** Fixed. It is the same guard, so the two would have collapsed into one
+    commit; defect 1 narrowed it to `strand is None` and defect 2 removed it, keeping both attributable. `hit_name`
+    was `False` on that path and is now `None`, matching the other three inapplicable fields. The result still
+    carries the "No targets found" message, so the CLI reports it *and* writes the efficiency-only output. No
+    committed number moves — the committed query has hits — so it is covered end to end by a random query instead.
+  - **Defect 3 (`DNA_TMM1` leading spaces).** Fixed, after checking with Jordan as the plan asked. The plan's
+    premise turned out to be wrong: the fix cannot change any siFi number, because the terminal-mismatch table is
+    **structurally unreachable from siFi's call shapes**. The dangling-end duplex pairs siRNA n with the reverse
+    complement of siRNA n-2, which overlap by 19 nt and so pair exactly — no terminal mismatch ever arises.
+    Instrumented over ~7,000 duplexes: 140,960 lookups, 0 matches, 16 distinct keys queried, all Watson-Crick.
+    `test_the_terminal_mismatch_table_is_unreachable_from_sifis_own_call_shapes` keeps that honest.
+  - **Defect 4 (minor).** Two of the three fixed. `create_sirnas` now upper-cases, so a soft-masked FASTA no longer
+    fails the terminal-nucleotide rule silently (the rule compares against uppercase literals; thermodynamics was
+    never affected, it upper-cases its own input). `get_target_data` accumulates per target — the defect was on
+    `off_target_dict` as well as `main_target_dict`, and its `main_target_ready` guard also credited a siRNA
+    hitting two main targets to the first only; it now guards just the histogram, which is what it was for.
+    Positions per off-target went 398/398/435/500 -> 315/315/160/500 (same union, so the plot's red shading is
+    unchanged; what changes is attribution, which is what the GenBank export writes as feature names) and the
+    single main target went 1 position -> 0, that one having been an artefact of subtracting an incomplete set.
+  - **Handed to Phase 7:** the third defect-4 item. `self.mode = msg_box.exec_()` (`legacy/main.py:279`) returns 0
+    when the dialog is closed with the window X, and 0 is design mode, so cancelling silently picks a mode. It is
+    a `QMessageBox`, and the CLI picks its mode by subcommand, so there is nothing headless to fix.
+
+  Worth knowing: `apply_style()` rebinds matplotlib's single-letter colours (seaborn `color_codes=True`), so a
+  test asserting a literal RGB tuple passes alone and fails in the full suite. Resolve colours with
+  `matplotlib.colors.to_rgb("r")` at assertion time.
 
 ## Context
 
@@ -475,6 +513,10 @@ Only now, with goldens green. Each commit changes the golden file **deliberately
    accumulating set across all keys (`general_helpers.py:154`); `mode` selection returns design mode if the
    dialog is closed with the window X.
 
+> **Done**, in five commits. Two corrections to the text above. `tests/golden/` is *not* what a fix changes —
+> it is a capture of the original and stays byte-for-byte identical; the reviewed diff lands in the port's tests
+> and in `tests/baseline/`. And the third item of 4 is Qt (`legacy/main.py:279`), so it moved to Phase 7.
+
 ---
 
 ## Phase 7 — GUI (deferred, separate effort)
@@ -492,7 +534,9 @@ do headlessly: the **five identical `show_info_message` copies** (`main.py:365`,
 `imageviewer.py:123`, `popup.py:57`, `db_wizard.py:84`) are all `QMessageBox` calls inside widget classes, and
 the duplicated export/print/menu code shared by `imageviewer.py` and `show_plot.py` is likewise pure Qt.
 `show_plot.py`'s `filename += filename + '.png'` (which doubles the path instead of appending the extension, in
-both `export_image` and `export_table`) belongs with them.
+both `export_image` and `export_table`) belongs with them. Phase 6 handed over one more: `self.mode =
+msg_box.exec_()` (`main.py:279`) returns 0 when the dialog is closed with the window X, and 0 is design mode, so
+cancelling the mode question silently starts a design run.
 
 ---
 

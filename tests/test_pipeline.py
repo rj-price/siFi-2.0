@@ -42,30 +42,58 @@ def design_records():
 RECORDS = design_records()
 
 
+PLUS_RECORDS = [record for record in RECORDS if record["strand"] == "+"]
+
+
 def test_data_to_json_reproduces_the_captured_json():
-    assert len(RECORDS) == len(EXPECTED)
-    for produced, expected in zip(RECORDS, EXPECTED, strict=True):
+    """The captured Python 2 JSON holds plus-strand hits only, since the original
+    discarded the rest (Phase 6 defect 1, fixed). Its records must still be
+    reproduced exactly — the fix adds records, it must not alter any."""
+    assert len(PLUS_RECORDS) == len(EXPECTED)
+    for produced, expected in zip(PLUS_RECORDS, EXPECTED, strict=True):
         assert produced == expected
 
 
-def test_minus_strand_hits_are_still_dropped():
-    """PLAN.md Phase 6 defect 1, pinned numerically: 1430 bowtie rows in, 1370
-    records out. Fixing it must show up as a deliberate golden diff."""
+def test_minus_strand_hits_are_reported():
+    """PLAN.md Phase 6 defect 1, fixed: 1430 bowtie rows in, 1430 records out,
+    where the original produced 1370. The 60 new records are the minus-strand
+    hits its ``if strand == '+':`` guard discarded."""
     rows = bowtie.bowtie_to_lst(bowtie_lines())
     assert len(rows) == 1430
-    assert len(RECORDS) == 1370
-    assert {record["strand"] for record in RECORDS} == {"+"}
+    assert len(RECORDS) == 1430
+    assert len(PLUS_RECORDS) == 1370
+    assert {record["strand"] for record in RECORDS} == {"+", "-"}
 
 
-def test_design_mode_without_hits_still_yields_nothing():
-    """PLAN.md Phase 6 defect 2: the no-hits path sets ``strand = None``, which
-    the same ``strand == '+'`` guard then discards, so the efficiency-only plot
-    the code provides for is dead."""
+def test_a_minus_strand_record_carries_the_sirna_not_its_reverse_complement():
+    """bowtie reports the read as it aligned, so column 5 of a minus-strand row
+    is the reverse complement of the siRNA. Scoring that would score a sequence
+    the construct never contains, so the record carries the siRNA itself."""
+    by_position = dict(sirna.create_sirnas(query(), SIRNA_SIZE))
+    minus = [record for record in RECORDS if record["strand"] == "-"]
+    assert minus
+    for record in minus:
+        assert record["sirna_sequence"] == by_position[record["sirna_name"]]
+
+
+def test_design_mode_without_hits_scores_every_sirna():
+    """PLAN.md Phase 6 defect 2, fixed: the no-hits design path sets
+    ``strand = None``, which the ``strand == '+'`` guard discarded, so the
+    efficiency-only plot the original explicitly provided for was dead. One
+    record per siRNA now, carrying an efficiency verdict and no target."""
     pipe = SifiPipeline(SifiConfig(mode=Mode.DESIGN))
     sirnas = sirna.create_sirnas(query(), SIRNA_SIZE)
     lunp = rnaplfold.load_lunp(DATA / "TUB3_fragment_lunp", SIRNA_SIZE)
     records = pipe.data_to_json("TUB3_fragment", [list(pair) for pair in sirnas], True, lunp, None, sirnas)
-    assert records == []
+
+    assert len(records) == len(sirnas)
+    assert [record["sirna_sequence"] for record in records] == [sequence for _name, sequence in sirnas]
+    # No hit to report against: everything target-related is unset.
+    for key in ("hit_name", "reference_strand_pos", "strand", "mismatches"):
+        assert {record[key] for record in records} == {None}
+    assert {record["is_off_target"] for record in records} == {False}
+    # The efficiency verdict is the whole point of these records.
+    assert any(record["is_efficient"] for record in records)
 
 
 def test_off_target_mode_leaves_is_off_target_unset():
@@ -73,7 +101,7 @@ def test_off_target_mode_leaves_is_off_target_unset():
     sirnas = sirna.create_sirnas(query(), SIRNA_SIZE)
     lunp = rnaplfold.load_lunp(DATA / "TUB3_fragment_lunp", SIRNA_SIZE)
     rows = bowtie.bowtie_to_lst(bowtie_lines())
-    records = pipe.data_to_json("TUB3_fragment", rows, False, lunp, None, sirnas)
+    records = [r for r in pipe.data_to_json("TUB3_fragment", rows, False, lunp, None, sirnas) if r["strand"] == "+"]
     assert {record["is_off_target"] for record in records} == {None}
     # Everything else must be identical to the design-mode run.
     for produced, expected in zip(records, EXPECTED, strict=True):

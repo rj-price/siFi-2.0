@@ -135,9 +135,8 @@ def plot_design(figure: Figure, result: QueryResult, sirna_size: int) -> Axes:
 
     With no main targets chosen, only the efficiency histogram is drawn: that is
     the "design a construct against a sequence with no database hits" case the
-    original explicitly provided for. It is currently unreachable from the
-    pipeline, because ``data_to_json`` discards the records it would need
-    (``PLAN.md`` Phase 6 defect 2), so it is drawn from whatever records exist.
+    original explicitly provided for but could never reach, since ``data_to_json``
+    discarded the records it needs (``PLAN.md`` Phase 6 defect 2, now fixed).
     """
     from matplotlib.lines import Line2D
     from matplotlib.patches import Rectangle

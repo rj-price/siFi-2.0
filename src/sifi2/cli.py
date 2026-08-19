@@ -380,8 +380,13 @@ def report_results(
     """Write each result and summarise; non-zero only if nothing was produced."""
     written_any = False
     for name, result in results:
+        if result.message:
+            # Design mode with no database hits still has efficiency records to
+            # write, so the message is not by itself a reason to skip the query.
+            log(f"sifi: {name}: {result.message}")
         if not result.has_hits:
-            log(f"sifi: {name}: {result.message or 'no records produced'}")
+            if not result.message:
+                log(f"sifi: {name}: no records produced")
             continue
         paths = write_results(result, outdir, safe_stem(name), config, plot=plot)
         written_any = True

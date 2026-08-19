@@ -84,3 +84,13 @@ def test_reverse_complement_handles_ambiguity_and_case():
     assert sirna.reverse_complement("AAAC") == "GTTT"
     assert sirna.reverse_complement("acgt") == "acgt"
     assert sirna.reverse_complement("RYSWKMN") == "NKMWSRY"
+
+
+def test_lowercase_input_is_upper_cased():
+    """PLAN.md Phase 6 defect 4, fixed: the original called ``sirna.upper()`` and
+    threw the result away, so a lowercase or soft-masked FASTA reached the
+    terminal-nucleotide rule in lower case and failed every one of its
+    comparisons against ``"A"``/``"T"``/``"G"``/``"C"``."""
+    seq = query_sequence()
+    assert sirna.create_sirnas(seq.lower(), SIRNA_SIZE) == sirna.create_sirnas(seq, SIRNA_SIZE)
+    assert sirna.create_sirnas(seq.lower(), SIRNA_SIZE)[0][1].isupper()
