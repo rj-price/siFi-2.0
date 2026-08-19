@@ -6,8 +6,9 @@ committed query, pinned by `tests/test_end_to_end.py`. They are *not* golden fix
 these were produced by the port and only pin it against itself. A full original-vs-port comparison was never
 available — the original's design mode blocks on a Qt dialog and it shipped Windows `.exe` binaries.
 
-They exist so a whole-pipeline change is visible as a diff. `PLAN.md` Phase 6 will move these numbers
-deliberately, one attributable commit at a time.
+They exist so a whole-pipeline change is visible as a diff. `PLAN.md` Phase 6 moves these numbers
+deliberately, one attributable commit at a time; each such commit regenerates both files with the commands
+below.
 
 Regenerate (from the repo root, with a scratch directory `$TMP`):
 

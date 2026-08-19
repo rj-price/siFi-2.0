@@ -186,11 +186,15 @@ class SifiPipeline:
         One record per bowtie hit, carrying the siRNA, its position on the query,
         the target it hit and its efficiency verdict.
 
-        Note the ``strand == "+"`` guard: minus-strand hits produce no record at
-        all, and neither does the no-hits design path, since it sets
-        ``strand = None``. Both are ``PLAN.md`` Phase 6 defects 1 and 2, kept
-        here so that fixing them is a reviewed golden diff rather than a silent
-        change of published numbers.
+        Minus-strand hits are reported (``PLAN.md`` Phase 6 defect 1): the
+        original built the record inside ``if strand == "+":``, so every hit on
+        the reverse strand of a database sequence was silently discarded — a
+        substantive defect for off-target *prediction*, whose whole point is to
+        find every sequence a construct can silence.
+
+        The no-hits design path still produces nothing, because it sets
+        ``strand = None`` and is skipped below; that is Phase 6 defect 2, fixed
+        separately.
         """
         config = self.config
         json_lst = []
@@ -204,7 +208,11 @@ class SifiPipeline:
                 reference_strand_pos = int(data_split[3])
                 # Position on the query sequence, starting at 1.
                 query_position = int(sirna_name.split("sirna")[1])
-                sirna_sequence = data_split[4]
+                # bowtie reports the read as it aligned, so a minus-strand hit
+                # carries the reverse complement of the siRNA. The efficiency
+                # rules are about the siRNA itself, so take it from the query
+                # windowing; for a plus-strand hit the two are identical.
+                sirna_sequence = sirnas[query_position - 1][1]
                 missmatches = data_split[7]
                 off_target = (hit_name not in main_targets) if config.is_design else None
             else:
@@ -218,7 +226,8 @@ class SifiPipeline:
                 reference_strand_pos = None
                 missmatches = None
 
-            if strand != "+":
+            if strand is None:
+                # Phase 6 defect 2: the no-hits design path is still discarded.
                 continue
 
             # The dangling-end partner is the siRNA two positions upstream, so

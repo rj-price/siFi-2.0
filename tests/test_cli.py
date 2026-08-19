@@ -234,9 +234,11 @@ def test_batch_mode_writes_one_result_set_per_record(test_db, tmp_path, capsys):
         [f"{stem}.{extension}" for stem in stems for extension in ("json", "tsv", "png")]
     )
 
-    # Record counts are the Phase 3 end-to-end baseline at --mismatches 0.
+    # Record counts at --mismatches 0, after Phase 6 defect 1 (minus-strand hits
+    # were dropped): 900/413/811 before the fix. TUB4 gains most, since the
+    # reference holds it reverse-complemented and so it hits its own deposit.
     counts = [len(json.loads((outdir / f"{stem}.json").read_text())) for stem in stems]
-    assert counts == [900, 413, 811]
+    assert counts == [912, 793, 820]
 
     for stem, count in zip(stems, counts, strict=True):
         lines = (outdir / f"{stem}.tsv").read_text().splitlines()
