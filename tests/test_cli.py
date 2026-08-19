@@ -231,7 +231,7 @@ def test_batch_mode_writes_one_result_set_per_record(test_db, tmp_path, capsys):
 
     stems = ["TUB3_fragment", "TUB4_fragment", "TUB8_fragment"]
     assert sorted(path.name for path in outdir.iterdir()) == sorted(
-        [f"{stem}.{extension}" for stem in stems for extension in ("json", "tsv")]
+        [f"{stem}.{extension}" for stem in stems for extension in ("json", "tsv", "png")]
     )
 
     # Record counts are the Phase 3 end-to-end baseline at --mismatches 0.
@@ -252,7 +252,7 @@ def test_threaded_and_serial_runs_agree(test_db, tmp_path):
         argv = [
             "design", "--query", str(DATA / "query_multi.fasta"), "--db", "testdb",
             "--db-location", test_db, "--outdir", str(outdir), "--all-targets-main",
-            "--threads", threads, "--quiet",
+            "--threads", threads, "--quiet", "--no-plot",
         ]  # fmt: skip
         assert main(argv) == 0
         outputs[threads] = {path.name: path.read_text() for path in sorted(outdir.iterdir())}

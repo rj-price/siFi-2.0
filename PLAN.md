@@ -23,7 +23,7 @@ make every later phase verifiable. Phases 4 and 5 can be swapped. Phase 7 is def
 - [x] **Phase 2** — `thermo.py` ported, `test_thermo.py` green
 - [x] **Phase 3** — rest of core ported, headless, Qt coupling broken
 - [x] **Phase 4** — CLI with batch mode
-- [ ] **Phase 5** — plots + end-to-end baseline
+- [x] **Phase 5** — plots + end-to-end baseline
 - [ ] **Phase 6** — known defects fixed, one attributable commit each
 - [ ] **Phase 7** — GUI (deferred)
 
@@ -175,6 +175,54 @@ make every later phase verifiable. Phases 4 and 5 can be swapped. Phase 7 is def
   - Exit codes: 0 success, 1 for any `CliError`/`BowtieError`/`RNAplfoldError`/`PipelineCancelled` (reported as
     a message, never a traceback) and for "no result sets produced at all", 2 from argparse.
   - The three end-to-end tests skip when bowtie/RNAplfold are off PATH, so the suite still runs anywhere.
+
+- **Phase 5.** `src/sifi2/plots.py` plus `tests/test_plots.py` and `tests/test_end_to_end.py`; suite is
+  **1274 passed, 2 skipped**. Both plots render headless through `FigureCanvasAgg`, and `sifi2.plots` imports
+  **no pyplot** (checked: `matplotlib.pyplot` is absent from `sys.modules` after importing it) — pyplot owns
+  global figure state and picks an interactive backend, neither of which belongs in a library. The CLI now
+  writes `<query>.png` alongside the JSON and TSV, with `--plot/--no-plot`.
+
+  **The five-target bug is not hypothetical here.** `tests/data/reference.fasta` produces exactly five targets
+  for the committed query, so the upstream `elif len(hit_overview) == 4: ... elif > 5:` chain would have raised
+  `UnboundLocalError` on this very dataset before drawing anything. Fixed, and
+  `test_offtarget_figsize_is_defined_for_exactly_five_targets` pins it.
+
+  Deviations from the phase text, all deliberate:
+  - **The `filename += filename + '.png'` bug has no analogue to fix.** It lives in `show_plot.py`'s
+    `export_image`/`export_table`, which are `QFileDialog` handlers — GUI, so Phase 7. The CLI names its own
+    output files, so the bug simply does not exist in the port. Same for the **`show_info_message` × 5 and the
+    export/print/menu duplication**: every one of those five copies is a `QMessageBox` call inside a Qt widget
+    class, and all of `imageviewer.py` is GUI. Consolidating them means writing the GUI, so it moved to Phase 7
+    — there is nothing headless to consolidate. Phase 5 should not have listed it.
+  - **Contiguous shaded regions are one patch, not one per base.** Upstream added a 1 bp `Rectangle` per covered
+    position; at alpha 0.2 the abutting patches seam where they overlap, so a fully-covered 500 bp query rendered
+    as visible vertical stripes (and 500 artists). `analysis.group_ranges` collapses runs, `linewidth=0` removes
+    the seam. Visually confirmed against the striped version.
+  - `the_table.set_fontsize(12)` was a no-op upstream — automatic font sizing was still on, so it was recomputed
+    at draw time. `auto_set_font_size(False)` first, which is the only reason the call does anything.
+  - The `figure.subplots_adjust(...)` in `plot_offtarget` is dropped: `tight_layout()` runs immediately after it
+    and recomputes every value it set. `bottom_offset` existed only to feed it.
+  - `apply_style()` is a **separate call**, not something the plot functions do to their caller. The original's
+    `sns.set(style="white", palette="muted", color_codes=True)` is global rc state, and `color_codes=True` is
+    load-bearing rather than cosmetic: it rebinds the `'r'`/`'b'` single-letter colours both plots use.
+    `save_plot` calls it; a GUI embedding the figures can decide for itself.
+
+  Other notes:
+  - The end-to-end baseline is `tests/baseline/{design,offtarget}_TUB3_fragment.json`, at CLI defaults
+    (`--mismatches 0`), 900 records each — **not** comparable to `tests/data/pipeline_design.json`, which is real
+    py2 output at `--mismatches 2`. `tests/baseline/README.md` has the regeneration commands. Note what this
+    baseline is and is not: it pins the port against *itself*, since the original could never be run end to end.
+    Phase 6 will move these numbers deliberately.
+  - Design mode is measurably stricter than off-target mode on the same hits (42 efficient vs 449 of 900), which
+    is the mode-dependent end-stability/accessibility defaults doing their job;
+    `test_the_two_modes_differ_only_in_efficiency_scoring_and_target_attribution` asserts the direction.
+  - Plotting happens in `report_results`, which runs **after** the thread pool has joined, so `--threads` never
+    touches matplotlib concurrently. Keep it that way — `apply_style()` mutates global rc.
+  - `matplotlib` and `seaborn` are imported lazily inside `write_results`, so `sifi db ...` and any run that
+    fails early never pay for them.
+  - There is no golden fixture for a plot and there should not be: the original needed PyQt4 and a display, and a
+    PNG is not a stable comparison artefact. `test_plots.py` asserts the *structure* the original prescribed —
+    panel count, axis limits, tick spacing, shaded regions, legend labels.
 
 ## Context
 
@@ -406,6 +454,8 @@ Then build a small bowtie index from the committed reference FASTA and run both 
 resulting JSON as the end-to-end baseline. Consolidate the five identical copies of `show_info_message` and the
 duplicated export/print/menu code shared by `imageviewer.py` and `show_plot.py`.
 
+> **Done.** Note the last sentence was misplaced: all of that code is Qt widget code, so it moved to Phase 7.
+
 ---
 
 ## Phase 6 — Fix the known defects, one attributable commit each
@@ -437,7 +487,12 @@ Out of scope for the initial rewrite; recorded so it is not lost. Regenerate the
 `QFileDialog.getOpenFileName` now returns a **tuple**, breaking `.isNull()` at `main.py:311` and `db_wizard.py:79`;
 `backend_qt4agg` → `backend_qtagg`; the `"gtk"` style no longer exists. Also decide whether GenBank export
 (`imageviewer.py` → `general_helpers.create_gbk`) returns — it is currently unreachable dead code, so "retain all
-functionality" does not strictly require it.
+functionality" does not strictly require it. Phase 5 also handed over two clean-ups it listed but could not
+do headlessly: the **five identical `show_info_message` copies** (`main.py:365`, `show_plot.py:336`,
+`imageviewer.py:123`, `popup.py:57`, `db_wizard.py:84`) are all `QMessageBox` calls inside widget classes, and
+the duplicated export/print/menu code shared by `imageviewer.py` and `show_plot.py` is likewise pure Qt.
+`show_plot.py`'s `filename += filename + '.png'` (which doubles the path instead of appending the extension, in
+both `export_image` and `export_table`) belongs with them.
 
 ---
 
