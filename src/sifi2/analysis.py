@@ -5,8 +5,8 @@ themselves — the original re-read and re-parsed the JSON file on every call, v
 a hand-rolled ``iterparse`` that worked around a limitation ``json.load`` does
 not have. :func:`load_records` is the file-reading convenience wrapper.
 
-The aggregation semantics are pinned by ``tests/golden/analysis.json`` and are
-reproduced faithfully, quirks included; see the note on ``main_target_dict``.
+The aggregation semantics are pinned by ``tests/golden/analysis.json``, except
+where ``PLAN.md`` Phase 6 fixed them deliberately; see :func:`get_target_data`.
 """
 
 from __future__ import annotations
@@ -57,19 +57,23 @@ def get_target_data(records: list[dict], sirna_size: int) -> tuple[dict, dict, d
     target, the positions of efficient siRNAs per target, and the flat list of
     main-target positions the histogram is built from.
 
-    ``main_target_dict`` deliberately aliases a single accumulating set across
-    every key, so all its values end up equal — the original's behaviour, listed
-    as ``PLAN.md`` Phase 6 defect 4 and pinned by the golden fixture until it is
-    fixed in its own commit.
+    Both dictionaries are per-target. The original assigned each key the running
+    union of everything seen so far, so every target was credited with every
+    other target's positions, and each key held a different snapshot of that
+    union depending on where its last record fell (``PLAN.md`` Phase 6 defect 4).
+
+    Main-target positions have the off-target positions subtracted, as the
+    original intended: a position that is also hit off-target is shown as an
+    off-target on the design plot. The subtraction now uses the *complete* set of
+    off-target positions rather than however much of it had accumulated by then.
     """
     off_target_positions: set[int] = set()
     off_target_dict: dict[str, set[int]] = {}
-    main_target_positions: set[int] = set()
     main_target_dict: dict[str, set[int]] = {}
     efficient_dict: dict[str, list[int]] = {}
     main_hits_histo: list[int] = []
-    ready_sirnas: list[str] = []
-    main_target_ready: list[tuple] = []
+    ready_sirnas: set[str] = set()
+    main_target_ready: set[tuple] = set()
 
     for data in records:
         start = int(data["sirna_position"])
@@ -81,21 +85,23 @@ def get_target_data(records: list[dict], sirna_size: int) -> tuple[dict, dict, d
                 efficient_dict[data["hit_name"]].extend(plot_range_l)
             else:
                 efficient_dict[data["hit_name"]] = plot_range_l
-            ready_sirnas.append(data["sirna_name"])
+            ready_sirnas.add(data["sirna_name"])
 
         if data["is_off_target"]:
-            off_target_positions = off_target_positions | plot_range
-            off_target_dict[data["hit_name"]] = off_target_positions
-        elif (data["sirna_name"], data["sirna_position"]) not in main_target_ready:
-            main_target_ready.append((data["sirna_name"], data["sirna_position"]))
-            main_target_positions = main_target_positions | plot_range
-            main_target_dict[data["hit_name"]] = main_target_positions - off_target_positions
-            # The original extended from the *set*, so the order was CPython's
-            # set-iteration order and differs between Python 2 and 3. Ascending
-            # order is used instead: same multiset, and the only consumer is a
-            # histogram, where order cannot matter.
-            main_hits_histo.extend(plot_range_l)
+            off_target_positions |= plot_range
+            off_target_dict.setdefault(data["hit_name"], set()).update(plot_range)
+        else:
+            main_target_dict.setdefault(data["hit_name"], set()).update(plot_range)
+            # The histogram counts each siRNA once however many main targets it
+            # hits. The original extended it from the *set*, so the order was
+            # CPython's set-iteration order and differs between Python 2 and 3.
+            # Ascending order is used instead: same multiset, and the only
+            # consumer is a histogram, where order cannot matter.
+            if (data["sirna_name"], data["sirna_position"]) not in main_target_ready:
+                main_target_ready.add((data["sirna_name"], data["sirna_position"]))
+                main_hits_histo.extend(plot_range_l)
 
+    main_target_dict = {name: positions - off_target_positions for name, positions in main_target_dict.items()}
     return off_target_dict, main_target_dict, efficient_dict, main_hits_histo
 
 
