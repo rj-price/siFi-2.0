@@ -143,3 +143,19 @@ def test_terminal_rule_branches_are_all_exercised_by_the_fixture():
         seq = case["sirna_sequence"]
         branches.add((seq[21 - 3] in "AT", seq[1] in "AT", seq[1] in "GC"))
     assert len(branches) >= 3
+
+
+def test_a_soft_masked_query_scores_as_the_uppercase_one_does():
+    """PLAN.md Phase 6 defect 4: the terminal-nucleotide rule compares against
+    uppercase literals, so before ``create_sirnas`` upper-cased its windows a
+    soft-masked FASTA scored every siRNA as inefficient."""
+    from sifi2 import sirna
+
+    sequence = "GGGATGGCTCAAAGGCGTAGTACTGGCATA"
+    settings = config()
+    scored = []
+    for query in (sequence, sequence.lower()):
+        windows = sirna.create_sirnas(query, settings.sirna_size)
+        scored.append([efficiency.calculate_efficiency(settings, seq, None, 0.5) for _name, seq in windows])
+    assert scored[0] == scored[1]
+    assert any(verdict[0] for verdict in scored[0])
