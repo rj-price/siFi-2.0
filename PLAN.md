@@ -22,7 +22,7 @@ make every later phase verifiable. Phases 4 and 5 can be swapped. Phase 7 is def
 - [x] **Phase 1** — golden fixtures captured from the Python 2 original ← *gate for everything below*
 - [x] **Phase 2** — `thermo.py` ported, `test_thermo.py` green
 - [x] **Phase 3** — rest of core ported, headless, Qt coupling broken
-- [ ] **Phase 4** — CLI with batch mode
+- [x] **Phase 4** — CLI with batch mode
 - [ ] **Phase 5** — plots + end-to-end baseline
 - [ ] **Phase 6** — known defects fixed, one attributable commit each
 - [ ] **Phase 7** — GUI (deferred)
@@ -148,6 +148,33 @@ make every later phase verifiable. Phases 4 and 5 can be swapped. Phase 7 is def
   - The end-to-end smoke run works today: build an index from `tests/data/reference.fasta`, then
     `SifiPipeline(...).run("tests/data/query_multi.fasta")` returns 3 result sets (900/413/811 records at
     `--mismatches 0`). That is the Phase 5 baseline waiting to be committed.
+
+- **Phase 4.** `src/sifi2/cli.py` plus `tests/test_cli.py`; suite is **1248 passed, 2 skipped**. Batch mode is
+  proven: a 3-record multi-FASTA produces 3 result sets (900/413/811 records at `--mismatches 0`, matching the
+  Phase 3 baseline exactly), so the original's early `return` is definitively gone.
+
+  Two things the phase text did not specify, both decided here:
+  - **`no_efficience` is derived, not just exposed.** The GUI never had a checkbox for it: `main.py:135` sets it
+    from whether the four efficiency widgets are *enabled*, and `main.py:110-117` disables all four as soon as
+    mismatches > 0. So the CLI default is `--efficiency` on, flipping off when `--mismatches > 0`, with an
+    explicit `--efficiency/--no-efficiency` override either way. Note the flag is spelled `--efficiency`, not
+    `--no-efficiency`, because `BooleanOptionalAction` on the latter would generate `--no-no-efficiency`.
+  - **Duplicate FASTA record ids are a hard error.** Two records sharing an id share an output filename, so the
+    second would silently overwrite the first — precisely the class of bug this phase exists to remove.
+
+  Other notes:
+  - `--threads` uses a `ThreadPoolExecutor`, not processes: nearly all the wall time is inside bowtie and
+    RNAplfold subprocesses, and `SifiPipeline` holds no mutable per-run state (every run gets its own
+    `TemporaryDirectory`). `pool.map` preserves input order, so reports stay in FASTA order.
+    `test_threaded_and_serial_runs_agree` compares the full output files at `--threads 1` and `--threads 3`.
+  - A `--main-target` name matching no hit **warns and continues** rather than failing. It is nearly always a
+    typo, and the consequence — every hit reported as an off-target — is otherwise silent.
+  - `safe_stem()` sanitises FASTA ids for filenames; real ids carry `|` and whitespace routinely.
+  - `--outdir` gets `<query>.json` and `<query>.tsv` only. **`<query>.png` is deferred to Phase 5** with
+    `plots.py`; `write_results` is where it slots in.
+  - Exit codes: 0 success, 1 for any `CliError`/`BowtieError`/`RNAplfoldError`/`PipelineCancelled` (reported as
+    a message, never a traceback) and for "no result sets produced at all", 2 from argparse.
+  - The three end-to-end tests skip when bowtie/RNAplfold are off PATH, so the suite still runs anywhere.
 
 ## Context
 
