@@ -274,6 +274,50 @@ def test_design_marks_unchosen_hits_as_off_targets(test_db, tmp_path):
     assert {record["hit_name"] for record in records if not record["is_off_target"]} == {"NM_125665.4"}
 
 
+#: A random sequence, so no 21mer of it is in the tubulin reference.
+NO_HIT_FASTA = """>nohits
+ATGAACTGGAGTCTACGATGAGTGTACGAACGTCAGCTGGAACAGGCTTCCCACCAGGGT
+TGCTACTTATCATTTATTGTACGTTCAAAGGCGTGGTTTGTTTCTTGTGGCTGGTTCGAT
+"""
+
+
+@needs_binaries
+def test_design_without_database_hits_still_writes_efficiency_results(test_db, tmp_path, capsys):
+    """PLAN.md Phase 6 defect 2: designing against a sequence with no database
+    hits is a supported case, and now produces the efficiency-only output the
+    original provided for but discarded."""
+    query = tmp_path / "nohits.fasta"
+    query.write_text(NO_HIT_FASTA)
+    outdir = tmp_path / "out"
+    argv = [
+        "design", "--query", str(query), "--db", "testdb",
+        "--db-location", test_db, "--outdir", str(outdir), "--all-targets-main",
+    ]  # fmt: skip
+    assert main(argv) == 0
+
+    records = json.loads((outdir / "nohits.json").read_text())
+    assert len(records) == 120 - 21 + 1
+    assert {record["hit_name"] for record in records} == {None}
+    assert sorted(path.name for path in outdir.iterdir()) == ["nohits.json", "nohits.png", "nohits.tsv"]
+    # The run is still reported as having found no targets.
+    assert "No targets found" in capsys.readouterr().out
+
+
+@needs_binaries
+def test_offtarget_without_database_hits_produces_nothing(test_db, tmp_path, capsys):
+    """Off-target mode has no efficiency-only fallback: with no hits there is
+    nothing to predict, so the run reports that and exits non-zero."""
+    query = tmp_path / "nohits.fasta"
+    query.write_text(NO_HIT_FASTA)
+    outdir = tmp_path / "out"
+    argv = [
+        "offtarget", "--query", str(query), "--db", "testdb",
+        "--db-location", test_db, "--outdir", str(outdir),
+    ]  # fmt: skip
+    assert main(argv) == 1
+    assert "No targets found" in capsys.readouterr().out
+
+
 # ----------------------------------------------------------------------
 # Failures
 # ----------------------------------------------------------------------

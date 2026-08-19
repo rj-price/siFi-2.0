@@ -49,6 +49,10 @@ NO_TARGETS_MESSAGE = (
     "No targets found. Please make sure that the query and/or database sequences are in correct orientation."
 )
 
+#: Design mode with no database hits still scores the siRNAs themselves, so the
+#: run produces records — just none attributed to a target.
+NO_TARGETS_DESIGN_MESSAGE = NO_TARGETS_MESSAGE + " Reporting siRNA efficiency only, with no target attribution."
+
 
 class PipelineCancelled(Exception):
     """The main-target selector cancelled the run."""
@@ -150,6 +154,7 @@ class SifiPipeline:
             records=records,
             table_data=analysis.get_table_data(records),
             main_targets=main_targets,
+            message=NO_TARGETS_DESIGN_MESSAGE if no_target else None,
         )
 
     # ------------------------------------------------------------------
@@ -192,9 +197,12 @@ class SifiPipeline:
         substantive defect for off-target *prediction*, whose whole point is to
         find every sequence a construct can silence.
 
-        The no-hits design path still produces nothing, because it sets
-        ``strand = None`` and is skipped below; that is Phase 6 defect 2, fixed
-        separately.
+        The no-hits design path (``no_target``) produces a record per siRNA, with
+        no strand, target or mismatch information and an efficiency verdict as
+        its only content — the "design a construct against a sequence with no
+        database hits" case the original explicitly provided for but could not
+        reach, since it set ``strand = None`` and the guard above then discarded
+        every record (``PLAN.md`` Phase 6 defect 2).
         """
         config = self.config
         json_lst = []
@@ -216,19 +224,16 @@ class SifiPipeline:
                 missmatches = data_split[7]
                 off_target = (hit_name not in main_targets) if config.is_design else None
             else:
-                # No bowtie hits: the siRNA file carries the efficiency data.
+                # No bowtie hits: the siRNA file carries the efficiency data, and
+                # there is no target to report against.
                 sirna_name = data_split[0]
                 query_position = int(sirna_name.split("sirna")[1])
                 sirna_sequence = data_split[1]
                 off_target = False
                 strand = None
-                hit_name = False
+                hit_name = None
                 reference_strand_pos = None
                 missmatches = None
-
-            if strand is None:
-                # Phase 6 defect 2: the no-hits design path is still discarded.
-                continue
 
             # The dangling-end partner is the siRNA two positions upstream, so
             # the first two siRNAs of a query have none.

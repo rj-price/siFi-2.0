@@ -76,15 +76,24 @@ def test_a_minus_strand_record_carries_the_sirna_not_its_reverse_complement():
         assert record["sirna_sequence"] == by_position[record["sirna_name"]]
 
 
-def test_design_mode_without_hits_still_yields_nothing():
-    """PLAN.md Phase 6 defect 2: the no-hits path sets ``strand = None`` and is
-    still discarded, so the efficiency-only plot the code provides for is dead.
-    Fixed in its own commit."""
+def test_design_mode_without_hits_scores_every_sirna():
+    """PLAN.md Phase 6 defect 2, fixed: the no-hits design path sets
+    ``strand = None``, which the ``strand == '+'`` guard discarded, so the
+    efficiency-only plot the original explicitly provided for was dead. One
+    record per siRNA now, carrying an efficiency verdict and no target."""
     pipe = SifiPipeline(SifiConfig(mode=Mode.DESIGN))
     sirnas = sirna.create_sirnas(query(), SIRNA_SIZE)
     lunp = rnaplfold.load_lunp(DATA / "TUB3_fragment_lunp", SIRNA_SIZE)
     records = pipe.data_to_json("TUB3_fragment", [list(pair) for pair in sirnas], True, lunp, None, sirnas)
-    assert records == []
+
+    assert len(records) == len(sirnas)
+    assert [record["sirna_sequence"] for record in records] == [sequence for _name, sequence in sirnas]
+    # No hit to report against: everything target-related is unset.
+    for key in ("hit_name", "reference_strand_pos", "strand", "mismatches"):
+        assert {record[key] for record in records} == {None}
+    assert {record["is_off_target"] for record in records} == {False}
+    # The efficiency verdict is the whole point of these records.
+    assert any(record["is_efficient"] for record in records)
 
 
 def test_off_target_mode_leaves_is_off_target_unset():
