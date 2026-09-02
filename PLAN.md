@@ -14,7 +14,7 @@ Each phase is self-contained. To start a phase in a clean context:
 4. Clear context before the next phase.
 
 Phases are strictly ordered — **Phase 1 must be complete before Phase 2**, since the golden fixtures are what
-make every later phase verifiable. Phases 4 and 5 can be swapped. Phase 7 is deferred indefinitely.
+make every later phase verifiable. Phases 4 and 5 can be swapped. Phase 7 was deferred, then done.
 
 ## Status
 
@@ -25,7 +25,7 @@ make every later phase verifiable. Phases 4 and 5 can be swapped. Phase 7 is def
 - [x] **Phase 4** — CLI with batch mode
 - [x] **Phase 5** — plots + end-to-end baseline
 - [x] **Phase 6** — known defects fixed, one attributable commit each
-- [ ] **Phase 7** — GUI (deferred)
+- [x] **Phase 7** — GUI (PyQt5, optional extra)
 
 **Notes from completed phases:** _(append here as you go)_
 
@@ -261,6 +261,51 @@ make every later phase verifiable. Phases 4 and 5 can be swapped. Phase 7 is def
   Worth knowing: `apply_style()` rebinds matplotlib's single-letter colours (seaborn `color_codes=True`), so a
   test asserting a literal RGB tuple passes alone and fails in the full suite. Resolve colours with
   `matplotlib.colors.to_rgb("r")` at assertion time.
+
+- **Phase 7.** `src/sifi2/gui/` (six modules plus the generated Qt resources) and `tests/test_gui.py`; suite is
+  **1314 passed, 2 skipped**. PyQt5 is in the `sifi2` env and in a `gui` extra; `sifi gui` and `sifi-gui` both
+  open it. The GUI runs with **no elevated privileges on any platform**, which is what upstream's
+  `general_helpers.copying_files` — copying bundled Windows `.exe`s out of a `Program Files` install on every
+  start-up — actually needed: nothing is copied, the binaries come from `PATH`, databases live in the CLI's own
+  `platformdirs` directory and preferences in `QSettings`.
+
+  **The package boundary is the design.** Qt lives only under `sifi2/gui/`, so
+  `test_no_qt_import_anywhere_in_the_core` still holds by construction (it globs `sifi2/*.py`, which does not
+  reach a subpackage); the new half of it asserts that no core module imports the GUI *at module level*, and
+  `test_importing_the_cli_does_not_import_qt` checks behaviourally that `import sifi2.cli` leaves `PyQt5` out of
+  `sys.modules`. `sifi gui` imports it inside the handler.
+
+  Things worth knowing:
+  - **`pyuic5 --from-imports` is load-bearing**, not a style choice. Without it the generated files end with a
+    bare `import sifi_2015_rc` — the Phase 3 resource-import hazard. `test_generated_ui_imports_its_resource_module_relatively`
+    pins it, and `test_the_resource_images_are_registered` checks the pixmaps actually load.
+  - The `.qrc` lists **five** images, not upstream's twelve: three (`siFi21_logo_*.tif`) were never in the
+    repository, four (`header0*.png`) are referenced by nothing, and the two used TIFFs are now PNGs. The rc
+    module is 336 KB rather than upstream's 3.8 MB.
+  - **The main-target dialog is a cross-thread handshake.** The pipeline asks for main targets from inside
+    `run_query`, on the worker thread; only the GUI thread may show a dialog. `PipelineWorker` emits a signal
+    and blocks on a `threading.Event` until `provide_main_targets` answers, and `None` cancels the run
+    (`PipelineCancelled`). Two consequences: cancelling must still answer, or the worker waits forever; and a
+    test that drives this must pump the event loop — `worker.wait()` on its own deadlocks, exactly as upstream's
+    `start()`-then-`wait()` pair did.
+  - `imageviewer.py` and `show_plot.py` collapse into **one** `ResultsWindow`. Upstream saved the figure to a
+    PNG and opened that PNG in a second window, so "zoom" was image scaling; the figure is now live on a
+    `FigureCanvasQTAgg`. That also disposes of the five `show_info_message` copies and the duplicated
+    export/print/menu code Phase 5 handed over, plus `filename += filename + '.png'` in all four places.
+  - **GenBank export is kept** — Phase 7 asked whether it should return. It was unreachable upstream (the
+    `imageviewer` construction in `main.py` is commented out), it is reachable now, and it is the only output
+    that carries per-target attribution, which is what Phase 6 defect 4 fixed. Design mode only, as upstream.
+  - The last Phase 6 defect is fixed: `ModeDialog` returns a `Mode` or `None`, so closing the mode question no
+    longer starts a design run. `main()` returns 0 without building a window.
+  - **The `no_efficience` derivation now has two implementations that must agree** — the CLI's `--efficiency`
+    default and the GUI's "are the efficiency widgets enabled?". Both are the same rule (off when
+    `--mismatches > 0`), and `test_mismatches_disable_efficiency_prediction` pins the GUI half.
+  - `test_a_full_gui_run_reproduces_the_cli_baseline` drives the window end to end and compares the records to
+    `tests/baseline/design_TUB3_fragment.json`, so GUI, CLI and baseline are pinned to each other.
+  - The GUI tests set `QT_QPA_PLATFORM=offscreen` themselves (`os.environ.setdefault`, before PyQt5 is
+    imported), so `pytest` works on a cluster node with no display. Note `conda run` buffers **all** output
+    until the process exits, so a hanging GUI test looks like a silent hang: debug with
+    `/mnt/apps/users/jnprice/conda/envs/sifi2/bin/python -m pytest` directly.
 
 ## Context
 
@@ -519,24 +564,22 @@ Only now, with goldens green. Each commit changes the golden file **deliberately
 
 ---
 
-## Phase 7 — GUI (deferred, separate effort)
+## Phase 7 — GUI
 
-Out of scope for the initial rewrite; recorded so it is not lost. Regenerate the `.ui`/`.qrc` files with
-`pyuic5`/`pyrcc5` rather than hand-porting. The migration surface: ~40 `QtGui.*` widget classes move to
-`QtWidgets`; `QPrinter`/`QPrintDialog` move to `QtPrintSupport`; three old-style `SIGNAL`/`SLOT` connections
-(`main.py:108`, `threads.py:20`, `db_wizard.py:51`) become new-style with a declared `pyqtSignal`;
-`QDesktopServices.storageLocation` is **removed in Qt5** (5 call sites) → `QStandardPaths.writableLocation`;
-`QFileDialog.getOpenFileName` now returns a **tuple**, breaking `.isNull()` at `main.py:311` and `db_wizard.py:79`;
-`backend_qt4agg` → `backend_qtagg`; the `"gtk"` style no longer exists. Also decide whether GenBank export
-(`imageviewer.py` → `general_helpers.create_gbk`) returns — it is currently unreachable dead code, so "retain all
-functionality" does not strictly require it. Phase 5 also handed over two clean-ups it listed but could not
-do headlessly: the **five identical `show_info_message` copies** (`main.py:365`, `show_plot.py:336`,
-`imageviewer.py:123`, `popup.py:57`, `db_wizard.py:84`) are all `QMessageBox` calls inside widget classes, and
-the duplicated export/print/menu code shared by `imageviewer.py` and `show_plot.py` is likewise pure Qt.
-`show_plot.py`'s `filename += filename + '.png'` (which doubles the path instead of appending the extension, in
-both `export_image` and `export_table`) belongs with them. Phase 6 handed over one more: `self.mode =
-msg_box.exec_()` (`main.py:279`) returns 0 when the dialog is closed with the window X, and 0 is design mode, so
-cancelling the mode question silently starts a design run.
+**Done.** `src/sifi2/gui/`: `app.py` (main window and entry point), `dialogs.py`, `workers.py`, `wizard.py`,
+`results.py`, and `resources/` holding the `.ui`/`.qrc` sources with their `pyuic5 --from-imports` / `pyrcc5`
+output. PyQt5 is an optional extra; the core still imports without it.
+
+Every item this phase listed was done: `QtGui.*` widgets moved to `QtWidgets`, `QPrinter`/`QPrintDialog` to
+`QtPrintSupport`, the three old-style `SIGNAL`/`SLOT` connections became new-style signals,
+`QDesktopServices.storageLocation` became `QStandardPaths.writableLocation`, `getOpenFileName`/`getSaveFileName`
+are unpacked as tuples, `backend_qt4agg` became `backend_qtagg`, and the `"gtk"` style is gone. The five
+`show_info_message` copies are one function, `imageviewer.py` and `show_plot.py` are one window, the
+`filename += filename + '.png'` bug is fixed in all four places, GenBank export is retained and now reachable,
+and `msg_box.exec_()`'s "cancel means design mode" is fixed.
+
+Beyond the list: the GUI accepts multi-record FASTA (upstream refused it), runs the pipeline on a worker thread
+that stays responsive, and needs no administrator rights — see the Phase 7 note above.
 
 ---
 
@@ -552,7 +595,11 @@ cancelling the mode question silently starts a design run.
   against the Phase 5 baseline and eyeball the PNGs.
 - **Batch:** a 3-record multi-FASTA produces 3 result sets — the check that the early-`return` bug is gone.
 - **Headless:** `python -c "import sifi2.pipeline"` in an env with **no PyQt installed** must succeed. This is the
-  regression test that the Qt coupling stayed broken.
+  regression test that the Qt coupling stayed broken. Since Phase 7 put PyQt5 in the env, the test stubs
+  `sys.modules['PyQt5'] = None`, and `test_importing_the_cli_does_not_import_qt` adds the behavioural half:
+  importing `sifi2.cli` must leave `PyQt5` out of `sys.modules` even though it is installed.
+- **GUI:** `conda run -n sifi2 pytest tests/test_gui.py` — runs offscreen, needs no display, skips without
+  PyQt5. `test_a_full_gui_run_reproduces_the_cli_baseline` pins the GUI to `tests/baseline/`.
 - **Fixture regeneration:** `tests/py2_capture/capture.py` re-runnable under the py2 env to confirm goldens were
   not hand-edited.
 
