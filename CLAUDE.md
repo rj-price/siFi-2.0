@@ -6,7 +6,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 siFi — long dsRNA RNAi-target design and off-target prediction (Lück et al. 2019, doi:10.3389/fpls.2019.01023).
 The original code is **Python 2 / PyQt4**, Windows-only, packaged with `py2exe`. Upstream is unmaintained.
-This repo is a fork porting it to Python 3 with a CLI and tests.
+This repo is a fork porting it to Python 3 with a CLI, an optional PyQt5 GUI, and tests.
 
 ## The port is planned — read `PLAN.md` first
 
@@ -17,7 +17,7 @@ then clear context. Do not start a phase before the one above it in Status is ti
 ## Goal of this fork
 
 Port to **Python 3**, retain all existing functionality, and expose the analysis as a **CLI tool** (the GUI must
-not be the only entry point). When choosing between preserving an odd upstream construct and writing idiomatic
+not be the only entry point; it is now ported too, as an optional extra, and is a client of the same pipeline). When choosing between preserving an odd upstream construct and writing idiomatic
 Python 3, prefer Python 3 — but preserve *numerical behaviour* exactly; this is scientific code and the
 thermodynamics must not silently change.
 
@@ -29,14 +29,17 @@ legacy/            frozen Python 2 original — never edit, never import from sr
 src/sifi2/         the Python 3 port; see PLAN.md for the module map. Ported: thermo,
                    config (the SifiConfig dataclass), sirna, bowtie, rnaplfold, efficiency,
                    analysis, pipeline, cli, plots. The core is complete and the known defects are
-                   fixed; only Phase 7 (GUI) remains
+                   fixed
+src/sifi2/gui/     the PyQt5 GUI (Phase 7) — app, dialogs, workers, wizard, results, and
+                   resources/ with the .ui/.qrc sources and their generated output. The ONLY
+                   place in the package that may import Qt
 tests/baseline/    the port's own end-to-end output for both modes, pinned by test_end_to_end.py;
                    see its README.md — these are not golden fixtures, they pin the port against itself
 tests/golden/      JSON fixtures captured from legacy/ under Python 2.7 (Phase 1)
 tests/data/        real inputs the fixtures are built from — query/reference FASTA, captured
                    bowtie and RNAplfold output, and a real data_to_json result
 tests/py2_capture/ the capture script, the Qt stubs, and make_inputs.py; see its README.md
-ToCopy/Images/     icons kept for the eventual GUI, converted from TIFF to PNG
+ToCopy/Images/     the two TIFF icons converted to PNG; the GUI's copies live in gui/resources/Images
 environment.yml    curated sifi2 env spec; environment.lock.yml is the generated pin
 environment-py2.yml throwaway sifi2-py2 env, for regenerating the fixtures only
 ```
@@ -58,7 +61,8 @@ Present throughout `legacy/`, so do not pattern-match on surrounding code when p
 Every defect `PLAN.md` listed is fixed: the leaked `mkstemp` descriptors and the four unrestored `os.chdir()`
 calls went in Phase 3, and Phase 6 did the five that move numbers (minus-strand hits dropped, design mode with no
 hits producing nothing, the unreachable `DNA_TMM1` keys, the discarded `sirna.upper()`, and the per-target
-position sets). One is left, in `legacy/main.py:279`, and it is Qt — see `PLAN.md` Phase 7.
+position sets). The last one — `legacy/main.py:279`, where closing the mode dialog silently selected design
+mode — went with the GUI in Phase 7, along with the Qt-only clean-ups Phase 5 handed over.
 
 If another one turns up, fix it the same way: **one attributable commit per defect**, whose message says which
 numbers moved and by how much. Never fold a behaviour change into an unrelated commit.
@@ -71,10 +75,16 @@ by `os.chdir()`. The Windows `.exe` builds that shipped with upstream have been 
 
 ## Qt and generated files
 
-`legacy/Resources/ui_sifi2015.py`, `ui_db_wizard.py` and `sifi_2015_rc.py` are **generated** from `sifi2015.ui`,
-`db_wizard.ui` and `sifi_2015.qrc` — edit the `.ui`/`.qrc` sources and regenerate, don't hand-edit the outputs.
-Under PyQt5 the tools are `pyuic5` / `pyrcc5`. The GUI is deferred to Phase 7; PyQt5 is deliberately **not** in
-the `sifi2` env, and `import sifi2.pipeline` must keep working without it.
+The GUI's Qt sources are `src/sifi2/gui/resources/{sifi2015.ui, db_wizard.ui, sifi_2015.qrc}`;
+`ui_sifi2015.py`, `ui_db_wizard.py` and `sifi_2015_rc.py` beside them are **generated** — edit the sources and
+regenerate, never hand-edit the output (the commands are in `resources/__init__.py`). `pyuic5` must be run with
+**`--from-imports`**, or the generated file ends with a bare `import sifi_2015_rc` that resolves against
+`sys.path`. `legacy/Resources/` holds the originals of all three and stays frozen.
+
+**Qt is confined to `src/sifi2/gui/`.** No module in `src/sifi2/*.py` may import PyQt5, and none may import
+`sifi2.gui` at module level — `sifi gui` imports it inside its handler. `import sifi2.pipeline` and
+`import sifi2.cli` must keep working with no Qt installed; two tests in `tests/test_pipeline.py` enforce this.
+PyQt5 is now in the `sifi2` env and in the `gui` extra, so it is present but optional.
 
 ## Environment
 
@@ -89,12 +99,15 @@ this cluster, so any new env spec needs `- nodefaults` in its channel list.
 ## Linting
 
 `conda run -n sifi2 ruff check src/ tests/` and `ruff format --check src/ tests/`. `ruff.toml` selects
-`E,W,F,UP,B,SIM,I` and excludes `legacy/`, `ToCopy/` and `tests/py2_capture/` — ruff cannot parse Python 2
-syntax, and `tests/py2_capture/` must keep running under Python 2.7, so never point it at either.
+`E,W,F,UP,B,SIM,I` and excludes `legacy/`, `ToCopy/`, `tests/py2_capture/` and the pyuic5/pyrcc5 output in
+`src/sifi2/gui/resources/` — ruff cannot parse Python 2 syntax, `tests/py2_capture/` must keep running under
+Python 2.7, and the generated Qt files are not edited by hand. Never point it at any of them.
 
 ## Testing
 
-`conda run -n sifi2 pytest`. Tests live in `tests/`, with the golden fixtures in `tests/golden/`. The fidelity
+`conda run -n sifi2 pytest`. Tests live in `tests/`, with the golden fixtures in `tests/golden/`. The GUI
+tests set `QT_QPA_PLATFORM=offscreen` themselves, so they need no display. Note `conda run` buffers all output
+until the process exits, so a hanging test looks like silence — debug by calling the env's python directly. The fidelity
 guarantee of this port is that the ported functions reproduce those fixtures exactly, so a failing golden test
 means the port is wrong — never adjust a fixture to make a test pass unless that change is the deliberate
 subject of the commit.

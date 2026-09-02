@@ -1,0 +1,9 @@
+<RCC>
+  <qresource prefix="Images">
+    <file>Images/siFi21_icon64.png</file>
+    <file>Images/about.png</file>
+    <file>Images/open.png</file>
+    <file>Images/add.png</file>
+    <file>Images/remove.png</file>
+  </qresource>
+</RCC>

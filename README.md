@@ -13,7 +13,8 @@ See [Relationship to upstream](#relationship-to-upstream) for the handful of del
 
 ## What's different
 
-- **Runs on Python 3.11+**, on Linux, macOS and Windows; no PyQt, no `py2exe`, no bundled `.exe` binaries.
+- **Runs on Python 3.11+**, on Linux, macOS and Windows; no PyQt4, no `py2exe`, no bundled `.exe` binaries,
+  **and no administrator rights** — nothing is installed or copied outside your own user directories.
 - **A real CLI.** `sifi design`, `sifi offtarget` and `sifi db`, scriptable and usable on an HPC cluster.
 - **Results are written to files you choose.** Upstream's advice was to hunt through the system temp
   directory for a `tmpXXXX.json` after each run; here `--outdir` gets you JSON, TSV and a plot per query
@@ -22,13 +23,13 @@ See [Relationship to upstream](#relationship-to-upstream) for the handful of del
   first), optionally in parallel with `--threads`.
 - **Parameters that were hard-coded are now flags** — RNAplfold's window, span and temperature, and the
   free-energy overhang and end-nucleotide counts.
-- **Tested.** 1283 tests, including golden fixtures captured from the Python 2 original and an end-to-end
+- **A GUI that is optional.** The desktop interface is ported to PyQt5 (`sifi gui`), but it is a client of
+  the same pipeline the CLI uses, and it installs separately — the core never imports Qt.
+- **Tested.** 1314 tests, including golden fixtures captured from the Python 2 original and an end-to-end
   baseline for both modes.
 - **Known bugs fixed**, one attributable commit each — minus-strand hits are no longer dropped, design mode
   with no hits no longer silently produces nothing, and three smaller defects. Each fix's commit message says
   which numbers moved.
-
-The GUI is not yet ported (see `PLAN.md`, Phase 7). The CLI is the entry point.
 
 ## Installation
 
@@ -47,7 +48,8 @@ To install into an existing environment instead, make sure `bowtie`, `bowtie-bui
 `PATH` (or pass `--bowtie-path` / `--rnaplfold-path`), then:
 
 ```bash
-pip install -e .
+pip install -e .          # CLI only
+pip install -e '.[gui]'   # ...and the desktop GUI
 ```
 
 ## Quickstart
@@ -65,6 +67,30 @@ sifi offtarget --query trigger.fasta --db mydb --outdir results/
 
 Databases live in a platform-appropriate data directory by default (`~/.local/share/sifi2/databases` on
 Linux); `--db-location` overrides it, and `sifi db list` / `sifi db remove` manage them.
+
+## The GUI
+
+```bash
+sifi gui        # or: sifi-gui
+```
+
+The desktop interface is the original's, ported to PyQt5: paste or open a sequence, pick a database, set the
+siRNA and efficiency options, press **Start**. The plot opens in its own window with matplotlib's zoom, and
+exports to PNG, CSV and — in design mode — GenBank.
+
+It needs the `gui` extra (`pip install 'sifi2[gui]'`, or `pyqt` in the conda environment), and it is strictly
+optional: `import sifi2.pipeline` works in an environment with no Qt at all, which is what lets the CLI run on
+a headless cluster node.
+
+Three things differ from the upstream GUI:
+
+- **No elevated privileges.** Upstream shipped Windows `bowtie`/`RNAplfold` executables inside its install
+  directory and copied them into `%LOCALAPPDATA%` on every start-up; from a `Program Files` install that
+  needs administrator rights. Here the binaries are found on `PATH`, databases live in your user data
+  directory (the same one the CLI uses, so both see the same databases) and preferences live in `QSettings`.
+- **Multi-record FASTA is accepted**, and each record gets its own plot in the results window. Upstream
+  refused it, pointing at a batch mode that was never written.
+- **Cancelling the "which mode?" question cancels**, rather than silently starting a design run.
 
 ## The two modes
 
@@ -124,11 +150,16 @@ conda run -n sifi2 ruff check src/ tests/
 conda run -n sifi2 ruff format --check src/ tests/
 ```
 
+The GUI tests run through Qt's `offscreen` platform plugin, so they need no display; they skip if PyQt5 is
+not installed. The Qt `.ui` and `.qrc` sources live in `src/sifi2/gui/resources/` and are compiled with
+`pyuic5 --from-imports` / `pyrcc5` — edit the sources, never the generated files.
+
 `PLAN.md` is the source of truth for the port and records every phase and deliberate deviation. `CLAUDE.md`
 carries the working conventions. Repository layout:
 
 ```
 src/sifi2/        the Python 3 port
+src/sifi2/gui/    the PyQt5 GUI — the only place Qt is imported
 legacy/           the frozen Python 2 original — never edited, never imported from src/
 tests/golden/     JSON fixtures captured from legacy/ under Python 2.7
 tests/baseline/   the port's own end-to-end output for both modes
