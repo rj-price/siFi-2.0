@@ -199,12 +199,34 @@ def test_pipeline_imports_without_pyqt():
     assert "ok" in result.stdout
 
 
-def test_no_qt_import_anywhere_in_the_package():
+def test_no_qt_import_anywhere_in_the_core():
+    """Qt is confined to ``sifi2.gui``. Every core module must stay importable
+    without it — the GUI is a client of the pipeline, never the other way round
+    (``PLAN.md`` Phase 7)."""
     import re
     from pathlib import Path
 
     import sifi2
 
+    package = Path(sifi2.__file__).parent
     qt_import = re.compile(r"^\s*(import|from)\s+(PyQt\d|popup|show_plot)\b", re.MULTILINE)
-    for path in Path(sifi2.__file__).parent.glob("*.py"):
+    for path in package.glob("*.py"):
         assert not qt_import.search(path.read_text()), path
+
+    assert (package / "gui" / "app.py").exists(), "the GUI package should be here"
+
+    # ...and no core module may import the GUI at module level. `sifi gui` does
+    # import it, but from inside the handler, so PyQt5 stays off the critical
+    # path of every headless run.
+    top_level_gui_import = re.compile(r"^(from|import)\s+\.?gui\b", re.MULTILINE)
+    for path in package.glob("*.py"):
+        assert not top_level_gui_import.search(path.read_text()), path
+
+
+def test_importing_the_cli_does_not_import_qt():
+    """The behavioural half of the check above: `sifi design` on a cluster node
+    must not load PyQt5 even when it happens to be installed."""
+    code = "import sys, sifi2.cli; print('PyQt5' in sys.modules)"
+    result = subprocess.run([sys.executable, "-c", code], capture_output=True, text=True)
+    assert result.returncode == 0, result.stderr
+    assert result.stdout.strip() == "False"

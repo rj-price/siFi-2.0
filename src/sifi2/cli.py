@@ -8,6 +8,7 @@ management::
     sifi db build   --fasta ref.fasta --name mydb
     sifi db list
     sifi db remove  mydb
+    sifi gui                                  # the desktop GUI, if PyQt5 is installed
 
 Every parameter the GUI exposed is a flag here, with the GUI's own defaults —
 including the six constants (``--winsize``, ``--span``, ``--temperature``,
@@ -190,6 +191,13 @@ def build_parser() -> argparse.ArgumentParser:
         description="Off-target prediction: report every database hit of every siRNA, with no main-target split.",
     )
     _add_common_arguments(offtarget)
+
+    gui = subparsers.add_parser(
+        "gui",
+        help="open the desktop GUI (needs the optional PyQt5 extra)",
+        description="Open the siFi desktop GUI. Requires PyQt5: pip install 'sifi2[gui]'.",
+    )
+    gui.add_argument("--db-location", metavar="DIR", help=f"default: {default_db_location()}")
 
     db = subparsers.add_parser("db", help="manage bowtie databases")
     db_subparsers = db.add_subparsers(dest="db_command", required=True, metavar="SUBCOMMAND")
@@ -401,6 +409,21 @@ def report_results(
     return 0
 
 
+def run_gui(args: argparse.Namespace) -> int:
+    """Hand over to the GUI, which is an optional extra.
+
+    Imported here and nowhere else: nothing in the core may import Qt, and a
+    headless run must not pay for PyQt5 being installed.
+    """
+    try:
+        from .gui.app import main as gui_main
+    except ImportError as error:
+        raise CliError(
+            f"the GUI needs PyQt5, which is not installed ({error}). Install it with: pip install 'sifi2[gui]'"
+        ) from error
+    return gui_main(db_location=args.db_location)
+
+
 def run_db(args: argparse.Namespace) -> int:
     db_location = args.db_location or default_db_location()
 
@@ -439,6 +462,8 @@ def main(argv: list[str] | None = None) -> int:
     try:
         if args.command == "db":
             return run_db(args)
+        if args.command == "gui":
+            return run_gui(args)
         return run_analysis(args, Mode.DESIGN if args.command == "design" else Mode.OFFTARGET)
     except (CliError, PipelineCancelled, bowtie.BowtieError, rnaplfold.RNAplfoldError) as error:
         print(f"sifi: error: {error}", file=sys.stderr)

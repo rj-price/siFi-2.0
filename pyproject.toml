@@ -29,6 +29,7 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
+gui = ["PyQt5"]
 test = ["pytest", "pytest-cov"]
 dev = ["ruff"]
 
@@ -39,9 +40,15 @@ Publication = "https://doi.org/10.3389/fpls.2019.01023"
 
 [project.scripts]
 sifi = "sifi2.cli:main"
+sifi-gui = "sifi2.gui:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
+
+# The GUI's Qt sources ship alongside the modules generated from them, so the
+# generated files can always be regenerated from an installed copy.
+[tool.setuptools.package-data]
+"sifi2.gui.resources" = ["*.ui", "*.qrc", "Images/*.png"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
